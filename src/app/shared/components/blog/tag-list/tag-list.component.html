@@ -1,0 +1,3 @@
+<ul *ngFor="let tagCount of getTagCounts() | keyvalue">
+  <li>{{ tagCount.key }}: {{ tagCount.value }}</li>
+</ul>
