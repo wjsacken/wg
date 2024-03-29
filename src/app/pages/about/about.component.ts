@@ -1,0 +1,71 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import sal from 'sal.js';
+import Swiper from 'swiper';
+import {register} from 'swiper/element';
+register();
+import { HeaderTwoComponent } from '../../shared/header/header-two/header-two.component';
+import { ServiceAreaSevenComponent } from '../../shared/components/service/service-area-seven/service-area-seven.component';
+import { UtilsService } from '../../shared/services/utils.service';
+import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.component';
+
+@Component({
+  selector: 'app-about',
+  standalone: true,
+  imports: [CommonModule,HeaderTwoComponent,ServiceAreaSevenComponent,FooterTwoComponent],
+  templateUrl: './about.component.html',
+  styleUrl: './about.component.scss'
+})
+export class AboutComponent {
+
+  constructor(public utilsService: UtilsService) { };
+
+  public gallery_images = [
+    '/assets/img/slider/about/_47.jpg',
+    '/assets/img/slider/about/_48.jpg',
+    '/assets/img/slider/about/_49.jpg',
+    '/assets/img/slider/about/_50.jpg',
+    '/assets/img/slider/about/_51.jpg',
+    '/assets/img/slider/about/_52.jpg',
+    '/assets/img/slider/about/_53.jpg',
+    '/assets/img/slider/about/_54.jpg',
+    '/assets/img/slider/about/_55.jpg',
+    '/assets/img/slider/about/_56.jpg',
+    '/assets/img/slider/about/_57.jpg',
+    '/assets/img/slider/about/_58.jpg',
+  ];
+
+  faq_items = [
+    {
+      id: "one",
+      title: "EXPERIENCED",
+      show: true,
+      desc: "Our firm continues to operate and thrive under the leadership and four decades of experience of founding partner, Mona Lisa Wallace. Together, Mona Lisa and her partner of over 25 years, Bill Graham, have built a firm of seasoned and dedicated attorneys and legal professionals who share their high standard of excellence and perseverance on behalf of their clients. We know what it takes because we have been there before.",
+    },
+    {
+      id: "two",
+      title: "FOCUSED ON YOU",
+      desc: "“Our Clients Are Our Priority” has been our mission since Day One. Our firm culture is focused on listening to our clients, caring about our clients, and developing legal strategies to advance their legal rights. We aim to lessen the burdens and improve the outlook for our clients as much as possible after a devastating life setback.",
+    },
+    {
+      id: "three",
+      title: "REPUTATION",
+      desc: "We are known as one of the hardest-working law firms for harmed and injured persons and their families. We are driven to overcome obstacles blocking our clients' access to justice. We pride ourselves on thinking outside the box. And we are not afraid to go up against some of the largest corporate actors in the world.",
+    }
+  ]
+
+  ngAfterViewInit() {
+    sal({ threshold: 0.1, once: true, root: null });
+  }
+
+  ngOnInit(): void {
+    new Swiper('.about__gallery-slider-active', {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.about-button-next',
+        prevEl: '.about-button-prev'
+      }
+    });
+  }
+}

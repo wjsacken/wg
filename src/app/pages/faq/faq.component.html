@@ -1,0 +1,74 @@
+<div>
+  <!-- header area start -->
+  <app-header-two></app-header-two>
+  <!-- header area end -->
+
+  <main>
+
+    <!-- breadcrumb area start -->
+    <section class="breadcrumb__area breadcrumb__style-8 p-relative include-bg pt-110 pb-50">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xxl-8 col-xl-8 col-lg-10">
+            <div class="breadcrumb__content text-center p-relative z-index-1">
+              <h3 class="breadcrumb__title">Testimonials</h3>
+              <div class="breadcrumb__list">
+                <span><a href="/">Home</a></span>
+                <span class="dvdr"><i class="fa-solid fa-circle-small"></i></span>
+                <span>Testimonials</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- breadcrumb area end -->
+    <!-- faq area start -->
+    <section class="faq__area pt-100 pb-25">
+      <div class="container">
+        <div class="faq__item-wrapper">
+          <div class="tab-content" id="faqTabContent">
+            <div *ngFor="let item of tab_faqs; let i = index"
+              [ngClass]="'tab-pane fade' + (item.active ? ' show active' : '')" [id]="item.id" role="tabpanel"
+              [attr.aria-labelledby]="item.id + '-tab'">
+              <div *ngFor="let faq_item of item.faq_content; let index = index" class="faq__item pb-95">
+                <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12">
+                    <div class="faq__wrapper faq__style-4 tp-accordion">
+                      <div class="accordion" [id]="faq_item.id + '-' + (index + 1) + '_accordion'">
+                        <div *ngFor="let item of faq_item.accordions; let i = index" class="accordion-item">
+                          <h2 class="accordion-header" [attr.id]="'heading-'+item.id">
+                            <button class="accordion-button" [class.collapsed]="!item.show" type="button"
+                              data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse-' + item.id"
+                              [attr.aria-expanded]="item.show ? 'true' : 'false'"
+                              [attr.aria-controls]="'#collapse-' + item.id">
+                              {{item.title}}
+                              <span class="accordion-btn"></span>
+                            </button>
+                          </h2>
+                          <div [id]="'collapse-' + item.id" class="accordion-collapse collapse" [class.show]="item.show"
+                            [attr.aria-labelledby]="'collapse-' + item.id" [attr.data-bs-parent]="'#'+item.parent">
+                            <div class="accordion-body">
+                              <div [innerHTML]="item.desc"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- faq area end -->
+  </main>
+
+  <!-- footer area start -->
+  <app-footer-two></app-footer-two>
+  <!-- footer area end -->
+</div>

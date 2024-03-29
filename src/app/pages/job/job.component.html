@@ -1,0 +1,65 @@
+<div>
+  <!-- header area start -->
+  <app-header-two></app-header-two>
+  <!-- header area end -->
+
+  <main>
+
+    <!-- section title area -->
+    <section class="tp-section-area pt-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="tp-section-wrapper-5 text-center mb-85">
+              <span class="tp-section-subtitle-5">Practice Areas</span>
+              <h3 class="tp-section-title-5">How We Can Help You</h3>
+              <p>Our firm practices a wide array of injury, disease, death, consumer, and environmental tort claims.
+                We investigate the wrongful conduct of companies and the insurance industry. We aim to help our
+                clients in any way possible. Please call to see if we can help.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section title end -->
+
+    <!-- job area start -->
+    <section class="job__area pb-140">
+      <div class="container">
+         <div class="row">
+            <div class="col-xxl-12">
+               <div class="job__item-wrapper">
+                  <div *ngFor="let item of practice_data;let i = index" class="job__item transition-3" data-sal="slide-up" [attr.data-sal-delay]="(i+1)*50 + 100" data-sal-duration="1000">
+                     <div class="row align-items-center">
+                        <div class="col-xl-6 col-lg-7 col-md-9">
+                           <div class="job__content">
+                              <h3 class="job__title">
+                                <a [routerLink]="'/practice/' + item.slug" [innerHTML]="item.name">{{item.name}}</a>
+                              </h3>
+                              <div class="job__meta-wrapper d-sm-flex flex-wrap align-items-center">
+                                 <div class="job__tag">
+                                    <span [innerHTML]="item.announcement"></span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                           <div class="job__vacancies">
+                              <img [src]="item.img" height="75">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- job area end -->
+
+  </main>
+
+  <!-- footer area start -->
+  <app-footer-two></app-footer-two>
+  <!-- footer area end -->
+</div>

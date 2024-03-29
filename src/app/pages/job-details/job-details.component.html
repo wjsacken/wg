@@ -1,0 +1,42 @@
+<div>
+  <!-- header area start -->
+  <app-header-two></app-header-two>
+  <!-- header area end -->
+
+  <main>
+
+    <!-- job details area start -->
+    <section class="job__details-area pt-60 pb-80 grey-bg-8">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-12 bg-white p-30">
+              <div class="job__details-wrapper">
+                <div class="job__details-content mb-50">
+                    <div class="job__details-tag mb-10">
+                      <span [innerHTML]="practice?.category"></span>
+                    </div>
+                    <h3 class="job__details-title">{{practice?.name}}</h3>
+                    <div class="job__details-thumb m-img mb-60">
+                      <img [src]="practice?.img" alt="">
+                    </div>
+                </div>
+                <div class="job__details-about mb-35" [innerHTML]="practice?.content"></div>
+                <div class="job__details-list-wrapper">
+                    <div class="row">
+
+                    </div>
+                </div>
+
+              </div>
+          </div>
+        </div>
+    </div>
+    </section>
+    <!-- job details area end -->
+
+  </main>
+
+  <!-- footer area start -->
+  <app-footer-two></app-footer-two>
+  <!-- footer area end -->
+</div>
