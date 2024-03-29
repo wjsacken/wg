@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import team_data from '../../../data/team-data';
+import attorney_data from '../../../data/attorney-data';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -11,5 +11,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './team-area-two.component.scss'
 })
 export class TeamAreaTwoComponent {
-  public teams = [...team_data].filter(t => t.page.includes('team'));
+  public teams = [...attorney_data];
 }
