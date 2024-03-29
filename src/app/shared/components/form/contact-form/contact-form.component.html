@@ -1,0 +1,57 @@
+<form id="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <div class="row">
+     <div class="col-md-12">
+        <div class="contact__input-2">
+           <input name="name" type="text" placeholder="Enter your name" formControlName="name">
+           <span *ngIf="name?.hasError('required') && (name?.touched || formSubmitted)" class="text-danger">
+             Name is required
+           </span>
+        </div>
+     </div>
+     <div class="col-md-12">
+        <div class="contact__input-2">
+           <input name="email" type="email" placeholder="Enter your email" formControlName="email">
+           <span *ngIf="(email?.hasError('required') && email?.touched) || (email?.hasError('email') && email?.dirty) || (formSubmitted && !email?.value)" class="text-danger">
+             Email is required and must be a valid email address
+           </span>
+        </div>
+     </div>
+     <div class="col-md-12">
+        <div class="contact__input-2">
+           <input name="phone" type="text" placeholder="Phone Number" formControlName="phone">
+           <span *ngIf="phone?.hasError('required') && (phone?.touched || formSubmitted)" class="text-danger"> Phone is required </span>
+        </div>
+     </div>
+     <div class="col-md-12">
+        <div class="contact__input-2">
+          <select name="practice_area" formControlName="practice_area">
+            <option disabled [selected]="true">What can we help you with?</option>
+            <option value="Personal Injury">Personal Injury</option>
+            <option value="Social Security Disability">Social Security Disability</option>
+            <option value="Mesothelioma & Asbestos">Mesothelioma & Asbestos</option>
+            <option value="Chemical Related Cancers">Chemical Related Cancers</option>
+            <option value="Wage & Hour Discrimination">Wage & Hour Discrimination</option>
+            <option value="Farm Nuisances">Farm Nuisances</option>
+            <option value="Class Action & Consumer Rights">Class Action & Consumer Rights</option>
+            <option value="Employment Benefits & Insurance">Employment Benefits & Insurance</option>
+            <option value="Wills & Estates">Wills & Estates</option>
+            <option value="Nursing Home Abuse & Neglect">Nursing Home Abuse & Neglect</option>
+            <option value="FELA & Your Rights">FELA & Your Rights</option>
+          </select>
+          <span *ngIf="practice_area?.hasError('required') && (practice_area?.touched || formSubmitted)" class="text-danger">Practice Area is required</span>
+
+        </div>
+     </div>
+     <div class="col-md-12">
+        <div class="contact__input-2">
+           <textarea name="message" placeholder="Your message" formControlName="message"></textarea>
+           <span *ngIf="message?.hasError('required') && (message?.touched || formSubmitted)" class="text-danger"> Message is required </span>
+        </div>
+     </div>
+     <div class="col-md-12">
+        <div class="contact__btn-2">
+           <button type="submit" class="tp-btn">Send Message</button>
+        </div>
+     </div>
+  </div>
+</form>
