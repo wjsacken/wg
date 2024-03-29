@@ -1,0 +1,115 @@
+<div>
+
+  <!-- header area start -->
+  <app-header-two></app-header-two>
+  <!-- header area end -->
+
+  <main>
+
+    <!-- breadcrumb area start -->
+    <section class="breadcrumb__area include-bg pb-70 pt-120 grey-bg-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-12">
+            <div class="breadcrumb__content p-relative z-index-1">
+              <div class="postbox__category">
+                <a href="#" [innerHTML]="blog?.tag"></a>
+              </div>
+              <h3 class="breadcrumb__title" [innerHTML]="blog?.title"></h3>
+
+              <div class="breadcrumb__list">
+                <span><a href="#">Home</a></span>
+                <span class="dvdr"><i class="fa-solid fa-circle-small"></i></span>
+                <span><a href="/new-blog">Blog</a></span>
+                <span class="dvdr"><i class="fa-solid fa-circle-small"></i></span>
+                <span>{{blog?.title}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- breadcrumb area end -->
+
+    <!-- postbox details area start -->
+    <section class="postbox__area grey-bg-4 pb-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-8">
+            <div class="postbox__wrapper">
+              <div class="postbox__top">
+                <div class="postbox__thumb m-img mb-55">
+                  <img src="{{blog?.img}}" alt="{{blog?.title}}">
+                </div>
+              </div>
+              <div class="postbox__main">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="postbox__main-wrapper">
+                      <div class="postbox__meta-wrapper d-flex align-items-center flex-wrap">
+                        <div class="postbox__meta-item mb-30">
+                          <div class="postbox__meta-author d-flex align-items-center">
+                            <div class="postbox__meta-content">
+                              <span class="postbox__meta-type">Author</span>
+                              <p class="postbox__meta-name" [innerHTML]="blog?.author_name"></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="postbox__meta-item mb-30">
+                          <div class="postbox__meta-content">
+                            <span class="postbox__meta-type">Published</span>
+                            <p class="postbox__meta-name">{{blog?.date}}</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="postbox__details-content-wrapper">
+                        <h3 class="postbox__details-title">{{blog?.title}}</h3><br>
+                        <div [innerHTML]="blog?.blog"></div>
+
+
+
+                      </div>
+
+                      <div class="postbox__share-wrapper mb-60">
+                        <div class="row align-items-center">
+                          <div class="col-xl-7">
+                            <div class="tagcloud tagcloud-sm">
+                              <span>Tags:</span>
+                              <a href="#">Blog</a>
+                              <a href="#">Creative</a>
+                              <a href="#">Portfoilo</a>
+                              <a href="#">Harry</a>
+                            </div>
+                          </div>
+                          <div class="col-xl-5">
+                            <div class="postbox__share text-xl-end">
+                              <span>Share On:</span>
+                              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <!-- blog sidebar -->
+            <app-blog-sidebar></app-blog-sidebar>
+            <!-- blog sidebar -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- postbox details area end -->
+  </main>
+
+  <!-- footer area start -->
+  <app-footer-two></app-footer-two>
+  <!-- footer area end -->
+</div>
