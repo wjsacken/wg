@@ -25,18 +25,41 @@ export class LawyerFormComponent {
     })
   }
 
-  onSubmit() {
+  async onSubmit() {
     this.formSubmitted = true;
     if (this.contactForm.valid) {
-      console.log('contact-form-value', this.contactForm.value);
-      alert(`Message sent successfully`);
+      try {
+        const formData = {
+          FirstName: this.contactForm.value.firstName,
+          LastName: this.contactForm.value.lastName,
+          Email: this.contactForm.value.email,
+          Phone: this.contactForm.value.phone,
+          Message: this.contactForm.value.message
+        };
 
-      // Reset the form
-      this.contactForm.reset();
-      this.formSubmitted = false; // Reset formSubmitted to false
+        const response = await fetch('https://webhook.site/WallaceGraham', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to submit form data');
+        }
+
+        alert('Form submitted successfully!');
+        // Reset the form
+        this.contactForm.reset();
+        this.formSubmitted = false; // Reset formSubmitted to false
+      } catch (error) {
+        console.error('An error occurred while submitting the form:', error);
+        alert('An error occurred while submitting the form: ');
+      }
     }
-    console.log('contact-form', this.contactForm);
   }
+
 
   get firstName() { return this.contactForm.get('firstName') }
   get lastName() { return this.contactForm.get('lastName') }

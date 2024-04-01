@@ -8,4 +8,5 @@ export interface IPracticeDT {
   content?: string;
   tags?: string;
   announcement?: string;
+  icon?: string;
 }

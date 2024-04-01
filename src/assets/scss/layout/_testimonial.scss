@@ -1418,6 +1418,10 @@
     }
     &__rating{
         margin-bottom: 5px;
+        color: var(--tp-common-yellow);
+        & .fa-star {
+            margin: 0px 2px;
+        }
         & a{
             font-size: 16px;
             color: var(--tp-common-yellow);

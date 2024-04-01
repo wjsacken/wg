@@ -21,39 +21,11 @@ export class BlogSliderBreadcrumbComponent {
   public slider_data = [
     {
       id: 1,
-      bg: '/assets/img/blog/breadcrumb/blog-breadcrumb-slider-1.jpg',
-      tag: 'Business',
-      title: 'Investment Trend Monitor: Top Trends in 2023',
-      date: 'October 24, 2022',
-      comment: '35',
-      watch: '234,5k'
-    },
-    {
-      id: 2,
-      bg: '/assets/img/blog/breadcrumb/blog-breadcrumb-slider-2.jpg',
-      tag: 'Creative',
-      title: 'Things Your Boss Needs To Know Agency Industry.',
-      date: 'October 26, 2022',
-      comment: '40',
-      watch: '180,2k'
-    },
-    {
-      id: 3,
-      bg: '/assets/img/blog/breadcrumb/blog-breadcrumb-slider-3.jpg',
-      tag: 'Agency',
-      title: 'The Reasons Why We Love The Agency Industry.',
-      date: 'November 15, 2022',
-      comment: '25',
-      watch: '150,3k'
-    },
-    {
-      id: 4,
-      bg: '/assets/img/blog/breadcrumb/blog-breadcrumb-slider-4.jpg',
-      tag: 'Latest',
-      title: 'Here What Industry Insiders Say About Agency.',
-      date: 'December 10, 2022',
-      comment: '22',
-      watch: '118,6k'
+      bg: 'assets/img/blog/clientuploads/Blog_Images/will_filing_a_case_affect_my_benefits.jpg',
+      tag: 'Camp Lejeune Water Contamination',
+      title: 'Will Filing A Claim Under The Camp Lejeune Justice Act (CLJA) Affect My VA Benefits?',
+      date: 'Monday, October 10, 2022',
+      slug:'filing-a-camp-lejeune-claim-affect-va-benefits',
     },
   ]
 

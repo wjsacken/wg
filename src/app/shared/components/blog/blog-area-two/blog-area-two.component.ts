@@ -14,7 +14,9 @@ import { RouterModule } from '@angular/router';
   styleUrl: './blog-area-two.component.scss'
 })
 export class BlogAreaTwoComponent {
-  public blog_items = [...blog_data].filter(b => b.page === 'wg');
+  public blog_items = [...blog_data]
+    .filter(b => b.page === 'wg')
+    .slice(0, 2);
 
   ngOnInit(): void {
     // blog slider active

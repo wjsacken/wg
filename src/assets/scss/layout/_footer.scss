@@ -6,6 +6,13 @@
 
 .footer{
     $self:&;
+    &_UL{
+        display: flex;
+        justify-content: space-around;
+    }
+    &_menu{
+        align-content: center;
+    }
     &__widget{
         &-space{
             padding-top: 40px;
@@ -62,24 +69,6 @@
                         padding-right: 13px;
                     }
 
-                    &::after{
-                        position: absolute;
-                        content: '';
-                        left: 0;
-                        top: 50%;
-                        @include transform(translateY(-50%));
-                        background-color: var(--tp-text-3);
-                        width: 5px;
-                        height: 5px;
-                        background-color: var(--tp-text-3);
-                        border-radius: 50%;
-                        @extend %tp-transition;
-
-                        @include rtl{
-                            left: auto;
-                            right: 0;
-                        }
-                    }
 
                     &:hover{
                         color: var(--tp-theme-1);
@@ -1499,7 +1488,7 @@
             border-bottom: 1px solid rgba($color: #fff, $alpha: .1);
         }
         &-4{
-            padding-top: 95px;
+            padding-top: 35px;
             padding-bottom: 30px;
         }
 

@@ -75,7 +75,6 @@
             opacity: 0;
             @extend %tp-transition;
             transition-duration: .5s;
-
             @media #{$xl, $lg, $md, $sm, $xs}{
                 visibility: visible;
                 opacity: 1;
@@ -1508,6 +1507,7 @@
             & img{
                 height: 100%;
                 object-fit: cover;
+                max-height: 270px;
 
                 @media #{$xs}{
                     width: 100%;
@@ -1939,7 +1939,7 @@
                 font-weight: 700;
                 font-size: 15px;
                 color: var(--tp-common-white);
-                background-color: var(--tp-theme-1);
+                background-color: var(--tp-theme-4);
                 line-height: 1;
                 padding: 4px 12px 6px;
             }
@@ -2259,7 +2259,7 @@
 
                     & a{
                         &:hover{
-                            color: var(--tp-theme-1);
+                            color: var(--tp-theme-4-dark);
                         }
                     }
                 }
@@ -2885,8 +2885,8 @@
             font-weight: 500;
             font-size: 15px;
             line-height: 1;
-            color: var(--tp-common-white);
-            background-color: var(--tp-theme-1);
+            color: var(--tp-common-black);
+            background-color: var(--tp-theme-4);
             padding: 4px 12px 5px;
 
             &:hover{

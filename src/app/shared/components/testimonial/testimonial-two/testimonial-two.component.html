@@ -14,9 +14,6 @@
               <div class="testimonial__slider-active-4 swiper-container">
                  <div class="swiper-wrapper">
                     <div *ngFor="let item of testimonial_data" class="testimonial__item-4 swiper-slide d-sm-flex align-items-center">
-                       <div class="testimonial__avater-thumb-4">
-                          <img [src]="item.userImg" alt="userImg">
-                       </div>
                        <div class="testimonial__content-4">
                           <div class="testimonial__icon">
                              <span>
@@ -26,39 +23,22 @@
                              </span>
                           </div>
                           <div class="testimonial__rating">
-                             <a href="#">
+                                <a><i class="fa-solid fa-star"></i></a>
                                 <i class="fa-solid fa-star"></i>
-                             </a>
-                             <a href="#">
                                 <i class="fa-solid fa-star"></i>
-                             </a>
-                             <a href="#">
                                 <i class="fa-solid fa-star"></i>
-                             </a>
-                             <a href="#">
                                 <i class="fa-solid fa-star"></i>
-                             </a>
-                             <a href="#">
-                                <i class="fa-solid fa-star"></i>
-                             </a>
                           </div>
 
-                          <p>{{item.desc}}</p>
+                          <p [innerHTML]="item.desc"></p>
 
                           <div class="testimonial__avater-info-4">
                              <h4 class="testimonial__avater-title-4">{{item.name}}</h4>
-                             <span class="testimonial__avater-designation-4">{{item.title}}</span>
                           </div>
                        </div>
                     </div>
                  </div>
               </div>
-           </div>
-        </div>
-        <div class="col-xxl-2 col-xl-2 col-lg-2">
-           <div class="testimonial__slider-nav-4 d-flex flex-lg-column">
-              <button type="button" class="testimonial-4-button-prev"><i class="fa-regular fa-angle-left"></i></button>
-              <button type="button" class="testimonial-4-button-next"><i class="fa-regular fa-angle-right"></i></button>
            </div>
         </div>
      </div>

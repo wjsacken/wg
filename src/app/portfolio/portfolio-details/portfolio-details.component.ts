@@ -1,37 +1,55 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import Swiper from 'swiper';
-import {register} from 'swiper/element';
-register();
-import { HeaderOneComponent } from '../../shared/header/header-one/header-one.component';
-import { FooterOneComponent } from '../../shared/footer/footer-one/footer-one.component';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { UtilsService } from '../../shared/services/utils.service';
+import { catchError } from 'rxjs/operators';
+import { of, switchMap } from 'rxjs';
+import { INewsDT } from '../../shared/types/news-d-t'; // Import INewsDT interface
 import sal from 'sal.js';
+import { HeaderTwoComponent } from '../../shared/header/header-two/header-two.component';
+import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.component';
 import { CounterAreaThreeComponent } from '../../shared/components/counter/counter-area-three/counter-area-three.component';
 import { PortfolioPostFormComponent } from '../../shared/components/form/portfolio-post-form/portfolio-post-form.component';
-import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio-details',
   standalone: true,
-  imports: [CommonModule,RouterModule,HeaderOneComponent,CounterAreaThreeComponent,PortfolioPostFormComponent,FooterOneComponent],
+  imports: [CommonModule,RouterModule,HeaderTwoComponent,CounterAreaThreeComponent,PortfolioPostFormComponent,FooterTwoComponent],
   templateUrl: './portfolio-details.component.html',
   styleUrl: './portfolio-details.component.scss'
 })
-export class PortfolioDetailsComponent {
+export class PortfolioDetailsComponent implements OnInit {
+  public news: INewsDT | null | undefined;
 
+  constructor(
+    private route: ActivatedRoute,
+    private utilsService: UtilsService
+  ) { }
 
-  ngOnInit(): void {
-    new Swiper('.portfolio__details-slider-active', {
-      slidesPerView: 1,
-      spaceBetween: 0,
-      pagination: {
-        el: '.portfolio-details-slider-dot',
-        clickable: true
+  ngOnInit() {
+    this.route.paramMap.pipe(
+      switchMap(params => {
+        const headline = params.get('headline');
+        const decodedHeadline = headline ? decodeURIComponent(headline) : null; // Decode the headline
+        console.log('Headline:', decodedHeadline);
+        if (decodedHeadline) {
+          return this.utilsService.getNewsByHeadline(decodedHeadline).pipe(
+            catchError(error => {
+              console.error('Error fetching news:', error);
+              return of(null);
+            })
+          );
+        }
+        return of<INewsDT | null>(null);
+      })
+    ).subscribe((news: INewsDT | null | undefined) => {
+      if (!news) {
+        console.log('No news found');
+        // Handle the case when the news is null or undefined
+      } else {
+        this.news = news;
+        console.log('Fetched News:', this.news);
       }
     });
-  }
-
-  ngAfterViewInit() {
-    sal({ threshold: 0.1, once: true, root: null });
   }
 }

@@ -578,9 +578,9 @@
             }
         }
         &-4{
-            @include transform(translateY(110px));
+            @include transform(translateY(0px));
             padding-top: 40px;
-            background-color: var(--tp-common-green-dark);
+            /**background-color: var(--tp-common-green-dark);**/
 
             @media #{$xl}{
                 margin-right: 76px;
@@ -597,8 +597,8 @@
             }
 
             & img{
-                background-color: var(--tp-common-green-dark);
-                mix-blend-mode: luminosity;
+                /**background-color: var(--tp-common-green-dark);
+                mix-blend-mode: luminosity;**/
             }
         }
         &-5{

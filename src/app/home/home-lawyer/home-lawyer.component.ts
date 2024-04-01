@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import Swiper from 'swiper';
 import { HeaderTwoComponent } from '../../shared/header/header-two/header-two.component';
 import { HeroBannerTwoComponent } from '../../shared/components/hero-banner/hero-banner-two/hero-banner-two.component';
-import { VideoAreaOneComponent } from '../../shared/components/video/video-area-one/video-area-one.component';
 import { ServiceAreaTwoComponent } from '../../shared/components/service/service-area-two/service-area-two.component';
 import { BlogAreaTwoComponent } from '../../shared/components/blog/blog-area-two/blog-area-two.component';
 import { TestimonialTwoComponent } from '../../shared/components/testimonial/testimonial-two/testimonial-two.component';
@@ -22,7 +21,6 @@ import { RouterModule } from '@angular/router';
     RouterModule,
     HeaderTwoComponent,
     HeroBannerTwoComponent,
-    VideoAreaOneComponent,
     ServiceAreaTwoComponent,
     BlogAreaTwoComponent,
     TestimonialTwoComponent,
@@ -36,11 +34,11 @@ import { RouterModule } from '@angular/router';
 })
 export class HomeLawyerComponent {
   public award_images = [
-    '/assets/img/award/4/award-icon-1.png',
-    '/assets/img/award/4/award-icon-2.png',
-    '/assets/img/award/4/award-icon-3.png',
-    '/assets/img/award/4/award-icon-4.png',
-    '/assets/img/award/4/award-icon-2.png',
+    '/assets/img/award/2018-top10-mesothelioma-verdicts-us-bill-graham.png',
+    '/assets/img/award/2018-top10-verdicts-us-john-hughes-iv.png',
+    '/assets/img/award/2018-top10-verdicts-us-mona-lisa-wallace.png',
+    '/assets/img/award/Monabadge.png',
+    '/assets/img/award/Johnbadge.png',
   ];
 
   public case_results = [
@@ -62,28 +60,22 @@ export class HomeLawyerComponent {
 
   history_lists = [
     {
-      year: '2007 - 2012',
-      title: 'Together We Build',
-      text: 'In quasi vitae non alias nulla qui dolores dolor non tempora tenetur.',
+      year: '01',
+      title: 'EXPERIENCED',
+      text: 'Our firm continues to operate and thrive under the leadership of Attorney Partners Mona Lisa Wallace, Bill Graham, and Whitney Wallace Williams. Together, they have built a firm of seasoned and dedicated attorneys, paralegals, and legal professionals who share their high standard of excellence and perseverance on behalf of their clients. Our team has the passion, skills, and resources to handle the most complex cases.',
       meta: 'Family Law',
     },
     {
-      year: '2012 - 2016',
-      title: 'Completed 1000 Cases',
-      text: 'In quasi vitae non alias nulla qui dolores dolor non tempora tenetur.',
+      year: '02',
+      title: 'FOCUSED ON YOU',
+      text: '"Our Clients Are Our Priority" has been our mission since Day One. Our firm culture is focused on listening to our clients, caring about our clients, and developing legal strategies to advance their legal rights. We aim to lessen the burdens and improve the outlook for our clients as much as possible after a devastating life setback.',
       meta: 'Criminal Law',
     },
     {
-      year: '2016 - 2018',
-      title: 'We Are Number One',
-      text: 'In quasi vitae non alias nulla qui dolores dolor non tempora tenetur.',
+      year: '03',
+      title: 'REPUTATION',
+      text: 'We are known as one of the hardest-working law firms for harmed and injured persons and their families. We are driven to overcome obstacles blocking our clients&apos; access to justice. We pride ourselves on thinking outside the box. And we are not afraid to go up against some of the largest corporate actors in the world.',
       meta: 'Business Law',
-    },
-    {
-      year: '2018 - 2022',
-      title: 'Intellectual Property',
-      text: 'In quasi vitae non alias nulla qui dolores dolor non tempora tenetur.',
-      meta: 'Car Accident',
     },
   ];
 

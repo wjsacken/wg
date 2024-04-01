@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { HeaderTwoComponent } from '../../shared/header/header-two/header-two.component';
 import { FooterSixComponent } from '../../shared/footer/footer-six/footer-six.component';
-import team_data from '../../shared/data/team-data';
 import attorney_data from '../../shared/data/attorney-data';
 import { RouterModule } from '@angular/router';
 

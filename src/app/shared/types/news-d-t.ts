@@ -2,7 +2,7 @@ export interface INewsDT {
   id: number;
   headline: string;
   sub_headline?: string;
-  date?: string;
+  date: string;
   author?: string;
   email?: string;
   source?: string;
