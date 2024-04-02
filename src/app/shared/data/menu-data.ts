@@ -5,6 +5,7 @@ const menu_data:IMenuData[] = [
     id: 1,
     hasDropdown: false,
     title: "Home",
+    mobile: true,
     link: "/",
   },
   {
@@ -12,6 +13,7 @@ const menu_data:IMenuData[] = [
     hasDropdown: true,
     title: "About Us",
     link: "/about-us",
+    mobile: true,
     submenus: [
       { title: "Attorneys", link: "/attorneys" },
       { title: "Our Team", link: "/new-directory" },
@@ -21,9 +23,10 @@ const menu_data:IMenuData[] = [
   {
     id: 3,
     title: "Practice Areas",
-    megaMenu: true,
     link: "/practice-areas",
+    megaMenu: true,
     pages: true,
+    mobile:false,
     mega_menus: [
       {
         title:"",
@@ -57,24 +60,28 @@ const menu_data:IMenuData[] = [
       hasDropdown: false,
       title: "News",
       link: "/news",
+      mobile: true,
     },
     {
       id: 6,
       hasDropdown: false,
       title: "W&G Gives",
       link: "/community-outreach",
+      mobile: true,
     },
     {
     id: 7,
     hasDropdown: false,
     title: "Blog",
     link: "/new-blog",
+    mobile: true,
   },
   {
     id: 8,
     hasDropdown: false,
     title: "Contact",
     link: "/contact",
+    mobile: true,
   },
 ]
 

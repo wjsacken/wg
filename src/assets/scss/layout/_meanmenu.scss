@@ -40,7 +40,7 @@
 	border-top: 1px solid #ebebeb;
 	font-size: 14px;
     line-height: 1.5;
-    font-weight: 700;
+    font-weight: 500;
 
 	@include rtl{
 		float: right;
@@ -80,7 +80,7 @@
 	color: var(--tp-common-black);
 	line-height: 30px;
 	top: 0;
-	font-weight: 400;
+	font-weight: 600;
 
 	@include rtl{
 		right: auto;
@@ -88,11 +88,11 @@
 		text-align: center;
 	}
     &:hover{
-        background: var(--tp-theme-1);
-        color: var(--tp-common-white);
-        border-color: var(--tp-theme-1);
+        background: var(--tp-theme-4);
+        color: var(--tp-common-black);
+        border-color: var(--tp-theme-4);
 		& i{
-			color: var(--tp-common-white);
+			color: var(--tp-common-black);
 		}
     }
 }
@@ -109,16 +109,18 @@
 	border-top: 0;
 }
 
-
+.hide {
+	display:none;
+}
 
 .mean-container .mean-nav ul li a.mean-expand.mean-clicked{
     color: var(--tp-common-white);
 	&:hover{
-        background: var(--tp-theme-1);
-        color: var(--tp-common-white);
-        border-color: var(--tp-theme-1);
+        background: var(--tp-theme-4);
+        color: var(--tp-common-black);
+        border-color: var(--tp-theme-4-dark);
 		& i{
-			color: var(--tp-common-white);
+			color: var(--tp-common-black);
 		}
     }
 }
@@ -130,4 +132,9 @@
     -o-transform: rotate(45deg);
     color: var(--tp-common-black);
 	
+}
+.mean-nav .has-mega-menu .mega-menu li ul li a {
+	font-weight: 300;
+	width: 80%;
+	padding: 10px 10%;
 }

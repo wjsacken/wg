@@ -1047,6 +1047,7 @@
             text-align: center;
             color: #fff;
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             width: 350px;
             height: 490px;
@@ -2660,7 +2661,8 @@
                     @include transform(translateY(-50%));
                     width: 3px;
                     height: 100%;
-                    background-color: var(--tp-theme-1);
+                    opacity: 0;
+                    background-color: var(--tp-theme-4);
                     @include rtl{
                         left: auto;
                         right: 0;
@@ -2673,6 +2675,10 @@
                 letter-spacing: -0.04em;
                 margin-bottom: 15px;
 
+            }
+            & .members {
+                column-count: 2;
+                margin-left: 1rem;
             }
             &-content{
                 & p{

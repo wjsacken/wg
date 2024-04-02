@@ -556,7 +556,7 @@
                 height: 6px;
                 background-color: var(--tp-theme-1);
                 border-radius: 50%;
-
+                opacity: 0;
                 @include rtl{
                     left: auto;
                     right: 0;
@@ -3406,9 +3406,7 @@
         }
     }
 }
-.portfolio__details-slider-active {
-	// margin: 0 -200px;
-}
+
 .portfolio__area{
     & .portfolio__details-slider{
         & .carousel__viewport{

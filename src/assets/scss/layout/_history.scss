@@ -80,6 +80,7 @@
             text-align: center;
             color: #fff;
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             width: 230px;
             height: 370px;
@@ -259,14 +260,14 @@
                 font-size: 14px;
                 font-weight: 500;
                 font-family: var(--tp-ff-space);
-                color: var(--tp-text-1);
+                color: var(--tp-text-5);
                 background-color: var(--tp-grey-9);
                 border-radius: 20px;
                 @extend %tp-transition;
 
                 &:hover{
                     background-color: var(--tp-theme-4);
-                    color: var(--tp-common-white);
+                    color: var(--tp-common-black);
                 }
             }
         }

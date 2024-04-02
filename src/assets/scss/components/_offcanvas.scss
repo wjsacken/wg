@@ -197,8 +197,9 @@
                    &-call{
                        color: var(--tp-common-white);
                        & a{
+                            color: var(--tp-common-white);
                             &:hover{
-                                color: var(--tp-common-black);
+                                color: var(--tp-common-white);
                             }
                        }
                    }
@@ -485,12 +486,12 @@
             font-family: var(--tp-ff-space);
             font-weight: 700;
             font-size: 20px;
-            color: var(--tp-common-black);
+            color: var(--tp-common-white);
             margin-bottom: 5px;
 
             & a{
                 &:hover{
-                    color: var(--tp-theme-1);
+                    color: var(--tp-theme-4);
                 }
             }
         }

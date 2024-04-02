@@ -3,6 +3,7 @@ export interface IMenuData {
   hasDropdown?: boolean;
   title: string;
   link: string;
+  mobile?: boolean;
   submenus?: {
     title: string;
     link: string;
