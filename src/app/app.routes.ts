@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 import { HomeLawyerComponent } from './home/home-lawyer/home-lawyer.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { ContactTwoComponent } from './pages/contact-two/contact-two.component';
 import { BlogGridSidebarComponent } from './blog/blog-grid-sidebar/blog-grid-sidebar.component';
 import { BlogDetailsComponent } from './blog/blog-details/blog-details.component';
 import { AboutComponent } from './pages/about/about.component';
@@ -31,7 +30,6 @@ export const routes: Routes = [
     ]
   },
   {path:'contact',component:ContactComponent,title:'Contact - Harry'},
-  {path:'contact-two',component:ContactTwoComponent,title:'Contact Two - Harry'},
   { path: 'new-blog', component: BlogGridSidebarComponent, data: { title: 'Wallace & Graham Blog' } },
   { path: ':slug', component: BlogDetailsComponent, data: { title: 'Blog Title' } },
   {path:'**',component:NotFoundComponent,title:'Page Not Found - Wallace & Graham'},

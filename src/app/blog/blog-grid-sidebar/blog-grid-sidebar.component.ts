@@ -2,7 +2,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 import { HeaderTwoComponent } from '../../shared/header/header-two/header-two.component';
-import { FooterOneComponent } from '../../shared/footer/footer-one/footer-one.component';
+import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.component';
 import { PaginationComponent } from '../../shared/components/pagination/pagination.component';
 import { BlogGridItemComponent } from '../../shared/components/blog/blog-grid-item/blog-grid-item.component';
 import { BlogSliderBreadcrumbComponent } from '../../shared/components/breadcrumb/blog-slider-breadcrumb/blog-slider-breadcrumb.component';
@@ -15,7 +15,7 @@ import { BlogSidebarComponent } from '../../shared/components/blog/blog-sidebar/
 @Component({
   selector: 'app-blog-grid-sidebar',
   standalone: true,
-  imports: [CommonModule,HeaderTwoComponent,BlogSliderBreadcrumbComponent,FooterOneComponent,PaginationComponent,BlogGridItemComponent,BlogSidebarComponent],
+  imports: [CommonModule,HeaderTwoComponent,BlogSliderBreadcrumbComponent,FooterTwoComponent,PaginationComponent,BlogGridItemComponent,BlogSidebarComponent],
   templateUrl: './blog-grid-sidebar.component.html',
   styleUrl: './blog-grid-sidebar.component.scss'
 })

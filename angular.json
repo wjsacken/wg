@@ -67,18 +67,18 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "harry-angular:build:production"
+              "buildTarget": "wg-angular:build:development"
             },
             "development": {
-              "buildTarget": "harry-angular:build:production"
+              "buildTarget": "wg-angular:build:development"
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "harry-angular:build"
+            "buildTarget": "wg-angular:build"
           }
         },
         "test": {
