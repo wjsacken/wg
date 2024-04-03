@@ -19,68 +19,22 @@ export class UtilsService {
   ) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        this.isSearchOpen = false;
-        this.isProductModalOpen = false;
         this.openMobileMenus = false;
-        this.removeBackdropAndProductModal();
-        this.mini_cart_sidebar = false;
       }
     });
   }
 
   // video modal
-  public videoUrl: string = 'https://www.youtube.com/embed/EW4ZYb3mCZk';
-  public isVideoOpen: Boolean = false;
-  public isSearchOpen: Boolean = false;
-  public isProductModalOpen: Boolean = false;
   public openMobileMenus: Boolean = false;
   public white_header: Boolean = false;
-  public mini_cart_sidebar: Boolean = false;
   public iframeElement: HTMLIFrameElement | null = null;
   // product modal
-  public modalId: string = 'product-modal-1';
 
   // open mobile sidebar
   handleOpenMobileMenu() {
     this.openMobileMenus = !this.openMobileMenus;
   };
 
-  // mini cart sidebar
-  handleMiniCartSidebar() {
-    this.mini_cart_sidebar = !this.mini_cart_sidebar;
-  };
-
-  // modal video play
-  playVideo(videoId: string) {
-    const videoOverlay = document.querySelector('#video-overlay');
-    this.videoUrl = `https://www.youtube.com/embed/${videoId}`;
-    if (!this.iframeElement) {
-      this.iframeElement = document.createElement('iframe');
-      this.iframeElement.setAttribute('src', this.videoUrl);
-      this.iframeElement.style.width = '60%';
-      this.iframeElement.style.height = '80%';
-    }
-
-    this.isVideoOpen = true;
-    videoOverlay?.classList.add('open');
-    videoOverlay?.appendChild(this.iframeElement);
-  }
-  // close modal video
-  closeVideo() {
-    const videoOverlay = document.querySelector('#video-overlay.open');
-
-    if (this.iframeElement) {
-      this.iframeElement.remove();
-      this.iframeElement = null;
-    }
-
-    this.isVideoOpen = false;
-    videoOverlay?.classList.remove('open');
-  }
-
-  handleSearchOpen() {
-    this.isSearchOpen = !this.isSearchOpen;
-  }
 
   handleWhiteHeader(index: number) {
     if (index === 1) {
@@ -90,21 +44,6 @@ export class UtilsService {
       this.white_header = false;
     }
   }
-
-
-  removeBackdropAndProductModal() {
-    const modalBackdrop = document.querySelector('.modal-backdrop');
-    const product_modal = document.querySelector('.tp-product-modal.show') as HTMLElement;
-    if (modalBackdrop) {
-      modalBackdrop.remove();
-      document.body.classList.remove('modal-open');
-      document.body.removeAttribute('style');
-    }
-    if (product_modal) {
-      product_modal.style.display = 'none';
-    }
-  }
-
 
   moveImage(e: MouseEvent, item: HTMLElement | any,children:number): void {
     const itemRect = item.getBoundingClientRect();

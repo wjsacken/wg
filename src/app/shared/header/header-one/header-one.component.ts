@@ -5,12 +5,11 @@ import { RouterModule } from '@angular/router';
 import { OffcanvasOneComponent } from '../../components/offcanvas/offcanvas-one/offcanvas-one.component';
 import { UtilsService } from '../../services/utils.service';
 import { OffcanvasSixComponent } from '../../components/offcanvas/offcanvas-six/offcanvas-six.component';
-import { SearchPopupComponent } from '../../components/search-popup/search-popup.component';
 
 @Component({
   selector: 'app-header-one',
   standalone: true,
-  imports: [CommonModule,RouterModule,HeaderNavMenusComponent,OffcanvasOneComponent,OffcanvasSixComponent,SearchPopupComponent],
+  imports: [CommonModule,RouterModule,HeaderNavMenusComponent,OffcanvasOneComponent,OffcanvasSixComponent],
   templateUrl: './header-one.component.html',
   styleUrl: './header-one.component.scss'
 })

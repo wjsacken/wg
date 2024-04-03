@@ -1,18 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import sal from 'sal.js';
-import {Gallery,GalleryItem,ImageItem,ThumbnailsPosition,ImageSize} from 'ng-gallery';
+import {Gallery,GalleryItem} from 'ng-gallery';
 import { Lightbox } from 'ng-gallery/lightbox';
 import { HeaderTwoComponent } from '../../shared/header/header-two/header-two.component';
 import { ServiceAreaSevenComponent } from '../../shared/components/service/service-area-seven/service-area-seven.component';
-import { PersonalPortSkillsComponent } from '../../shared/components/skills/personal-port-skills/personal-port-skills.component';
 import { UtilsService } from '../../shared/services/utils.service';
-import { IPortfolioDT } from '../../shared/types/portfolio-d-t';
-import { BrandSliderTwoComponent } from '../../shared/components/brand/brand-slider-two/brand-slider-two.component';
-import { CtaAreaSevenComponent } from '../../shared/components/cta/cta-area-seven/cta-area-seven.component';
-import { VideoPopupComponent } from '../../shared/components/modal/video-popup/video-popup.component';
 import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.component';
-import { TestimonialElevenComponent } from '../../shared/components/testimonial/testimonial-eleven/testimonial-eleven.component';
 import { RouterModule } from '@angular/router';
 
 @Component({
