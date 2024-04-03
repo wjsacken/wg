@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "harry-angular": {
+    "wg-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -27,7 +27,9 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/sitemap.xml",
+              "src/robots.txt"
             ],
             "styles": [
               "src/styles.scss"
@@ -68,10 +70,10 @@
               "buildTarget": "harry-angular:build:production"
             },
             "development": {
-              "buildTarget": "harry-angular:build:development"
+              "buildTarget": "harry-angular:build:production"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "production"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -90,7 +92,9 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/sitemap.xml",
+              "src/robots.txt"
             ],
             "styles": [
               "src/styles.scss"
