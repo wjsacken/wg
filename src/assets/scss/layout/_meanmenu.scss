@@ -29,8 +29,26 @@
 	list-style-type: none;
 	display: block !important;
 }
+.mean-container .mean-nav ul li {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
 .mean-container a.meanmenu-reveal {
 	display: none !important;
+}
+.mean-container .mean-nav ul li a {
+	display: block;
+	float: left;
+	width: 90%;
+	padding: 10px 5%;
+	margin: 0;
+	text-align: left;
+	color: #fff;
+	border-top: 1px solid #e0e3ed;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 .mean-container .mean-nav ul li a,
 .mean-container .mean-nav ul li span{

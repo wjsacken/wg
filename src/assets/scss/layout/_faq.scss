@@ -83,14 +83,14 @@
                 & .accordion-btn{
                     &::before{
                         @include transform(translateX(-50%) rotate(90deg));
-                        background-color: var(--tp-theme-1);
+                        background-color: var(--tp-theme-4-dark);
 
                         @include rtl{
                             @include transform(translateX(50%) rotate(90deg));
                         }
                     }
                     &::after{
-                        background-color: var(--tp-theme-1);
+                        background-color: var(--tp-theme-4-dark);
                     }
                 }
             }
