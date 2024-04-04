@@ -1,0 +1,103 @@
+@use '../../../../../assets/scss/utils' as *;
+
+.contact{
+    $self :&;
+    &__list{
+
+        &-item{
+            margin-bottom: 10px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &-11{
+                padding-top: 31px;
+                padding-bottom: 26px;
+                padding-right: 55px;
+                background-color: var(--tp-common-brown);
+                margin-bottom: 20px;
+                animation-delay: .3s;
+                animation-duration: 1s;
+
+                @include rtl{
+                    padding-right: 0;
+                    padding-left: 55px;
+                }
+
+                &:nth-child(2){
+                    animation-delay: .6s;
+                }
+
+                &:nth-child(3){
+                    animation-delay: .9s;
+                }
+
+                &:nth-child(4){
+                    animation-delay: 1.2s;
+                }
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+
+                &.is-green{
+                    background-color: var(--tp-common-green-light-5);
+                    #{$self}{
+                        &__list{
+                            &-icon-11{
+                                & span{
+                                    color: var(--tp-common-green-7);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.is-brown{
+                    background-color:  var(--tp-common-brown-light);
+                    #{$self}{
+                        &__list{
+                            &-icon-11{
+                                & span{
+                                    color: var(--tp-common-brown-dark-2);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-icon{
+            & span{
+                display: inline-block;
+                width: 70px;
+                height: 70px;
+                line-height: 63px;
+                text-align: center;
+                font-size: 26px;
+                background-color: var(--tp-grey-8);
+                color: var(--tp-text-body);
+                margin-right: 20px;
+            }
+        }
+        &-content{
+            & h5{
+                font-family: var(--tp-ff-inter);
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing: -0.04em;
+                margin-bottom: 2px;
+                color: var(--tp-text-1);
+            }
+            & p{
+                font-family: var(--tp-ff-inter);
+                font-weight: 500;
+                font-size: 18px;
+                letter-spacing: -0.04em;
+                color: var(--tp-common-black);
+                margin-bottom: 0;
+
+            }
+        }
+    }
+}

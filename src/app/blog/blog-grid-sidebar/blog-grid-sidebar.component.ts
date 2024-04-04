@@ -22,7 +22,7 @@ import { BlogSidebarComponent } from '../../shared/components/blog/blog-sidebar/
 export class BlogGridSidebarComponent {
 
   public blog_items: IBlogDT[] = [];
-  public pageSize: number = 6;
+  public pageSize: number = 12;
   public paginate: any = {}; // Pagination use only
   public pageNo: number = 1;
 

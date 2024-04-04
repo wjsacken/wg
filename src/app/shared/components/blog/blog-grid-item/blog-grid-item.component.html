@@ -7,7 +7,7 @@
               <img [src]="blog.img" alt="{{blog.title}}">
            </a>
            <div class="blog__tag-10">
-            <a [routerLink]="'/' + blog.slug">{{blog.tag}}</a>
+            <a [routerLink]="'/' + blog.slug" [innerHTML]="blog.tag">{{blog.tag}}</a>
            </div>
         </div>
         <div class="blog__content-10">

@@ -1,3 +1,5 @@
-<ul *ngFor="let tagCount of getTagCounts() | keyvalue">
-  <li>{{ tagCount.key }}: {{ tagCount.value }}</li>
+<ul class="simpleList">
+  <li *ngFor="let practice of practiceData">
+    <a href="practice/{{practice.slug}}" [innerHTML]="practice.name"></a>
+  </li>
 </ul>
