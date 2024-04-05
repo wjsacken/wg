@@ -7,7 +7,7 @@ import { IAttorneyDT } from '../../shared/types/attorney-d-t';
 import { catchError } from 'rxjs/operators';
 import { UtilsService } from '../../shared/services/utils.service';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-
+import { Title, Meta } from '@angular/platform-browser';
 import sal from 'sal.js';
 
 @Component({
@@ -23,7 +23,9 @@ export class AttorneyDetailsComponent {
   constructor(
     private route: ActivatedRoute,
     private utilsService: UtilsService,
-    private router: Router
+    private router: Router,
+    private titleService: Title, 
+    private metaService: Meta
   ) { }
 
   ngAfterViewInit() {
@@ -53,6 +55,11 @@ export class AttorneyDetailsComponent {
         // Proceed with handling the fetched blog
         this.attorney = attorney;
       }
-    });
+    
+    this.titleService.setTitle('attorneyName');
+
+    // Dynamically set the meta description
+    this.metaService.updateTag({ name: 'description', content: 'Your meta description' });
+  });
   }
 }

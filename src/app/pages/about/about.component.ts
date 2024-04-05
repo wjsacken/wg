@@ -8,6 +8,8 @@ import { HeaderTwoComponent } from '../../shared/header/header-two/header-two.co
 import { ServiceAreaSevenComponent } from '../../shared/components/service/service-area-seven/service-area-seven.component';
 import { UtilsService } from '../../shared/services/utils.service';
 import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.component';
+import { Title, Meta } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-about',
@@ -18,7 +20,9 @@ import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.co
 })
 export class AboutComponent {
 
-  constructor(public utilsService: UtilsService) { };
+  constructor(public utilsService: UtilsService,
+    private titleService: Title, 
+    private metaService: Meta) { };
 
   public gallery_images = [
     '/assets/img/slider/about/_47.jpg',
@@ -67,5 +71,9 @@ export class AboutComponent {
         prevEl: '.about-button-prev'
       }
     });
+    this.titleService.setTitle('About Wallace &amp; Graham, Attorneys at Law');
+
+    // Dynamically set the meta description
+    this.metaService.updateTag({ name: 'description', content: 'Learn about Wallace &amp; Graham, a leading personal injury law firm in North Carolina. Contact us for expert legal representation.' });
   }
 }

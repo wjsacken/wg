@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { HeaderTwoComponent } from '../../shared/header/header-two/header-two.component';
 import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.component';
 import { ContactFormComponent } from '../../shared/components/form/contact-form/contact-form.component';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
@@ -13,7 +14,10 @@ import { ContactFormComponent } from '../../shared/components/form/contact-form/
 })
 
 export class ContactComponent {
-
+  constructor(
+    private titleService: Title, 
+    private metaService: Meta
+  ){}
   public location_data = [
     {
       title:'Call',
@@ -34,6 +38,11 @@ export class ContactComponent {
       tel:'',
     }
   ];
+  ngOnInit() {
+    this.titleService.setTitle('Contact Us for Expert Legal Representation | Wallace &amp; Graham');
 
+    // Dynamically set the meta description
+    this.metaService.updateTag({ name: 'description', content: 'Contact Wallace &amp; Graham for expert legal representation in North Carolina. Our personal injury attorneys are here to help.' });
+  }
 
 }

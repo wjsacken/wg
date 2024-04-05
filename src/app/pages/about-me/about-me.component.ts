@@ -8,6 +8,7 @@ import { ServiceAreaSevenComponent } from '../../shared/components/service/servi
 import { UtilsService } from '../../shared/services/utils.service';
 import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.component';
 import { RouterModule } from '@angular/router';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-about-me',
@@ -28,7 +29,9 @@ export class AboutMeComponent {
   constructor(
     public gallery: Gallery,
     public lightbox: Lightbox,
-    public utilsService: UtilsService
+    public utilsService: UtilsService,
+    private titleService: Title, 
+    private metaService: Meta
   ) {};
 
   history_lists = [
@@ -95,7 +98,12 @@ export class AboutMeComponent {
     },
   ];
 
+  ngOnInit(){
+    this.titleService.setTitle('Community Outreach Programs in North Carolina | Wallace & Graham');
 
+    // Dynamically set the meta description
+    this.metaService.updateTag({ name: 'description', content: 'Wallace &amp; Graham personal injury law firm is committed to community outreach programs in North Carolina. Contact us for more information.' });
+  }
   ngAfterViewInit() {
     sal({ threshold: 0.1, once: true, root: null });
   }

@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { HeaderTwoComponent } from '../../shared/header/header-two/header-two.component';
 import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.component';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-faq',
@@ -11,7 +12,10 @@ import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.co
   styleUrl: './faq.component.scss'
 })
 export class FaqComponent {
-
+    constructor(
+        private titleService: Title, 
+        private metaService: Meta
+    ){}
   tab_faqs = [
     {
       id: "general",
@@ -779,4 +783,11 @@ export class FaqComponent {
 
 }
   ]
+
+  ngOnInit(){
+    this.titleService.setTitle('Testimonials for Wallace &amp; Graham Attorneys | North Carolina');
+
+    // Dynamically set the meta description
+    this.metaService.updateTag({ name: 'description', content: 'Read testimonials from satisfied clients of Wallace &amp; Graham, a top personal injury law firm serving clients in North Carolina. Contact us for expert legal representation.' });
+  }
 }
