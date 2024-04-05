@@ -15,7 +15,7 @@ const  blog_data:IBlogDT[] = [
   {
     id: 207,
     img:'assets/img/blog/clientuploads/Blog_Images/Personal_Injury_Claim_Form.jpg',
-    slug:'What-damages-can-I-recover-in-a-Personal-Injury-claim-in-NC',
+    slug:'what-damages-can-i-recover-in-a-Personal-Injury-claim-in-NC',
     title: 'What damages can I recover in a Personal Injury claim in NC?',
     date: 'Wednesday, June  1, 2022',
     author_name: 'Wallace &amp; Graham, P.A.',
@@ -27,7 +27,7 @@ const  blog_data:IBlogDT[] = [
  {
     id: 206,
     img:'assets/img/blog/clientuploads/Blog_Images/Personal_Injury_Claim.jpg',
-    slug:'Can-a-pre-existing-injury-affect-my-personal-injury-claim-in-NC',
+    slug:'can-a-pre-existing-injury-affect-my-personal-injury-claim-in-nc',
     title: 'Can a pre-existing injury affect my personal injury claim in NC?',
     date: 'Wednesday, May 25, 2022',
     author_name: 'Wallace &amp; Graham, P.A.',
@@ -39,7 +39,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 205,
   img:'assets/img/blog/clientuploads/Blog_Images/Serious_Injury_Accidents_in_NC.jpg',
-  slug:'Underinsured-Motorist-and-Uninsured-Motorist-Coverage',
+  slug:'underinsured-motorist-and-uninsured-motorist-coverage',
   title: 'Underinsured Motorist and Uninsured Motorist Coverage',
   date: 'Wednesday, May 18, 2022',
   author_name: 'Wallace &amp; Graham, P.A.',
@@ -51,7 +51,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 204,
   img:'assets/img/blog/clientuploads/Blog_Images/Underinsured_Driver_Blog.jpg',
-  slug:'Serious-Injury-Accidents-in-NC-with-Uninsured-Drivers',
+  slug:'serious-injury-accidents-in-nc-with-uninsured-drivers',
   title: 'Serious Injury Accidents in NC with Uninsured Drivers',
   date: 'Tuesday, April 19, 2022',
   author_name: 'Wallace &amp; Graham, P.A',
@@ -254,7 +254,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 186,
   img:'assets/img/blog/clientuploads/Blog_Images/Wallace&GrahamGives-ColorOption2.svg',
-  slug:'W-G-Gives-Exceeds-10-000-In-Lunches-For-Front-Line-Staff',
+  slug:'w-g-gives-exceeds-10-000-in-lunches-for-front-line-staff',
   title: 'W&amp;G Gives Exceeds $10,000 In Lunches For Front Line Staff',
   date: 'Tuesday, May 19, 2020',
   author_name: 'Wallace and Graham, P.A.',
@@ -290,7 +290,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 183,
   img:'assets/img/blog/clientuploads/Blog_Images/Nursing_Home_Neglect.jpg',
-  slug:'Lawsuit-The-Citadel-and-Nursing-Home-Neglect',
+  slug:'lawsuit-the-citadel-and-nursing-home-neglect',
   title: 'Lawsuit: The Citadel and Nursing Home Neglect',
   date: 'Wednesday, April 22, 2020',
   author_name: 'Wallace and Graham, P.A.',
@@ -302,7 +302,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 182,
   img:'assets/img/blog/clientuploads/Blog_Images/Law_Firm_Paycheck_Protection.jpg',
-  slug:'Tips-for-Law-Firms-Seeking-Funds-Under-The-Paycheck-Protection-Program',
+  slug:'tips-for-law-firms-seeking-funds-under-the-paycheck-protection-program',
   title: 'Tips for Law Firms Seeking Funds Under The Paycheck Protection Program',
   date: 'Thursday, April 16, 2020',
   author_name: 'Janet Varnell',
@@ -314,7 +314,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 181,
   img:'assets/img/blog/clientuploads/Blog_Images/Business_Interuption_Insurance.jpg',
-  slug:'Legal-Issues-Raised-by-COVID-19-Business-Interruption-Insurance',
+  slug:'legal-issues-raised-by-covid-19-business-interruption-insurance',
   title: 'Legal Issues Raised by COVID-19: Business Interruption Insurance',
   date: 'Wednesday, April  8, 2020',
   author_name: 'Wallace &amp; Graham, P.A.',
@@ -326,7 +326,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 180,
   img:'assets/img/blog/clientuploads/News/A_Person_To_Honor.JPG',
-  slug:'A-Person-to-Honor',
+  slug:'a-person-to-honor',
   title: 'A Person to Honor',
   date: 'Monday, March 16, 2020',
   author_name: 'Isaiah Woods',
@@ -338,7 +338,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 179,
   img:'assets/img/blog/clientuploads/Blog_Images/Trampoline_Park_Image.jpg',
-  slug:'Hidden-Danger-of-Trampoline-Parks',
+  slug:'hidden-danger-of-trampoline-parks',
   title: 'Hidden Danger of Trampoline Parks',
   date: 'Monday, March  9, 2020',
   author_name: 'Isaiah Woods',
@@ -374,7 +374,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 175,
   img:'assets/img/blog/clientuploads/Blog_Images/shutterstock_796807231.jpg',
-  slug:'What-is-a-Mesothelioma-Lawyer-NC-Mesothelioma-Law',
+  slug:'what-is-a-mesothelioma-lawyer-nc-mesothelioma-law',
   title: 'What is a Mesothelioma Lawyer: NC Mesothelioma Law',
   date: 'Thursday, January 30, 2020',
   author_name: 'Wallace &amp; Graham, P.A.',
@@ -398,7 +398,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 173,
   img:'assets/img/blog/clientuploads/Blog_Images/shutterstock_382531567.jpg',
-  slug:'New-Study-Suggests-Link-Between-Talcum-Powder-and-Malignant-Mesothelioma',
+  slug:'new-study-suggests-link-between-talcum-powder-and-malignant-mesothelioma',
   title: 'New Study Suggests Link Between Talcum Powder and Malignant Mesothelioma',
   date: 'Tuesday, January 14, 2020',
   author_name: 'Wallace &amp; Graham, P.A.',
@@ -410,7 +410,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 172,
   img:'assets/img/blog/clientuploads/Blog_Images/shutterstock_337613393.jpg',
-  slug:'Johnson-Johnson-Baby-Powder-Recalled-Due-to-Asbestos-Exposure',
+  slug:'johnson-johnson-baby-powder-recalled-due-to-asbestos-exposure',
   title: 'Johnson &amp; Johnson Baby Powder Recalled Due to Asbestos Exposure',
   date: 'Friday, December 20, 2019',
   author_name: 'Wallace &amp; Graham, P.A.',
@@ -434,7 +434,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 170,
   img:'assets/img/blog/clientuploads/Blog_Images/shutterstock_1040054041.jpg',
-  slug:'JUUL-Pulls-Flavors-from-Shelves-Ahead-of-Controversy',
+  slug:'juul-pulls-flavors-from-shelves-ahead-of-controversy',
   title: 'JUUL Pulls Flavors from Shelves Ahead of Controversy',
   date: 'Tuesday, November 19, 2019',
   author_name: 'Wallace and Graham, P.A.',
@@ -446,7 +446,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 169,
   img:'assets/img/blog/clientuploads/Blog_Images/shutterstock_405120391.jpg',
-  slug:'Four-Types-of-Workers-Compensation-Benefits-and-How-They-Are-Paid',
+  slug:'four-types-of-workers-compensation-benefits-and-gow-they-are-paid',
   title: 'Four Types of Workers’ Compensation Benefits and How They Are Paid',
   date: 'Thursday, October 24, 2019',
   author_name: 'Wallace and Graham, P.A.',
@@ -470,7 +470,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 167,
   img:'assets/img/blog/clientuploads/Blog_Images/shutterstock_1214860510.jpg',
-  slug:'What-Type-of-Case-is-Personal-Injury',
+  slug:'what-type-of-case-is-personal-injury',
   title: 'What Type of Case is Personal Injury?',
   date: 'Wednesday, September 25, 2019',
   author_name: 'Wallace and Graham, P.A.',
@@ -482,7 +482,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 166,
   img:'assets/img/blog/clientuploads/Blog_Images/shutterstock_754478737.jpg',
-  slug:'NYC-Health-Chief-Sounds-Alarm-On-Vaping-Rates-Among-Middle-School-Children',
+  slug:'nyc-health-chief-sounds-alarm-on-vaping-rates-among-middle-school-children',
   title: 'NYC  Health Chief Sounds Alarm On Vaping Rates Among Middle-School Children',
   date: 'Friday, September 13, 2019',
   author_name: 'Wallace and Graham, P.A.',
@@ -494,7 +494,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 165,
   img:'assets/img/blog/clientuploads/Blog_Images/shutterstock_97385543.jpg',
-  slug:'FDA-Advises-Consumers-to-Stop-Using-Certain-Cosmetic-Products',
+  slug:'fda-advises-consumers-to-stop-using-certain-cosmetic-products',
   title: 'FDA Advises Consumers to Stop Using Certain Cosmetic Products',
   date: 'Tuesday, September 10, 2019',
   author_name: 'Wallace and Graham, P.A.',
@@ -506,7 +506,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 164,
   img:'assets/img/blog/clientuploads/Blog_Images/shutterstock_1058554202.jpg',
-  slug:'Do-You-Get-a-Settlement-From-Workers-Compensation',
+  slug:'do-you-get-a-settlement-from-workers-compensation',
   title: 'Do You Get a Settlement From workers&apos; Compensation?',
   date: 'Monday, September  9, 2019',
   author_name: 'Wallace and Graham, P.A.',
@@ -518,7 +518,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 163,
   img:'assets/img/blog/clientuploads/Blog_Images/shutterstock_681265648.jpg',
-  slug:'What-is-the-Average-Settlement-for-Personal-Injury',
+  slug:'what-is-the-average-settlement-for-personal-injury',
   title: 'What is the Average Settlement for Personal Injury',
   date: 'Tuesday, August 27, 2019',
   author_name: 'Wallace and Graham, P.A.',
@@ -530,7 +530,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 162,
   img:'assets/img/blog/clientuploads/Blog_Images/shutterstock_493275868.jpg',
-  slug:'How-Does-Worker-s-Compensation-Work',
+  slug:'how-does-worker-s-compensation-work',
   title: 'How Does worker&apos;s Compensation Work?',
   date: 'Wednesday, August 14, 2019',
   author_name: 'Wallace and Graham, P.A.',
@@ -542,7 +542,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 161,
   img:'assets/img/blog/clientuploads/Blog_Images/shutterstock_247222222.jpg',
-  slug:'Chemo-free-Drug-Raises-Survival-Rate-of-Chronic-Leukemia-to-98.8',
+  slug:'chemo-free-drug-raises-survival-rate-of-chronic-leukemia-to-98.8',
   title: 'Chemo-free Drug Raises Survival Rate of Chronic Leukemia to 98.8%',
   date: 'Friday, August  9, 2019',
   author_name: 'Wallace &amp; Graham, P.A.',
@@ -554,7 +554,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 160,
   img:'assets/img/blog/clientuploads/Blog_Images/shutterstock_611205149_(1).jpg',
-  slug:'The-Basics-of-Personal-Injury-What-Does-Personal-Injury-Include',
+  slug:'the-basics-of-personal-injury-what-does-personal-injury-include',
   title: 'The Basics of Personal Injury: What Does Personal Injury Include?',
   date: 'Tuesday, July 30, 2019',
   author_name: 'Wallace &amp; Graham, P.A.',
@@ -926,7 +926,7 @@ const  blog_data:IBlogDT[] = [
  {
   id: 128,
   img:'assets/img/blog/clientuploads/Blog_Images/Placeholder.jpg',
-  slug:'fidget-spinners',
+  slug:'fidget-spinners2',
   title: 'SAFETY WHEN VIEWING THE GREAT AMERICAN ECLIPSE',
   date: 'Tuesday, August 15, 2017',
   author_name: 'thicks@wallacegraham.com',

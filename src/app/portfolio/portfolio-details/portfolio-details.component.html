@@ -14,7 +14,7 @@
             <div class="portfolio__details-wrapper">
               <div class="portfolio__details-content">
                 <img src="{{news?.img}}" alt="{{news?.headline}}">
-                <h3 class="portfolio__details-title" [innerHTML]="news?.headline">{{ news?.headline }}</h3>
+                <h1 class="portfolio__details-title" [innerHTML]="news?.headline">{{ news?.headline }}</h1>
                 <p>{{news?.date}} | {{news?.tags}} | Author: <a href="mailto:{{news?.email}}">{{news?.author}}</a> | <a href="{{news?.source}}" target="_blank">Original Article</a></p>
                 <p [innerHTML]="news?.body"></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium justo orci, ac semper tellus
