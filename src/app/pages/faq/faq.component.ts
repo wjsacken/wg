@@ -25,7 +25,8 @@ export class FaqComponent {
           id: "general",
           title: "Orders <br>& Shipping",
           accordions: [
-          {
+
+            {
               id: "478",
               show: true,
               title: "Linda Cartee",

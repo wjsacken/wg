@@ -24,7 +24,7 @@ export class AttorneyComponent {
     return b.title.localeCompare(a.title);
   });
 
-  ngOnINit(){
+  ngOnInit(){
     this.titleService.setTitle('Experienced Attorneys in North Carolina | Wallace &amp; Graham');
 
     // Dynamically set the meta description
