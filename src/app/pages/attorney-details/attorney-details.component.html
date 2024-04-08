@@ -42,12 +42,34 @@
       <div class="container">
         <div class="attorney__details-about-border pt-90 pb-65">
           <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="attorney__details-about-content" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
+            <div class="col-lg-6">
+              <div class="attorney__details-about-content">
                 <h3 class="attorney__details-about-title">About {{attorney?.name}}</h3>
                 <div [innerHTML]="attorney?.bio"></div>
               </div>
             </div>
+            <div class="col-lg-6">
+              <div class="attorney__details-about-content" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
+                <h3 class="attorney__details-about-title">Education</h3>
+                <div [innerHTML]="attorney?.edu"></div>
+              </div>
+              <div class="attorney__details-about-content mt-20" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
+                <h3 class="attorney__details-about-title">Cases</h3>
+                <div [innerHTML]="attorney?.cases"></div>
+              </div>
+              <div class="attorney__details-about-content mt-20" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
+                <h3 class="attorney__details-about-title">Affiliations</h3>
+                <div [innerHTML]="attorney?.affliliations"></div>
+              </div>
+              <div class="attorney__details-about-content mt-20" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
+                <h3 class="attorney__details-about-title">Appointments</h3>
+                <div [innerHTML]="attorney?.appointments"></div>
+              </div>
+              <div class="attorney__details-about-content mt-20" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
+                <h3 class="attorney__details-about-title">Charity</h3>
+                <div [innerHTML]="attorney?.charity"></div>
+              </div>
+            </div> 
           </div>
         </div>
       </div>
