@@ -64,8 +64,8 @@ export class BlogDetailsComponent {
         if (blog.title) {
           this.titleService.setTitle(blog.title);
         }
-        if (blog?.blog) {
-          this.metaService.updateTag({ name: 'description', content: blog.blog });
+        if (blog?.desc) {
+          this.metaService.updateTag({ name: 'description', content: blog.desc });
         }
       }
     });
