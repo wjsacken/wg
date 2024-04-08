@@ -20,7 +20,8 @@ const  attorney_data:IAttorneyDT[] = [
         charity: '<ul class="minus-list"><li class="li1">Mona Lisa <span class="s3">and</span> Lee <span class="s3">Wallace</span><span class="s2"> Charitable </span>Foundation</li><li class="li1">Wallace Educational Forum</li><li class="li1">Wallace Cancer Center</li><li class="li2">Mona <span class="s3">Wallace</span> <span class="s3">Public</span> <span class="s3">Interest</span> <span class="s3">Support</span> Fund – <span class="s3">Wake</span> Forest <span class="s3">University</span></li><li class="li1"><span class="s3">Benefactor</span> for <span class="s3">the</span> <span class="s3">American</span> <span class="s3">Museum</span> of <span class="s3">Tort</span> <span class="s3">Law</span></li><li class="li1"><span class="s3">Catawba College Scholarship Program</span></li></ul>',
         partner: '1',
         img: 'assets/img/team/Attorneys/Mona_2021.jpg',
-        url: 'mona-lisa-wallace'
+        url: 'mona-lisa-wallace',
+        description: 'Mona Lisa Wallace is a partner in the law firm of Wallace &amp; Graham, P.A. She has successfully brought, litigated, and settled numerous significant personal injury, wrongful death, defective drug, asbestos, multiple-claimant and mass-tort claims.'
     },
     {
         id: 336,
@@ -41,7 +42,8 @@ const  attorney_data:IAttorneyDT[] = [
         charity: '',
         partner: '1',
         img: 'assets/img/team/Attorneys/Bill_2021.jpg',
-        url: 'bill-graham'
+        url: 'bill-graham',
+        description: 'Bill Graham is a partner with the law firm of Wallace &amp; Graham.  Mr. Graham is a former prosecutor and is a strong supporter of law enforcement in North Carolina.'
         },
 
     {
@@ -64,6 +66,7 @@ const  attorney_data:IAttorneyDT[] = [
         partner: '1',
         img: 'assets/img/team/Attorneys/www.jpg',
         url: 'whitney-wallace-williams',
+        description: 'Whitney concentrates her practice on workers&apos; compensation and civil litigation.  She loves what she does in helping clients through difficult times.'
         },
 
     {
@@ -86,6 +89,7 @@ const  attorney_data:IAttorneyDT[] = [
         partner: '',
         img: 'assets/img/team/Attorneys/Daniel_Wallace_new.jpg',
         url: 'daniel-wallace',
+        description: 'Daniel concentrates his practice on workers’ compensation, personal injury, and civil litigation. He earned an undergraduate degree from North Carolina State University and a J.D. from the Charlotte School of Law.'
         },
 
     {
@@ -108,6 +112,7 @@ const  attorney_data:IAttorneyDT[] = [
         partner: '',
         img: 'assets/img/team/Attorneys/Ed_Pauley_new.jpg',
         url: 'ed-pauley',
+        description: 'Ed joined Wallace & Graham in 1999. He handles workers’ compensation, asbestos litigation, personal injury and civil litigation.'
         },
 
     {
@@ -130,6 +135,7 @@ const  attorney_data:IAttorneyDT[] = [
         partner: '',
         img: 'assets/img/team/Attorneys/John_2021.jpg',
         url: 'john-hughes',
+        description: 'John Hughes is an attorney licensed to practice law in North Carolina. Since 1995, he has been engaged in the private practice of law in North Carolina, concentrating in civil litigation'
         },
 
     {
@@ -152,6 +158,7 @@ const  attorney_data:IAttorneyDT[] = [
         partner: '',
         img: 'assets/img/team/Attorneys/Krystal_2021.jpg',
         url: 'krystal-draughn',
+        description: 'Krystal has been with Wallace and Graham for more than 15 years joining us in 2000 as a recent graduate of Catawba College where she earned a Bachelor’s Degree in Political Science.'
         },
 
     {
@@ -174,6 +181,7 @@ const  attorney_data:IAttorneyDT[] = [
         partner: '',
         img: 'assets/img/team/Attorneys/Mark_2021.jpg',
         url: 'mark-doby',
+        description: 'After graduating from high school in Salisbury, Mark earned his Bachelor of Arts degree from the University of North Carolina at Chapel Hill in 2006 followed by his law degree from Campbell University in 2009.'
         },
 
     {
@@ -196,6 +204,7 @@ const  attorney_data:IAttorneyDT[] = [
         partner: '',
         img: 'assets/img/team/Attorneys/Olivia_Smith_new.jpg',
         url: 'olivia-smith',
+        description: 'Olivia began working for Wallace & Graham during law school and continued her career with the firm after becoming a North Carolina-licensed attorney.'
         },
 
     {
@@ -218,6 +227,7 @@ const  attorney_data:IAttorneyDT[] = [
         partner: '',
         img: 'assets/img/team/Attorneys/Ben_Ridings.jpg',
         url: 'ben-ridings',
+        description: 'Ben Ridings has been practicing workers’ compensation law for over fifteen years and is a North Carolina Board Certified Specialist in Workers’ Compensation Law.'
         },
     {
         id: 497,
@@ -239,6 +249,7 @@ const  attorney_data:IAttorneyDT[] = [
         partner: '',
         img: 'assets/img/team/Attorneys/Aren-Hendrickson.jpg',
         url: 'aren-hendrickson',
+        description: 'After earning her bachelor’s degree in psychology from the New College of Florida, Aren relocated to North Carolina to attend Wake Forest University School of Law.'
         },
 
   ]

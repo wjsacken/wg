@@ -1,5 +1,7 @@
 @use '../../../assets/scss/utils' as *;
-
+.list {
+    margin-left: 2rem;
+}
 .breadcrumb{
     $self : &;
     &__title{

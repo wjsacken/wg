@@ -9,6 +9,8 @@ import { of, switchMap } from 'rxjs';
 import { IBlogDT } from '../../shared/types/blog-d-t';
 import { BlogSidebarComponent } from '../../shared/components/blog/blog-sidebar/blog-sidebar.component';
 import { BlogGridItemComponent } from '../../shared/components/blog/blog-grid-item/blog-grid-item.component';
+import { Title, Meta } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-blog-details',
@@ -25,7 +27,9 @@ export class BlogDetailsComponent {
   constructor(
     private route: ActivatedRoute,
     private utilsService: UtilsService,
-    private router: Router
+    private router: Router,
+    private titleService: Title, 
+    private metaService: Meta
   ) { }
 
   ngOnInit() {
@@ -48,14 +52,22 @@ export class BlogDetailsComponent {
         }
         return of<IBlogDT | null>(null); // Emit null if there's no blogSlug
       })
-      ).subscribe((blog: IBlogDT | null | undefined) => {
-        if (!blog) {
-          // Handle the case when the blog is null or undefined
-          // For example, navigate to a 404 page
-        } else {
-          // Proceed with handling the fetched blog
-          this.blog = blog;
+    ).subscribe((blog: IBlogDT | null | undefined) => {
+      if (!blog) {
+        // Handle the case when the blog is null or undefined
+        // For example, navigate to a 404 page
+      } else {
+        // Proceed with handling the fetched blog
+        this.blog = blog;
+        
+        // Set the dynamic title and meta description
+        if (blog.title) {
+          this.titleService.setTitle(blog.title);
         }
-      });
-    }
+        if (blog?.blog) {
+          this.metaService.updateTag({ name: 'description', content: blog.blog });
+        }
+      }
+    });
   }
+}

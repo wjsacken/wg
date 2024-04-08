@@ -18,4 +18,5 @@ export interface IAttorneyDT {
   charity?: string;
   partner?: string;
   url?: string;
+  description?: string;
 }

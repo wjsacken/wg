@@ -31,35 +31,38 @@ export class AttorneyDetailsComponent {
   ngAfterViewInit() {
     sal({ threshold: 0.1, once: true, root: null });
   }
+  
   ngOnInit() {
-
-  this.route.paramMap.pipe(
-    switchMap(params => {
-      const attorneyUrl = params.get('url');
-      if (attorneyUrl) {
-        return this.utilsService.getAttorneyByUrl(attorneyUrl).pipe(
-          catchError(error => {
-            console.error('Error fetching Attorney:', error);
-            // Handle the error as needed, e.g., navigate to a 404 page
-            return of(null); // Emit null if there's an error
-          })
-        );
-      }
-      return of<IAttorneyDT | null>(null); // Emit null if there's no blogSlug
-    })
+    this.route.paramMap.pipe(
+      switchMap(params => {
+        const attorneyUrl = params.get('url');
+        if (attorneyUrl) {
+          return this.utilsService.getAttorneyByUrl(attorneyUrl).pipe(
+            catchError(error => {
+              console.error('Error fetching Attorney:', error);
+              // Handle the error as needed, e.g., navigate to a 404 page
+              return of(null); // Emit null if there's an error
+            })
+          );
+        }
+        return of<IAttorneyDT | null>(null); // Emit null if there's no attorneyUrl
+      })
     ).subscribe((attorney: IAttorneyDT | null | undefined) => {
       if (!attorney) {
-        // Handle the case when the blog is null or undefined
+        // Handle the case when the attorney is null or undefined
         // For example, navigate to a 404 page
       } else {
-        // Proceed with handling the fetched blog
+        // Proceed with handling the fetched attorney
         this.attorney = attorney;
+        
+        // Set the dynamic title and meta description
+        if (attorney.name) {
+          this.titleService.setTitle(attorney.name);
+        }
+        if (attorney.description) {
+          this.metaService.updateTag({ name: 'description', content: attorney.description });
+        }
       }
-    
-    this.titleService.setTitle('attorneyName');
-
-    // Dynamically set the meta description
-    this.metaService.updateTag({ name: 'description', content: 'Your meta description' });
-  });
+    });
   }
 }
