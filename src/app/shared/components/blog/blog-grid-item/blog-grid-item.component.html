@@ -1,7 +1,7 @@
 <div>
 
   <div *ngIf="!blog.blog_quote" class="blog__grid-item" [ngClass]="cls" [class.no-img]="!blog.img">
-     <div class="blog__item-10 white-bg transition-3 mb-30 fix">
+     <div class="blog__item-10 transition-3 mb-30 fix">
         <div class="blog__thumb-10 w-img fix">
            <a [routerLink]="'/' + blog.slug">
               <img [src]="blog.img" alt="{{blog.title}}">
@@ -10,7 +10,7 @@
             <a [routerLink]="'/' + blog.slug" [innerHTML]="blog.tag">{{blog.tag}}</a>
            </div>
         </div>
-        <div class="blog__content-10">
+        <div class="blog__content-10 white-bg ">
            <div class="blog__content-10-top">
             <div *ngIf="!blog.img" class="blog__tag-10">
               <a [routerLink]="'/' + blog.slug">{{blog.tag}}</a>
