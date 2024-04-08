@@ -1,0 +1,38 @@
+@use '../../../assets/scss/utils' as *;
+
+.job{
+    &__details{
+        &-tag{
+            & span{
+                display: inline-block;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 1;
+                color: var(--tp-common-black);
+                background-color: var(--tp-theme-4);
+                padding: 8px 17px 10px;
+            }
+        }
+        &-title{
+            font-size: 50px;
+            letter-spacing: -0.04em;
+            margin-bottom: 6px;
+
+            @media #{$sm}{
+                font-size: 35px;
+            }
+
+            @media #{$xs}{
+                font-size: 27px;
+            }
+        }
+        &-content{
+            & p{
+                font-size: 22px;
+                line-height: 1.55;
+                color: var(--tp-common-black);
+            }
+        }
+    }
+
+}

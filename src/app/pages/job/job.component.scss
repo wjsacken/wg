@@ -1,0 +1,52 @@
+@use '../../../assets/scss/utils' as *;
+
+.job{
+    &__item{
+        background: var(--tp-common-white);
+        border: 1px solid #EAEAEF;
+        padding: 33px 60px 32px 40px;
+
+        @include rtl{
+            padding-right: 40px;
+            padding-left: 60px;
+        }
+
+        @media #{$sm, $xs}{
+            padding: 33px 30px 32px 30px;
+        }
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+
+        &:hover{
+            border-color: var(--tp-theme-1);
+        }
+    }
+    &__title{
+        font-size: 24px;
+        letter-spacing: -0.02em;
+        margin-bottom: 7px;
+
+        & a{
+            &:hover{
+                color: var(--tp-theme-1);
+            }
+        }
+    }
+    &__tag{
+
+        & span{
+            display: inline-block;
+            padding: 4px 10px 5px;
+            margin-bottom: 0;
+            color: var(--tp-common-purple);
+            background-color: rgba($color: #6364DB, $alpha: .06);
+            @extend %tp-transition;
+            line-height: 1;
+
+            @media #{$md, $sm, $xs}{
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

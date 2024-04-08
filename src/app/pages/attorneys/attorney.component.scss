@@ -1,0 +1,117 @@
+@use '../../../assets/scss/utils' as *;
+
+.team_img {
+	width: -webkit-fill-available;
+}
+.attorney{
+    $self:&;
+	&__item{
+        &:hover{
+            #{$self}{
+                &__thumb{
+                    & img{
+                        @include transform(scale(1.05));
+                    }
+                }
+            }
+        }
+    }
+	&__thumb{
+        position: relative;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+    }
+	&__action{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+
+        & ul{
+            & li{
+                position: relative;
+                margin-bottom: 1px;
+                z-index: 1;
+                list-style: none;
+
+                & > a{
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    font-size: 15px;
+                    color: var(--tp-common-black);
+                    background-color: var(--tp-theme-4);
+
+                    &:hover{
+                        background-color: var(--tp-theme-4-dark);
+                    }
+
+                }
+                &:hover{
+                    & > #{$self}{
+                        &__social{
+
+                            & ul{
+                                & li{
+                                    visibility: visible;
+                                    opacity: 1;
+
+                                    &:nth-child(1){
+                                        right: calc(100% + 41px);
+                                        z-index: -1;
+                                    }
+                                    &:nth-child(2){
+                                        right: calc(100% + 82px);
+                                        z-index: -2;
+                                    }
+                                    &:nth-child(3){
+                                        right: calc(100% + 123px);
+                                        z-index: -3;
+                                    }
+                                    &:nth-child(4){
+                                        right: calc(100% + 164px);
+                                        z-index: -4;
+                                    }
+                                    &:nth-child(5){
+                                        right: calc(100% + 205px);
+                                    }
+                                    &:nth-child(6){
+                                        right: calc(100% + 246px);
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__title{
+        font-size: 20px;
+        font-family: var(--tp-ff-inter);
+        margin-bottom: 0;
+        line-height: 1.1;
+        & a{
+            &:hover{
+                color: var(--tp-theme-4-dark);
+            }
+        }
+
+    }
+    &__designation{
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--tp-text-1);
+        display: inline-block;
+        font-family: var(--tp-ff-space);
+        text-transform: uppercase;
+        line-height: 1;
+    }
+    &__content{
+        padding-top: 18px;
+    }
+}

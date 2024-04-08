@@ -37268,88 +37268,7 @@ div.team__details-shape-4 img {
   -o-transform: translate(4px, -2px);
   transform: translate(4px, -2px);
 }
-.video__play-btn-2 .video-play-bg {
-  background-image: -webkit-linear-gradient(164.71deg, #FFFFFF 8.83%, #EAEAEF 128.86%);
-  background-image: -moz-linear-gradient(164.71deg, #FFFFFF 8.83%, #EAEAEF 128.86%);
-  background-image: -ms-linear-gradient(164.71deg, #FFFFFF 8.83%, #EAEAEF 128.86%);
-  background-image: -o-linear-gradient(164.71deg, #FFFFFF 8.83%, #EAEAEF 128.86%);
-  background-image: linear-gradient(164.71deg, #FFFFFF 8.83%, #EAEAEF 128.86%);
-}
-.video__play-btn-2:hover {
-  color: var(--tp-theme-1);
-}
-.video__inner-8 {
-  position: relative;
-  box-shadow: 0px 50px 60px rgba(12, 15, 33, 0.9);
-}
-.video__inner-8::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(12, 15, 33, 0.4);
-}
-.video__overlay {
-  position: relative;
-  z-index: 1;
-}
-.video__overlay::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 50%;
-  background-color: var(--tp-common-black-12);
-  z-index: -1;
-}
-.video__bg {
-  background-image: -webkit-linear-gradient(173.39deg, #6364DB -16.2%, #4D4ECC 101.3%);
-  background-image: -moz-linear-gradient(173.39deg, #6364DB -16.2%, #4D4ECC 101.3%);
-  background-image: -ms-linear-gradient(173.39deg, #6364DB -16.2%, #4D4ECC 101.3%);
-  background-image: -o-linear-gradient(173.39deg, #6364DB -16.2%, #4D4ECC 101.3%);
-  background-image: linear-gradient(173.39deg, #6364DB -16.2%, #4D4ECC 101.3%);
-}
-.video__bg-shape {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  mix-blend-mode: luminosity;
-  z-index: -1;
-}
-.video__pt-183 {
-  padding-top: 183px;
-}
-.video__pb-223 {
-  padding-bottom: 223px;
-}
-@media (max-width: 575px) {
-  .video__pb-223 {
-    padding-bottom: 160px;
-  }
-}
-.video__shape-1 {
-  position: absolute;
-  top: 16%;
-  left: 15%;
-  z-index: -1;
-  -moz-animation: tptranslateX 3s ease-in-out 1s forwards infinite alternate;
-  -webkit-animation: tptranslateX 3s ease-in-out 1s forwards infinite alternate;
-  animation: tptranslateX 3s ease-in-out 1s forwards infinite alternate;
-}
-.video__shape-2 {
-  position: absolute;
-  bottom: 28%;
-  right: 8%;
-  z-index: -1;
-  -moz-animation: tptranslateY2 3s ease-in-out 1s forwards infinite alternate;
-  -webkit-animation: tptranslateY2 3s ease-in-out 1s forwards infinite alternate;
-  animation: tptranslateY2 3s ease-in-out 1s forwards infinite alternate;
-}
+
 
 /*----------------------------------------*/
 /*  24. HISTORY CSS START
@@ -49710,27 +49629,7 @@ p.postbox__meta-name {
 .postbox__content .tp-btn:hover {
   background-color: var(--tp-common-black);
 }
-.postbox__video .play-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.postbox__video .play-btn:hover {
-  color: var(--tp-common-white);
-  background-color: var(--tp-theme-1);
-}
-.postbox__audio {
-  height: 420px;
-}
-.postbox__audio iframe {
-  width: 100%;
-  height: 100%;
-}
+
 .postbox__nav button {
   width: 50px;
   height: 50px;
