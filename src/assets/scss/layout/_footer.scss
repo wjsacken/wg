@@ -369,7 +369,10 @@
                     color: var(--tp-common-white);
                     background-color: var(--tp-theme-4);
                     border-color: var(--tp-theme-4);
-                }
+                    & i{
+                        color: #000
+                        } 
+                    }
             }
         }
 
