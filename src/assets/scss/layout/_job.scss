@@ -3,7 +3,9 @@
 /*----------------------------------------*/
 /*  34. JOB CSS START
 /*----------------------------------------*/
-
+.paList{
+    margin-left: 25px;
+}
 .job{
     &__item{
         background: var(--tp-common-white);

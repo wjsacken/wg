@@ -8,13 +8,13 @@ import { INewsDT } from '../../shared/types/news-d-t'; // Import INewsDT interfa
 import sal from 'sal.js';
 import { HeaderTwoComponent } from '../../shared/header/header-two/header-two.component';
 import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.component';
-import { CounterAreaThreeComponent } from '../../shared/components/counter/counter-area-three/counter-area-three.component';
-import { PortfolioPostFormComponent } from '../../shared/components/form/portfolio-post-form/portfolio-post-form.component';
+import { Title, Meta } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-portfolio-details',
   standalone: true,
-  imports: [CommonModule,RouterModule,HeaderTwoComponent,CounterAreaThreeComponent,PortfolioPostFormComponent,FooterTwoComponent],
+  imports: [CommonModule,RouterModule,HeaderTwoComponent,FooterTwoComponent],
   templateUrl: './portfolio-details.component.html',
   styleUrl: './portfolio-details.component.scss'
 })
@@ -23,7 +23,9 @@ export class PortfolioDetailsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private utilsService: UtilsService
+    private utilsService: UtilsService,
+    private titleService: Title, 
+    private metaService: Meta
   ) { }
 
   ngOnInit() {
@@ -49,6 +51,12 @@ export class PortfolioDetailsComponent implements OnInit {
       } else {
         this.news = news;
         console.log('Fetched News:', this.news);
+        if (news.headline) {
+          this.titleService.setTitle(news.headline);
+        }
+        if (news?.blurb) {
+          this.metaService.updateTag({ name: 'description', content: news.blurb });
+        }
       }
     });
   }

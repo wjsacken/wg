@@ -164,7 +164,7 @@
                 <div class="swiper-wrapper">
                   <div *ngFor="let img of gallery_images" class="about__gallery-item swiper-slide">
                     <div class="about__gallery-thumb m-img">
-                      <img [src]="img" alt="">
+                      <img [src]="img.img" [alt]="img.title">
                     </div>
                   </div>
                 </div>

@@ -8,12 +8,12 @@ import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { of, switchMap } from 'rxjs';
 import { HeaderTwoComponent } from '../../shared/header/header-two/header-two.component';
 import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.component';
-import { NiceSelectComponent } from '../../shared/ui/nice-select/nice-select.component';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-job-details',
   standalone: true,
-  imports: [CommonModule,RouterModule,HeaderTwoComponent,NiceSelectComponent,FooterTwoComponent],
+  imports: [CommonModule,RouterModule,HeaderTwoComponent,FooterTwoComponent],
   templateUrl: './job-details.component.html',
   styleUrl: './job-details.component.scss'
 })
@@ -23,7 +23,9 @@ export class JobDetailsComponent {
   constructor(
     private route: ActivatedRoute,
     private utilsService: UtilsService,
-    private router: Router
+    private router: Router,
+    private titleService: Title, 
+    private metaService: Meta
   ) { }
 
   ngAfterViewInit() {
@@ -52,6 +54,14 @@ export class JobDetailsComponent {
       } else {
         // Proceed with handling the fetched blog
         this.practice = practice;
+                
+        // Set the dynamic title and meta description
+        if (practice.title) {
+          this.titleService.setTitle(practice.title);
+        }
+        if (practice.description) {
+          this.metaService.updateTag({ name: 'description', content: practice.description });
+        }
       }
     });
   }

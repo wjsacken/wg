@@ -25,18 +25,39 @@ export class AboutComponent {
     private metaService: Meta) { };
 
   public gallery_images = [
-    '/assets/img/slider/about/_47.jpg',
-    '/assets/img/slider/about/_48.jpg',
-    '/assets/img/slider/about/_49.jpg',
-    '/assets/img/slider/about/_50.jpg',
-    '/assets/img/slider/about/_51.jpg',
-    '/assets/img/slider/about/_52.jpg',
-    '/assets/img/slider/about/_53.jpg',
-    '/assets/img/slider/about/_54.jpg',
-    '/assets/img/slider/about/_55.jpg',
-    '/assets/img/slider/about/_56.jpg',
-    '/assets/img/slider/about/_57.jpg',
-    '/assets/img/slider/about/_58.jpg',
+    {img:'/assets/img/slider/about/_47.jpg',
+      title: 'team47'
+    },
+    {img:'/assets/img/slider/about/_48.jpg',
+      title: 'team48'
+    },
+    {img: '/assets/img/slider/about/_49.jpg',
+      title: 'team49'
+    },
+    {img: '/assets/img/slider/about/_50.jpg',
+      title: 'team50'
+    },
+    {img: '/assets/img/slider/about/_51.jpg',
+      title: 'team51'
+    },
+    {img: '/assets/img/slider/about/_52.jpg',
+      title: 'team52'
+    },
+    {img: '/assets/img/slider/about/_53.jpg',
+      title: 'team53'
+    },
+    {img: '/assets/img/slider/about/_54.jpg',
+      title: 'team54'
+    },
+    {img: '/assets/img/slider/about/_55.jpg',
+      title: 'team55'
+    },
+    {img: '/assets/img/slider/about/_56.jpg',
+      title: 'team56'
+    },
+    {img: '/assets/img/slider/about/_58.jpg',
+      title: 'team58'
+    },
   ];
 
   faq_items = [

@@ -9,4 +9,5 @@ export interface IPracticeDT {
   tags?: string;
   announcement?: string;
   icon?: string;
+  description?: string;
 }

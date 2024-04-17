@@ -121,14 +121,18 @@ ul {
 
 p {
 	font-family: var(--tp-ff-p);
-	font-size: var(--tp-fz-p);
+	font-size: 16px;
 	font-weight: var(--tp-fw-regular);
 	color: var(--tp-text-body);
 	margin-bottom: 15px;
 	line-height: 26px;
 }
-
-
+.paList{
+    margin-left: 25px;
+}
+.paImage{
+    width: -webkit-fill-available;
+}
 a,
 .btn,
 p,
