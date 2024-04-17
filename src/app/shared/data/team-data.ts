@@ -205,7 +205,7 @@ const team_data:ITeamDT[] = [
 {
     id: 425,
     name: 'Gennevi Souto',
-    title: 'Receptionist',
+    title: 'Legal Assistant',
     mail: 'gsouto@wallacegraham.com',
     phone: '156',
     img: 'assets/img/team/directory/Gennevi_Souto_2021.jpg',
@@ -265,7 +265,7 @@ const team_data:ITeamDT[] = [
 {
     id: 471,
     name: 'Jolie Savage',
-    title: 'Clerk',
+    title: 'Paralegal',
     mail: 'jsavage@wallacegraham.com',
     phone: '192',
     img: 'assets/img/team/directory/PlaceHolder-01.svg',
@@ -295,9 +295,9 @@ const team_data:ITeamDT[] = [
 {
     id: 465,
     name: 'Kaila Cervantes',
-    title: 'Floater',
+    title: 'Clerical',
     mail: 'kcervantes@wallacegraham.com',
-    phone: '',
+    phone: '110',
     img: 'assets/img/team/directory/PlaceHolder-01.svg',
     page: 'team',
 
@@ -396,7 +396,7 @@ const team_data:ITeamDT[] = [
     id: 402,
     name: 'Meagan Sutphin',
     title: 'Medical Records Clerk',
-    mail: 'mrabon@wallacegraham.com',
+    mail: 'msutphin@wallacegraham.com',
     phone: '142',
     img: 'assets/img/team/directory/Meagan_Rabon.jpg',
     page: 'team',
@@ -405,7 +405,7 @@ const team_data:ITeamDT[] = [
 {
     id: 493,
     name: 'Melanie Frye',
-    title: 'CLWC',
+    title: 'Paralegal',
     mail: 'mfrye@wallacegraham.com',
     phone: '163',
     img: 'assets/img/team/directory/PlaceHolder-01.svg',
@@ -445,7 +445,7 @@ const team_data:ITeamDT[] = [
 {
     id: 294,
     name: 'Paige Lefler',
-    title: 'NCCP',
+    title: 'Paralegal',
     mail: 'plefler@wallacegraham.com',
     phone: '140',
     img: 'assets/img/team/directory/Paige_Lefler_new.jpg',
