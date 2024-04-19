@@ -213,32 +213,12 @@ const team_data:ITeamDT[] = [
 
 },
 {
-    id: 292,
-    name: 'Jamie Anderson',
-    title: 'Medical Billing Clerk',
-    mail: 'janderson@wallacegraham.com ',
-    phone: '158',
-    img: 'assets/img/team/directory/Jamie_Anderson.jpg',
-    page: 'team',
-
-},
-{
     id: 494,
     name: 'Janelle Hooper',
     title: 'PI Paralegal',
     mail: 'jhooper@wallacegraham.com',
     phone: '121',
     img: 'assets/img/team/directory/PlaceHolder-01.svg',
-    page: 'team',
-
-},
-{
-    id: 307,
-    name: 'Janet Garcia',
-    title: 'Accounting Assistant',
-    mail: 'jgarcia@wallacegraham.com',
-    phone: '206',
-    img: 'assets/img/team/directory/Janet_Garcia.jpg',
     page: 'team',
 
 },
