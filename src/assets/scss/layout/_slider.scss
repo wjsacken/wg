@@ -174,8 +174,10 @@
                 height: 100%;
             }
         }
-        @media #{$sm, $xs}{
+        & img {
+            @media #{$sm, $xs}{
             display:none;
+            }
         }
     }
     &__btn{
