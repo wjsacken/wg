@@ -9,6 +9,9 @@
     &_UL{
         display: flex;
         justify-content: space-around;
+        @media #{$sm, $xs}{
+            margin-top: 10%;
+        }
     }
     &_menu{
         align-content: center;

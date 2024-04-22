@@ -17,13 +17,19 @@
             }
         }
     }
-    &__thumb{
+    &__thumb {
         position: relative;
         animation-duration: 1s;
         animation-delay: 0.5s;
         animation-iteration-count: 1;
         animation-fill-mode: both;
-
+        &-4 {
+            & img {
+                @media #{$sm, $xs}{
+                    height:auto;
+                }
+            }
+        }
     }
     &__action{
         position: absolute;
@@ -114,5 +120,4 @@
         text-transform: uppercase;
         line-height: 1;
     }
-
 }

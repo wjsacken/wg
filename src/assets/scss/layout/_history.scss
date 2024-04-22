@@ -16,17 +16,9 @@
             }
         }
         &-wrapper{
-
-            @include rtl{
-                padding-right: 0;
-                padding-left: 70px;
-            }
             @media #{$xs}{
                 padding-right: 0;
 
-                @include rtl{
-                    padding-left: 0;
-                }
             }
         }
         &-right{
@@ -39,6 +31,10 @@
                 margin-top: -70px;
                 height: 270px;
                 padding-top: 155px;
+                display: none;
+            }
+            @media #{$xs, $sm}{
+                display:none;
             }
         }
     }

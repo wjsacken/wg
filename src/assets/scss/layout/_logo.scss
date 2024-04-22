@@ -10,6 +10,11 @@
     & .logo-dark{
         display: none;
     }
+    & img {
+        @media #{$sm, $xs}{
+            max-width: 270px;
+        }
+    }
 }
 
 .logo{
@@ -29,10 +34,6 @@
             height: 102%;
             background-color: var(--tp-border-1);
 
-            @include rtl{
-                right: auto;
-                left: 23%;
-            }
             @media #{$md, $sm, $xs}{
                 display: none;
             }

@@ -11,6 +11,20 @@
   list-style: none;
   z-index: 1;
 }
+.history__thumb-right-wrapper {
+    @media #{$sm, $xs}{
+        display:none;
+    }
+}
+.history__list {
+    @media #{$sm, $xs}{
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x)* .5);
+        padding-left: calc(var(--bs-gutter-x)* .5);
+        margin-top: 5%;
+    }
+}
 .slider{
     $self : &;
     &__thumb{
@@ -25,6 +39,10 @@
             @media #{$md, $sm, $xs}{
                 padding-top: 0;
                 @include transform(translateY(0));
+
+            }
+            & img{
+                height: auto;
             }
         }
     }
