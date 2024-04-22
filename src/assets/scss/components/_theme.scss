@@ -1,48 +1,4 @@
 @use '../utils' as *;
-/*-----------------------------------------------------------------------------------
-
-    Template Name: Harry - Creative Agency & Portfolio Template
-    Author: Theme_Pure
-    Support: basictheme400@gmail.com
-    Description: Harry - Creative Agency & Portfolio Template
-    Version: 1.1
-
------------------------------------------------------------------------------------
-
-/************ TABLE OF CONTENTS ***************
-
-    01. THEME DEFAULT CSS
-    02. LOGO CSS
-    03. HEADER CSS
-    04. MENU CSS
-    05. MEAN MENU CSS
-    06. SLIDER CSS
-    07. ABOUT CSS
-    08. COUNTER CSS
-    11. TEAM CSS
-    12. FAQ CSS
-    13. PORTFOLIO CSS
-    14. TESTIMONIAL CSS
-    15. BRAND CSS
-    16. SKILL CSS
-    17. AWARD CSS
-    18. CTA CSS
-    24. HISTORY CSS
-    25. CONTACT CSS
-    27. FEATURES CSS
-    34. JOB CSS
-    36. ERROR CSS
-    40. ARTICLE CSS
-    41. BANNER CSS
-    43. BLOG CSS
-    44. FOOTER CSS
-
-
-
-**********************************************/
-
-
-
 
 /*----------------------------------------*/
 /*  01. THEME DEFAULT CSS START
@@ -93,32 +49,25 @@ h6 {
 h1 {
 	font-size: var(--tp-fz-h1);
 }
-
 h2 {
 font-size: var(--tp-fz-h2);
 }
-
 h3 {
 font-size: var(--tp-fz-h3);
 }
-
 h4 {
 font-size: var(--tp-fz-h4);
 }
-
 h5 {
 font-size: var(--tp-fz-h5);
 }
-
 h6 {
 font-size: var(--tp-fz-h6);
 }
-
 ul {
 	margin: 0px;
 	padding: 0px;
 }
-
 p {
 	font-family: var(--tp-ff-p);
 	font-size: 16px;
@@ -349,8 +298,6 @@ input[type="color"] {
 		bottom: 15px;
 	}
 }
-
-
 // basic pagination
 
 .tp-pagination{
@@ -425,10 +372,7 @@ input[type="color"] {
 		}
 	}
 }
-
-
 // nice select arrow
-
 .nice-select{
 	@include rtl{
         float: right;
@@ -468,8 +412,6 @@ input[type="color"] {
 		}
 	}
 }
-
-
 .tp-thumb-overlay{
 	position: absolute;
 	content: '';
@@ -490,7 +432,6 @@ input[type="color"] {
     animation-fill-mode: both;
 	z-index: 99;
 }
-
 // tp overlay
 @include keyframes(tpoverlay){
 	0%, 100% {
@@ -595,74 +536,6 @@ input[type="color"] {
 	background-repeat: no-repeat;
 	background-repeat: repeat-x;
 }
-
-.tp-product-quantity{
-	width: 148px;
-	position: relative;
-}
-
-.tp-cart-plus,
-.tp-cart-minus{
-    width: 45px;
-    height: 44px;
-	line-height: 44px;
-    display: inline-block;
-    text-align: center;
-    font-size: 16px;
-	color: var(--tp-common-black);
-	@extend %tp-transition;
-	position: absolute;
-	top: 50%;
-	left: 0;
-	@include transform(translateY(-50%));
-
-	&::after{
-		position: absolute;
-		content: '';
-		width: 1px;
-		height: 26px;
-		top: 50%;
-		@include transform(translateY(-50%));
-		right: 0;
-		background-color: #DADCE0;
-	}
-
-	& svg{
-		@include transform(translateY(-2px));
-	}
-    &:hover{
-        cursor: pointer;
-        color: var(--tp-theme-1);
-    }
-
-	&.tp-cart-plus{
-		left: auto;
-		right: 0;
-
-		&::after{
-			left: 0;
-			right: auto;
-		}
-	}
-}
-
-.tp-cart-input[type="text"]{
-    height:44px;
-    text-align: center;
-    font-size: 14px;
-    border: 1px solid #DADCE0;
-	background-color: var(--tp-common-white);
-	padding: 0 45px;
-
-	@include rtl{
-		text-align: center;
-	}
-    &:focus{
-        outline: none;
-    }
-}
-
-
 .back-to-top-wrapper{
 	@include rtl{
 		right: auto;

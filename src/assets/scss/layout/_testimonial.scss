@@ -68,12 +68,6 @@
             margin-right: 206px;
             text-align: center;
             width: auto;
-
-            @include rtl{
-                margin-right: 0;
-                margin-left: 206px;
-            }
-
             @media #{$xl, $lg}{
                 margin-right: 140px;
 
@@ -477,48 +471,18 @@
             color: var(--tp-common-white);
             font-size: 40px;
         }
-
-        &-10{
-            margin-bottom: 17px;
-            & span{
-                display: inline-block;
-                width: 70px;
-                height: 70px;
-                line-height: 66px;
-                text-align: center;
-                border: 2px solid rgba($color: #fff, $alpha: .12);
-                border-radius: 50%;
-                font-size: 24px;
-                color: var(--tp-common-white);
-            }
-        }
     }
     &__info{
         padding-right: 60px;
-        @include rtl{
-            padding-right: 0;
-            padding-left: 60px;
-        }
-
         @media #{$xl}{
             padding-right: 40px;
-            @include rtl{
-                padding-right: 0;
-                padding-left: 40px;
-            }
         }
         @media #{$lg}{
             padding-right: 0;
-            @include rtl{
-                padding-left: 0;
-            }
         }
         @media #{$md, $sm, $xs}{
             padding-right: 0;
             margin-bottom: 50px;
-            @include rtl{
-                padding-left: 0;
-            }
         }
         &-title{
             font-size: 170px;
