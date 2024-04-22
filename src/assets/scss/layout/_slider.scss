@@ -172,11 +172,10 @@
                 right: 0;
                 z-index: -1;
                 height: 100%;
-
-                @include rtl{
-                    width: 100%;
-                }
             }
+        }
+        @media #{$sm, $xs}{
+            display:none;
         }
     }
     &__btn{
