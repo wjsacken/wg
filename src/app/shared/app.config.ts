@@ -1,8 +1,6 @@
 import { ApplicationConfig } from '@angular/core';
 import { InMemoryScrollingFeature, InMemoryScrollingOptions, provideRouter, withInMemoryScrolling } from '@angular/router';
-
 import { provideAnimations } from '@angular/platform-browser/animations';
-
 import { routes } from './app.routes';
 
 const scrollConfig: InMemoryScrollingOptions = {

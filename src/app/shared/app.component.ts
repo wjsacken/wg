@@ -8,8 +8,8 @@ import { BackToTopComponent } from './components/back-to-top/back-to-top.compone
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet,BackToTopComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  templateUrl: '../app.component.html',
+  styleUrl: '../app.component.scss'
 })
 
 export class AppComponent {
