@@ -116,6 +116,30 @@
 			}
 		}
 	}
+	&-black{
+		height: 15px;
+		width: 30px;
+		top: -4px;
+		& span{
+			background-color: var(--tp-common-black-2);
+
+			&:nth-child(1){
+				top: 0;
+			}
+			&:nth-child(2){
+				top: 7px;
+			}
+			&:nth-child(3){
+				top: 14px;
+			}
+		}
+
+		&:hover{
+			& span{
+				background-color: var(--tp-theme-1);
+			}
+		}
+	}
 
 	&-text{
 		position: relative;
