@@ -3,7 +3,7 @@ import { IBlogDT } from "../types/blog-d-t";
 const  blog_data:IBlogDT[] = [
   {
     id: 208,
-    img:'https://imagedelivery.net/DF926RUMiBgxrQOCj6Rcgg/ad401b38-4bbc-49f3-831e-b606c4209900/WG',
+    img:'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/72453dd0-9f9a-4198-9521-467be4918f00/homeBlog',
     slug:'filing-a-camp-lejeune-claim-affect-va-benefits',
     title: 'Will Filing A Claim Under The Camp Lejeune Justice Act (CLJA) Affect My VA Benefits?',
     date: 'Monday, October 10, 2022',
@@ -15,7 +15,7 @@ const  blog_data:IBlogDT[] = [
      },
   {
     id: 207,
-    img:'assets/img/blog/clientuploads/Blog_Images/Personal_Injury_Claim_Form.jpg',
+    img:'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/72453dd0-9f9a-4198-9521-467be4918f00/homeBlog',
     slug:'what-damages-can-i-recover-in-a-Personal-Injury-claim-in-NC',
     title: 'What damages can I recover in a Personal Injury claim in NC?',
     date: 'Wednesday, June  1, 2022',
