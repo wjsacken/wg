@@ -1,4 +1,38 @@
+# ROBOTS.TXT
+# wallacegraham.com
+
+Sitemap: https://wallacegraham.com/sitemap.xml
 User-agent: *
 Disallow:
-Disallow: /cgi-bin/
-Sitemap: https://wallacegraham.com/sitemap.xml
+
+# Google
+#User-agent: Googlebot
+#Disallow:
+
+# Yahoo
+#User-agent: Slurp
+#Disallow:
+
+# Alta-Vista
+#User-agent: Scooter
+#Disallow:
+
+# Excite
+#User-agent: ArchitextSpider
+#Disallow:
+
+# InfoSeek
+#User-agent: UltraSeek
+#Disallow:
+
+# Lycos
+#User-agent: Lycos_Spider_(T-Rex)
+#Disallow:
+
+# LookSmart
+#User-agent: MantraAgent
+#Disallow:
+
+# Alltheweb
+#User-agent: FAST-WebCrawler
+#Disallow:
