@@ -34,7 +34,7 @@
              <div class="history__list pl-65 pr-90">
                 <div *ngFor="let item of history_lists;let i = index" class="history__list-item d-flex align-items-start">
                    <div class="history__year" data-sal="slide-left" [attr.data-sal-delay]="(i+1)*50 + 100" data-sal-duration="1000">
-                      <h5 class="history__year-title">{{item.year}}</h5>
+                      <h3 class="history__year-title">{{item.year}}</h3>
                    </div>
                    <div class="history__list-content">
                       <div class="history__list-dot">
