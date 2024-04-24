@@ -29,12 +29,12 @@ export const routes: Routes = [
       { path: ':slug', component: JobDetailsComponent, data: { title: 'Practice Area - Wallace & Graham' } },
     ]
   },
-  { path: 'new-blog', component: BlogGridSidebarComponent, data: { title: 'Blog Grid Sidebar - Harry' } },
+  { path: 'new-blog', component: BlogGridSidebarComponent, data: { title: 'Blog - Wallace & Graham' } },
   { path: ':slug', component: BlogDetailsComponent, data: { title: 'Blog Title' } },
 
   {path:'pages',children:[
-    {path:'policy',component:PolicyComponent,title:'Policy - Harry'},
-    {path:'terms',component:TermsComponent,title:'Terms - Harry'},
+    {path:'policy',component:PolicyComponent,title:'Policy - Wallace & Graham'},
+    {path:'terms',component:TermsComponent,title:'Terms - Wallace & Graham'},
   ]},
-  {path:'**',component:NotFoundComponent,title:'Page Not Found - Harry'},
+  {path:'**',component:NotFoundComponent,title:'Page Not Found - Wallace & Graham'},
 ];
