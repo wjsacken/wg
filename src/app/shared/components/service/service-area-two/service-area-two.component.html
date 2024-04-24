@@ -19,8 +19,7 @@
      <div class="row">
         <div *ngFor="let item of practice_data;let i = index" class="col-xxl-4 col-lg-4 col-md-6">
            <div class="services__item-4 mb-30 transition-3 fix" data-sal="slide-up" [attr.data-sal-delay]="(i+1)*100 + 100" data-sal-duration="1000">
-              <div class="services__thumb-4 include-bg transition-3"
-              [style.backgroundImage]="'url('+item.img+')'" loading="lazy"></div>
+            <div class="services__thumb-4 include-bg transition-3" [ngStyle]="{ 'background-image': 'url(' + item.img + ')' }" ngxOptimizedImage ></div>
               <div class="services__content-4">
                  <h4 class="services__title-4">
                     <a [routerLink]="'/practice/' + item.slug" [innerHTML]="item.name">{{item.title}}</a>
