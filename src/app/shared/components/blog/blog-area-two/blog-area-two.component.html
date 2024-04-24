@@ -25,7 +25,7 @@
                           <div class="col-lg-7 col-md-7 col-sm-6">
                              <div class="blog__content-4">
                                 <div class="blog__tag-4">
-                                   <a [innerHTML]="blog?.tag"></a>
+                                   <span [innerHTML]="blog?.tag"></span>
                                 </div>
                                 <h3 class="blog__title-4">
                                    <a [routerLink]="'/' + blog.slug" [innerHTML]="blog?.title"></a>
@@ -36,7 +36,7 @@
 
                                    <div class="blog__author-content">
                                       <h3 class="blog__author-title">
-                                         <a [innerHTML]="blog.author_name"></a>
+                                         <span [innerHTML]="blog.author_name"></span>
                                       </h3>
                                    </div>
                                 </div>

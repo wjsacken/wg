@@ -129,6 +129,28 @@
         }
     }
     &__tag{
+        & span{
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--tp-text-1);
+            display: inline-block;
+            padding: 0 16px;
+            border: 2px solid var(--tp-border-5);
+            font-family: var(--tp-ff-space);
+            text-transform: uppercase;
+            margin-right: 5px;
+            margin-bottom: 12px;
+
+            @include rtl{
+                margin-right: 0;
+                margin-left: 5px;
+            }
+            &:hover{
+                color: var(--tp-common-white);
+                background-color: var(--tp-theme-1);
+                border-color: var(--tp-theme-1);
+            }
+        }
         & a{
             font-size: 12px;
             font-weight: 500;

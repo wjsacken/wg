@@ -5,7 +5,6 @@ import Swiper from 'swiper';
 import {register} from 'swiper/element';
 register();
 import { HeaderTwoComponent } from '../../shared/header/header-two/header-two.component';
-import { ServiceAreaSevenComponent } from '../../shared/components/service/service-area-seven/service-area-seven.component';
 import { UtilsService } from '../../shared/services/utils.service';
 import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.component';
 import { Title, Meta } from '@angular/platform-browser';
@@ -14,7 +13,7 @@ import { Title, Meta } from '@angular/platform-browser';
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule,HeaderTwoComponent,ServiceAreaSevenComponent,FooterTwoComponent],
+  imports: [CommonModule,HeaderTwoComponent,FooterTwoComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
