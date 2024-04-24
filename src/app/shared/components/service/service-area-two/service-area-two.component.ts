@@ -2,12 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { NgOptimizedImage } from '@angular/common'; // Import NgOptimizedImage
 import practice_data from '../../../data/practice-data';
 
 @Component({
   selector: 'app-service-area-two',
   standalone: true,
-  imports: [CommonModule,RouterModule],
+  imports: [CommonModule,RouterModule, NgOptimizedImage],
   templateUrl: './service-area-two.component.html',
   styleUrl: './service-area-two.component.scss'
 })
