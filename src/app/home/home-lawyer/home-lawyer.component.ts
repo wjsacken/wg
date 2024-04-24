@@ -7,7 +7,6 @@ import { ServiceAreaTwoComponent } from '../../shared/components/service/service
 import { BlogAreaTwoComponent } from '../../shared/components/blog/blog-area-two/blog-area-two.component';
 import { TestimonialTwoComponent } from '../../shared/components/testimonial/testimonial-two/testimonial-two.component';
 import { TeamAreaTwoComponent } from '../../shared/components/team/team-area-two/team-area-two.component';
-import { CounterAreaTwoComponent } from '../../shared/components/counter/counter-area-two/counter-area-two.component';
 import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.component';
 import { LawyerContactComponent } from '../../shared/components/contact/lawyer-contact/lawyer-contact.component';
 import sal from 'sal.js';
@@ -25,7 +24,6 @@ import { RouterModule } from '@angular/router';
     BlogAreaTwoComponent,
     TestimonialTwoComponent,
     TeamAreaTwoComponent,
-    CounterAreaTwoComponent,
     LawyerContactComponent,
     FooterTwoComponent,
   ],

@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { HeaderTwoComponent } from '../../shared/header/header-two/header-two.component';
 import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.component';
-import { CtaAreaThreeComponent } from '../../shared/components/cta/cta-area-three/cta-area-three.component';
 import news_data from '../../shared/data/news-data';
 import { RouterModule } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
@@ -11,7 +10,7 @@ import { Title, Meta } from '@angular/platform-browser';
 @Component({
   selector: 'app-portfolio-two',
   standalone: true,
-  imports: [CommonModule,RouterModule, HeaderTwoComponent,CtaAreaThreeComponent, FooterTwoComponent],
+  imports: [CommonModule,RouterModule, HeaderTwoComponent, FooterTwoComponent],
   templateUrl: './portfolio-two.component.html',
   styleUrl: './portfolio-two.component.scss'
 })
