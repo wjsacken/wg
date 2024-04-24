@@ -18,11 +18,12 @@
         <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-6">
            <div class="slider__thumb-4 m-img " >
               <img ngxOptimizedImage
-                   ngSrc="assets/img/slider/partnersTransparent.png"
+                   [ngSrc]="imageUrl"
                    width="476"
                    height="691"
                    alt="Wallace & Graham Partners"
-                   priority="eager">
+                   priority="high"
+                   loading="eager">
            </div>
         </div>
      </div>
