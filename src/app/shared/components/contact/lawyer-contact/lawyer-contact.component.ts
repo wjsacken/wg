@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { LawyerFormComponent } from '../../form/lawyer-form/lawyer-form.component';
-import { ContactFormComponent } from '../../form/contact-form/contact-form.component';
 
 @Component({
   selector: 'app-lawyer-contact',
