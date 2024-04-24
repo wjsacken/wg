@@ -17,7 +17,11 @@
         </div>
         <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-6">
            <div class="slider__thumb-4 m-img " >
-              <img width="476" height="691" ngSrc="https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/be5b6665-7d00-4a2c-c1b4-eb4850229300/partners" ngSrcset="100w, 200w" alt="Wallace & Graham Partners">
+              <img ngxOptimizedImage
+                   [ngSrc]="imageUrl"
+                   width="476"
+                   height="691"
+                   alt="Wallace & Graham Partners">
            </div>
         </div>
      </div>
