@@ -3,7 +3,7 @@ import { IBlogDT } from "../types/blog-d-t";
 const  blog_data:IBlogDT[] = [
   {
     id: 208,
-    img:'assets/img/blog/clientuploads/Blog_Images/will_filing_a_case_affect_my_benefits.jpg',
+    img:'https://imagedelivery.net/DF926RUMiBgxrQOCj6Rcgg/ad401b38-4bbc-49f3-831e-b606c4209900/WG',
     slug:'filing-a-camp-lejeune-claim-affect-va-benefits',
     title: 'Will Filing A Claim Under The Camp Lejeune Justice Act (CLJA) Affect My VA Benefits?',
     date: 'Monday, October 10, 2022',
