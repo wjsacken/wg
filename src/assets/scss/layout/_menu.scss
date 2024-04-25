@@ -5,16 +5,9 @@
 /*----------------------------------------*/
 
 .main-menu{
-    @include rtl{
-        padding-left: 0;
-        padding-right: 55px;
-    }
+
     @media #{$lg}{
         padding-left: 30px;
-        @include rtl{
-            padding-left: 0;
-            padding-right: 30px;
-        }
     }
     & ul{
         & li{
@@ -23,24 +16,12 @@
             display: inline-block;
             margin-right: 30px;
 
-            @include rtl{
-                margin-right: 0;
-                margin-left: 34px;
-            }
-
             @media #{$lg}{
                 margin-right: 25px;
-                @include rtl{
-                    margin-left: 25px;
-                    margin-right: 0;
-                }
             }
 
             &:last-child{
                 margin-right: 0;
-                @include rtl{
-                    margin-left: 0;
-                }
             }
 
             & a{
@@ -50,10 +31,6 @@
                 color: var(--tp-common-white);
                 padding: 16px 0;
                 text-align: left;
-
-                @include rtl{
-                    text-align: right;
-                }
             }
 
 			&.has-dropdown{
@@ -69,11 +46,6 @@
                         margin-left: 5px;
                         display: inline-block;
                         @extend %tp-transition;
-
-                        @include rtl{
-                            margin-right: 5px;
-                            margin-left: 0;
-                        }
                     }
                 }
 			}
@@ -98,11 +70,6 @@
                 @include transform(scaleY(0));
                 @extend %tp-transition;
                 @include box-shadow(0px 20px 30px rgba(3, 4, 28, 0.1));
-
-                @include rtl{
-                    left: auto;
-                    right: 0;
-                }
                 & li{
                     display: block;
                     width: 100%;
@@ -118,11 +85,6 @@
                                 right: 25px;
                                 @include transform(translateY(-50%) rotate(-90deg));
                                 color: var(--tp-common-black);
-
-                                @include rtl{
-                                    right: auto;
-                                    left: 25px;
-                                }
                             }
                         }
                     }
@@ -145,11 +107,6 @@
                             height: 1px;
                             background-color: var(--tp-theme-1);
                             @extend %tp-transition;
-
-                            @include rtl{
-                                left: auto;
-                                right: 25px;
-                            }
                         }
                     }
                     & .submenu{
@@ -157,21 +114,11 @@
                         top:0;
                         visibility: hidden;
                         opacity: 0;
-
-                        @include rtl{
-                            left: auto;
-                            right: 100%;
-                        }
                     }
                     &:hover{
                         & > a{
                             color: var(--tp-theme-1);
                             padding-left: 43px;
-
-                            @include rtl{
-                                padding-left: 0;
-                                padding-right: 43px;
-                            }
                             &::before{
                                 width: 12px;
                             }
@@ -203,22 +150,11 @@
                 @extend %tp-transition;
                 z-index: 99;
 
-                @include rtl{
-                    right: 0;
-                    left: auto;
-                }
-
                 & li{
                     float: left;
                     width: 50%;
                     margin-right: 0;
                     text-align: left;
-
-                    @include rtl{
-                        float: right;
-                        margin-left: 0;
-                        text-align: right;
-                    }
 
                     & .mega-menu-title{
                         font-weight: 500;
@@ -265,11 +201,6 @@
                                     background-color: var(--tp-theme-4);
                                     @extend %tp-transition;
 
-                                    @include rtl{
-                                        right: 0;
-                                        left: auto;
-                                    }
-
                                 }
                             }
                         }
@@ -278,20 +209,11 @@
                         & > .mega-menu-title{
                             color: var(--tp-theme-1);
                             padding-left: 0;
-
-                            @include rtl{
-                                padding-right: 0;
-                            }
                         }
 
                         & > a{
                             color: var(--tp-theme-1);
                             padding-left: 18px;
-
-                            @include rtl{
-                               padding-left: 0;
-                               padding-right: 18px;
-                            }
                             &::before{
                                 width: 12px;
                             }
@@ -344,35 +266,19 @@
         text-align: center;
         @media #{$lg}{
             padding-left: 0;
-
-            @include rtl{
-                padding-right: 0;
-            }
         }
     }
     &-3{
         @media #{$lg}{
             padding-left: 0;
-
-            @include rtl{
-                padding-right: 0;
-            }
         }
 
         & ul{
             & li{
                 margin-right: 25px;
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 25px;
-                }
                 &:last-child{
                     margin-right: 0;
 
-                    @include rtl{
-                        margin-left: 0;
-                    }
                 }
                 & a{
                     color: var(--tp-common-white);
@@ -451,24 +357,15 @@
         }
     }
     &-4{
-        @include rtl{
-            padding-right: 0;
-        }
         @media #{$lg}{
             padding-left: 0;
 
-            @include rtl{
-                padding-right: 0;
-            }
         }
 
         & ul{
             & li{
                 &:last-child{
                     margin-right: 0;
-                    @include rtl{
-                        margin-left: 0;
-                    }
                 }
                 & a{
                     color: var(--tp-common-white);
@@ -484,11 +381,6 @@
                         height: 1px;
                         background-color: var(--tp-theme-4);
                         @extend %tp-transition;
-
-                        @include rtl{
-                            left: 0;
-                            right: auto;
-                        }
                     }
 
 
@@ -560,11 +452,6 @@
                             width: 100%;
                             left: 0;
                             right: auto;
-
-                            @include rtl{
-                                left: auto;
-                                right: 0;
-                            }
                         }
                     }
                 }
@@ -574,38 +461,18 @@
     &-5{
         margin-left: -66px;
         padding-right: 0;
-        @include rtl{
-            margin-left: 0;
-            margin-right: -66px;
-            padding-right: 0;
-        }
 
         @media #{$xxl}{
            margin-left: -50px;
 
-           @include rtl{
-            margin-left: 0;
-            margin-right: -50px;
-            padding-right: 0;
-           }
         }
 
         @media #{$xl}{
            margin-left: -45px;
-
-           @include rtl{
-            margin-left: 0;
-            margin-right: -45px;
-            padding-right: 0;
-           }
         }
 
         @media #{$lg}{
             padding-left: 0;
-
-            @include rtl{
-                padding-right: 0;
-            }
         }
 
         & ul{
@@ -613,17 +480,10 @@
                 @media #{$xl, $lg}{
                     margin-right: 25px;
 
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 25px;
-                    }
                 }
 
                 &:last-child{
                     margin-right: 0;
-                    @include rtl{
-                        margin-left: 0;
-                    }
                 }
                 & a{
                     color: var(--tp-common-black);
@@ -698,19 +558,9 @@
     }
     &-6{
         margin-left: 20px;
-
-        @include rtl{
-            margin-left: 0;
-            margin-right: 20px;
-        }
         @media #{$lg}{
             padding-left: 0;
             margin-left: 0;
-
-            @include rtl{
-                padding-right: 0;
-                margin-right: 0;
-            }
         }
         & ul{
             & li{
@@ -718,17 +568,9 @@
                 @media #{$lg}{
                     margin-right: 25px;
 
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 25px;
-                    }
                 }
                 &:last-child{
                     margin-right: 0;
-
-                    @include rtl{
-                        margin-left: 0;
-                    }
                 }
                 & a{
                     color: var(--tp-common-black-10);
@@ -805,40 +647,24 @@
         }
     }
     &-7{
-        @include rtl{
-            padding-right: 0;
-        }
+
         @media #{$lg}{
             padding-left: 0;
 
-            @include rtl{
-                padding-right: 0;
-            }
         }
 
         & ul{
             & li{
                 margin-right: 40px;
 
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 40px;
-                }
                 @media #{$xl, $lg}{
                     margin-right: 25px;
 
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 25px;
-                    }
                 }
 
                 &:last-child{
                     margin-right: 0;
 
-                    @include rtl{
-                        margin-left: 0;
-                    }
                 }
                 & a{
                     color: var(--tp-common-black);
@@ -917,9 +743,6 @@
         @media #{$lg, $xxl}{
             padding-left: 0;
 
-            @include rtl{
-                padding-right: 0;
-            }
         }
 
         & ul{
@@ -928,25 +751,14 @@
                 @media #{$xxl}{
                     margin-right: 30px;
 
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 30px;
-                    }
                 }
                 @media #{$xl, $lg}{
                     margin-right: 25px;
 
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 25px;
-                    }
                 }
                 &:last-child{
                     margin-right: 0;
 
-                    @include rtl{
-                        margin-left: 0;
-                    }
                 }
                 & a{
                     color: var(--tp-common-white);
@@ -1026,41 +838,23 @@
         @media #{$lg}{
             padding-left: 0;
 
-            @include rtl{
-                padding-right: 0;
-            }
         }
 
         & ul{
             & li{
                 margin-right: 35px;
 
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 35px;
-                }
                 @media #{$xxl}{
                     margin-right: 30px;
 
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 30px;
-                    }
                 }
                 @media #{$xl, $lg}{
                     margin-right: 25px;
 
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 25px;
-                    }
                 }
                 &:last-child{
                     margin-right: 0;
 
-                    @include rtl{
-                        margin-left: 0;
-                    }
                 }
 
                 & a{
@@ -1175,40 +969,25 @@
     &-10{
         padding-left: 25px;
 
-        @include rtl{
-            padding-left: 0;
-            padding-right: 25px;
-        }
 
         @media #{$lg}{
             padding-left: 0;
-            @include rtl{
-                padding-right: 0;
-            }
+
         }
 
         & ul{
             & li{
                 @media #{$xxl}{
                     margin-right: 30px;
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 30px;
-                    }
+
                 }
                 @media #{$xl, $lg}{
                     margin-right: 25px;
 
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 25px;
-                    }
                 }
                 &:last-child{
                     margin-right: 0;
-                    @include rtl{
-                        margin-left: 0;
-                    }
+
                 }
 
                 & a{
@@ -1231,10 +1010,6 @@
                                 left: 25px;
                                 background-color: var(--tp-theme-10);
 
-                                @include rtl{
-                                    right: 25px;
-                                    left: auto;
-                                }
                             }
                         }
 
@@ -1301,32 +1076,21 @@
         @media #{$lg}{
             padding-left: 0;
 
-            @include rtl{
-                padding-right: 0;
-            }
         }
 
         & ul{
             & li{
                 @media #{$xxl}{
                     margin-right: 30px;
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 30px;
-                    }
+
                 }
                 @media #{$xl, $lg}{
                     margin-right: 25px;
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 25px;
-                    }
+
                 }
                 &:last-child{
                     margin-right: 0;
-                    @include rtl{
-                        margin-left: 0;
-                    }
+
                 }
 
                 & a{
@@ -1363,10 +1127,6 @@
                                 left: 25px;
                                 background-color: var(--tp-theme-10);
 
-                                @include rtl{
-                                    left: auto;
-                                    right: 25px;
-                                }
                             }
                         }
 
@@ -1436,41 +1196,23 @@
         @media #{$lg}{
             padding-left: 0;
 
-            @include rtl{
-                padding-right: 0;
-            }
         }
 
         & ul{
             & li{
                 margin-right: 36px;
 
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 36px;
-                }
                 @media #{$xxl}{
                     margin-right: 30px;
 
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 30px;
-                    }
                 }
                 @media #{$xl, $lg}{
                     margin-right: 25px;
 
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 25px;
-                    }
                 }
                 &:last-child{
                     margin-right: 0;
 
-                    @include rtl{
-                        margin-left: 0;
-                    }
                 }
 
                 & a{
@@ -1506,11 +1248,6 @@
                                 right: auto;
                                 left: 25px;
                                 background-color: var(--tp-theme-10);
-
-                                @include rtl{
-                                    right: 25px;
-                                    left: auto;
-                                }
                             }
                         }
 
@@ -1577,18 +1314,9 @@
             & li{
                 margin-right: 30px;
 
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 30px;
-                }
-
                 @media #{$xxl}{
                     margin-right: 25px;
 
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 25px;
-                }
 
                 }
                 & a{

@@ -1,0 +1,183 @@
+$xxxxl: 'only screen and (min-width: 1700px) and (max-width: 1899px)';
+$xxxl: 'only screen and (min-width: 1600px) and (max-width: 1699px)';
+$xxl: 'only screen and (min-width: 1400px) and (max-width: 1599px)';
+$xl: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$xsx: 'only screen and (min-width: 270px) and (max-width: 575px)';
+$xs3: 'only screen and (min-width: 398px) and (max-width: 575px)';
+$xs2: '(max-width: 366px)';
+$xs:'(max-width: 575px)';
+@mixin transition($time) {
+    -webkit-transition: all $time ease-out 0s;
+    -moz-transition: all $time ease-out 0s;
+    -ms-transition: all $time ease-out 0s;
+    -o-transition: all $time ease-out 0s;
+    transition: all $time ease-out 0s;
+}
+@mixin transform($transforms) {
+    -webkit-transform: $transforms;
+    -moz-transform: $transforms;
+    -ms-transform: $transforms;
+    -o-transform: $transforms;
+    transform: $transforms;
+}
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;       
+    -ms-box-shadow: $shadow;       
+    -o-box-shadow: $shadow;       
+    box-shadow: $shadow;
+}
+%tp-transition{
+    @include transition(.3s);
+}
+.footer{
+    &__top{
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 40px;
+        z-index: 1;
+    }
+    &__logo{
+        margin-bottom: 15px;
+    }
+    &__social{
+        &-4{
+            & h5{
+                font-family: var(--tp-ff-space);
+                font-size: 18px;
+                color: var(--tp-common-white);
+            }
+            & a{
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 36px;
+                text-align: center;
+                color: var(--tp-common-white);
+                border: 2px solid #FFFFFF1A;
+                margin-right: 2px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                &:hover{
+                    color: var(--tp-common-white);
+                    background-color: var(--tp-theme-4);
+                    border-color: var(--tp-theme-4);
+                    & i{
+                        color: #000
+                        } 
+                    }
+            }
+        }
+
+    }
+    &_menu{
+        align-content: center;
+    }
+    &_UL{
+        display: flex;
+        justify-content: space-around;
+        @media #{$sm, $xs}{
+            margin-top: 10%;
+        }
+    }
+    &__widget{
+        &-space{
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        & ul{
+            & li{
+                list-style: none;
+                margin-bottom: 17px;
+                line-height: 1;
+                color: var(--tp-text-3);
+                a{
+                    font-family: var(--tp-ff-inter);
+                    font-size: 16px;
+                    color: var(--tp-text-5);
+                    position: relative;
+                    padding-left: 13px;
+                    &:hover{
+                        color: var(--tp-theme-1);
+                    }
+                }
+            }
+        }
+       
+    }
+    &__bottom{
+        position: relative;
+        z-index: 1;
+        &-inner{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-top: 1px solid var(--tp-border-1);
+            &-4{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-top: 1px solid var(--tp-border-1);
+            }
+
+        }
+    }
+    &__link{
+        & a{
+            display: inline-block;
+            font-family: var(--tp-ff-inter);
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--tp-text-3);
+            margin-right: 25px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+
+
+            &:hover{
+                color: var(--tp-common-white);
+            }
+        }
+
+        &-4{
+            & p{
+                color: var(--tp-text-5);
+                & a{
+                    display: inline-block;
+                    font-family: var(--tp-ff-inter);
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: var(--tp-text-5);
+                    margin-right: 25px;
+        
+                    &:last-child{
+                        margin-right: 0;
+                    }
+       
+                    &:hover{
+                        color: var(--tp-common-white);
+                    }
+                }
+            }
+            & a{
+                display: inline-block;
+                font-family: var(--tp-ff-inter);
+                font-size: 14px;
+                font-weight: 500;
+                color: var(--tp-text-11);
+                margin-right: 25px;
+                &:last-child{
+                    margin-right: 0;
+                }
+
+                &:hover{
+                    color: var(--tp-common-white);
+                }
+            }
+        }
+    }
+}
