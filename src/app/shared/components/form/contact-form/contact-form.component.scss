@@ -1,6 +1,17 @@
-@use '../../../../../assets/scss/utils' as *;
-
-.contact{
+@mixin tp-placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}.contact{
     &__input{
         margin-bottom: 1rem;
         &-2{

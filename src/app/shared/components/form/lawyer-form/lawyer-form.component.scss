@@ -1,5 +1,17 @@
-@use '../../../../../assets/scss/utils' as *;
-
+@mixin tp-placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
 .contact{
     &__input{
         margin-bottom: 1rem;
@@ -15,12 +27,9 @@
                 background-color: var(--tp-grey-15);
                 color: var(--tp-common-black);
                 padding: 0 25px;
-
-                
                 @include tp-placeholder{
                     color: #85858B;
                 }
-
                 &:focus{
                     border-color: var(--tp-theme-1);
                     background-color: var(--tp-common-white);
