@@ -79,8 +79,9 @@
             }
 
             .mean-container .mean-nav ul li a.mean-expand.mean-clicked{
-                background-color: var(--tp-common-white);
-                color: var(--tp-common-black);
+                & .fa-plus{
+                    transform: rotate(45deg);
+                }
                 
             }
 
