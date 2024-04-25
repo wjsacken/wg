@@ -9,6 +9,44 @@ $xsx: 'only screen and (min-width: 270px) and (max-width: 575px)';
 $xs3: 'only screen and (min-width: 398px) and (max-width: 575px)';
 $xs2: '(max-width: 366px)';
 $xs:'(max-width: 575px)';
+@mixin transition($time) {
+    -webkit-transition: all $time ease-out 0s;
+    -moz-transition: all $time ease-out 0s;
+    -ms-transition: all $time ease-out 0s;
+    -o-transition: all $time ease-out 0s;
+    transition: all $time ease-out 0s;
+}
+@mixin transform($transforms) {
+    -webkit-transform: $transforms;
+    -moz-transform: $transforms;
+    -ms-transform: $transforms;
+    -o-transform: $transforms;
+    transform: $transforms;
+}
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;       
+    -ms-box-shadow: $shadow;       
+    -o-box-shadow: $shadow;       
+    box-shadow: $shadow;
+}
+%tp-transition{
+    @include transition(.3s);
+}
+.history__thumb-right-wrapper {
+    @media #{$sm, $xs}{
+        display:none;
+    }
+}
+.history__list {
+    @media #{$sm, $xs}{
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x)* .5);
+        padding-left: calc(var(--bs-gutter-x)* .5);
+        margin-top: 5%;
+    }
+}
 .slider{
     $self : &;
     &__thumb{
@@ -132,18 +170,8 @@ $xs:'(max-width: 575px)';
                 line-height: 28px;
                 margin-bottom: 30px;
                 padding-right: 100px;
-
-                @include rtl{
-                    padding-right: 0;
-                    padding-left: 100px;
-                }
-
                 @media #{$xl, $lg, $md, $sm, $xs}{
                     padding-right: 0;
-
-                    @include rtl{
-                        padding-left: 0;
-                    }
                 }
             }
         }
