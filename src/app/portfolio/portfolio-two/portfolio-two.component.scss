@@ -1,0 +1,161 @@
+$xxxxl: 'only screen and (min-width: 1700px) and (max-width: 1899px)';
+$xxxl: 'only screen and (min-width: 1600px) and (max-width: 1699px)';
+$xxl: 'only screen and (min-width: 1400px) and (max-width: 1599px)';
+$xl: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$xsx: 'only screen and (min-width: 270px) and (max-width: 575px)';
+$xs3: 'only screen and (min-width: 398px) and (max-width: 575px)';
+$xs2: '(max-width: 366px)';
+$xs:'(max-width: 575px)';
+@mixin transition($time) {
+    -webkit-transition: all $time ease-out 0s;
+    -moz-transition: all $time ease-out 0s;
+    -ms-transition: all $time ease-out 0s;
+    -o-transition: all $time ease-out 0s;
+    transition: all $time ease-out 0s;
+}
+@mixin transform($transforms) {
+    -webkit-transform: $transforms;
+    -moz-transform: $transforms;
+    -ms-transform: $transforms;
+    -o-transform: $transforms;
+    transform: $transforms;
+}
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;       
+    -ms-box-shadow: $shadow;       
+    -o-box-shadow: $shadow;       
+    box-shadow: $shadow;
+}
+%tp-transition{
+    @include transition(.3s);
+}
+@mixin tp-afbf-full($content: '', $top: 0, $left: 0, $right: auto, $x:0%, $y:0%, $height: 100%, $width:100%, $bg-color: var(--tp-common-black)) {
+    position: absolute;
+    content: $content;
+    top: $top;
+    left: $left;
+    right: $right;
+    width: $width;
+    height: $height;
+    @include transform(translate($x, $y));
+    background-color: $bg-color;
+}
+.portfolio{
+    $self : &;
+    &__item{
+        position: relative;
+        z-index: 1;
+        min-height: 650px;
+
+        &:hover{
+
+            #{$self}{
+                &__thumb{
+                    @include transform(translate3d(0px, 0, 0px) scale3d(0.955, 0.975, 1) skew(0deg));
+
+                    &::after{
+                        opacity: .6;
+                    }
+                }
+                &__text{
+                    bottom: 20px;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &__thumb{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        @include transition(.2s);
+        transform-style: preserve-3d;
+        &::after{
+            @include tp-afbf-full();
+            opacity: .2;
+            @include transition(.2s);
+        }
+    }
+    &__tag{
+        & span{
+            font-size: 12px;
+            font-weight: 700;
+            font-family: var(--tp-ff-space);
+            text-transform: uppercase;
+            color: var(--tp-common-white);
+            letter-spacing: 3px;
+            position: relative;
+            padding-left: 12px;
+            &::after{
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: 0;
+                @include transform(translateY(-50%));
+                width: 6px;
+                height: 6px;
+                background-color: var(--tp-theme-1);
+                border-radius: 50%;
+                opacity: 0;
+            }
+        }
+    }
+    &__title{
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--tp-common-white);
+        font-family: var(--tp-ff-space);
+
+        @media #{$lg}{
+            font-size: 25px;
+        }
+
+        @media #{$xs}{
+            font-size: 26px;
+        }
+    }
+    &__content{
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        right: 40px;
+        @media #{$lg, $md}{
+            left: 30px;
+            right: 30px;
+        }
+        @media #{$xs}{
+            left: 20px;
+            right: 20px;
+        }
+    }
+    &__text{
+        position: absolute;
+        bottom: -20px;
+        left: 40px;
+        right: 40px;
+        @extend %tp-transition;
+        visibility: hidden;
+        opacity: 0;
+        @media #{$lg, $md, $xs}{
+            left: 30px;
+            right: 30px;
+        }
+        @media #{$xs}{
+            left: 20px;
+            right: 20px;
+        }
+        & p{
+            font-size: 16px;
+            color: var(--tp-common-white);
+            font-family: var(--tp-ff-inter);
+        }
+    }
+}

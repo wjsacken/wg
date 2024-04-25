@@ -45,103 +45,6 @@
                 }
             }
         }
-
-        &-6{
-            position: relative;
-
-            &:hover{
-                #{$self}{
-                    &__content-6-bg,
-                    &__title-6,
-                    &__designation-6{
-                        @include transform(translateY(-70px));
-                    }
-                    &__content-6-bg{
-                        transition-delay: .1s;
-                    }
-                    &__thumb-6{
-                        & img{
-                            @include transform(scale(1.05));
-                        }
-                    }
-                    &__title-6{
-                        transition-delay: .15s;
-                    }
-                    &__designation-6{
-                        transition-delay: .17s;
-                    }
-                }
-            }
-        }
-
-        &-8{
-            @include transition(.2s);
-            
-            padding: 50px 25px;
-            position: relative;
-
-            @media #{$lg}{
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-
-            &::after{
-                position: absolute;
-                content: '';
-                top: 0;
-                left: auto;
-                right: 0;
-                width: 0%;
-                height: 2px;
-                background-color: var(--tp-theme-8);
-                @extend %tp-transition;
-
-                @include rtl{
-                    left: 0;
-                    right: auto;
-                }
-            }
-            &:hover{
-                @include transform(translateY(-10px));
-                transition-delay: 0;
-                &::after{
-                    width: 100%;
-                    left: 0;
-                    right: auto;
-
-                    @include rtl{
-                        left: auto;
-                        right: 0;
-                    }
-                }
-
-                #{$self}{
-                    &__thumb-8{
-                        & img{
-                            padding: 0;
-                            border-color: transparent;
-                            transition-delay: .1s;
-                        }
-                    }
-                }
-            }
-        }
-
-        &-10{
-            border-radius: 14px;
-
-            &:hover{
-                #{$self}{
-                    &__contact{
-                        &-overlay{
-                            @include transform(scaleX(1));
-                            visibility: visible;
-                            opacity: 1;
-                        }
-                    }
-                }
-            }
-        }
     }
     &__thumb{
         position: relative;
@@ -166,29 +69,6 @@
                 height: 90%;
                 background-color: #E9ECF1;
                 z-index: -1;
-            }
-        }
-
-        &-8{
-            & img{
-                width: 160px;
-                height: 160px;
-                padding: 15px;
-                border: 1px solid rgba($color: #fff, $alpha: .1);
-                border-radius: 50%;
-                @include transition(.2s);
-                transition-delay: 0s;
-            }
-        }
-
-        &-10{
-            & img{
-                border-top-left-radius: 14px;
-                border-top-right-radius: 14px;
-
-                @media #{$md, $sm, $xs}{
-                    width: 100%;
-                }
             }
         }
     }

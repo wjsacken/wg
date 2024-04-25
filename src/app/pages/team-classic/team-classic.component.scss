@@ -1,0 +1,146 @@
+$xxxxl: 'only screen and (min-width: 1700px) and (max-width: 1899px)';
+$xxxl: 'only screen and (min-width: 1600px) and (max-width: 1699px)';
+$xxl: 'only screen and (min-width: 1400px) and (max-width: 1599px)';
+$xl: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$xsx: 'only screen and (min-width: 270px) and (max-width: 575px)';
+$xs3: 'only screen and (min-width: 398px) and (max-width: 575px)';
+$xs2: '(max-width: 366px)';
+$xs:'(max-width: 575px)';
+@mixin transition($time) {
+    -webkit-transition: all $time ease-out 0s;
+    -moz-transition: all $time ease-out 0s;
+    -ms-transition: all $time ease-out 0s;
+    -o-transition: all $time ease-out 0s;
+    transition: all $time ease-out 0s;
+}
+@mixin transform($transforms) {
+    -webkit-transform: $transforms;
+    -moz-transform: $transforms;
+    -ms-transform: $transforms;
+    -o-transform: $transforms;
+    transform: $transforms;
+}
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;       
+    -ms-box-shadow: $shadow;       
+    -o-box-shadow: $shadow;       
+    box-shadow: $shadow;
+}
+%tp-transition{
+    @include transition(.3s);
+}
+.team{
+    $self:&;
+    &__item{
+        &:hover{
+            #{$self}{
+                &__thumb{
+                    & img{
+                        @include transform(scale(1.05));
+                    }
+                }
+            }
+        }
+    }
+    &__thumb{
+        position: relative;
+        animation-duration: 1s;
+        animation-delay: 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+    }
+    &__action{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+
+        & ul{
+            & li{
+                position: relative;
+                margin-bottom: 1px;
+                z-index: 1;
+                list-style: none;
+
+                & > a{
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    font-size: 15px;
+                    color: var(--tp-common-white);
+                    background-color: var(--tp-theme-4);
+
+                    &:hover{
+                        background-color: var(--tp-theme-4-dark);
+                    }
+                    
+                }
+                &:hover{
+                    & > #{$self}{
+                        &__social{
+
+                            & ul{
+                                & li{
+                                    visibility: visible;
+                                    opacity: 1;
+                                    
+                                    &:nth-child(1){
+                                        right: calc(100% + 41px);
+                                        z-index: -1;
+                                    }
+                                    &:nth-child(2){
+                                        right: calc(100% + 82px);
+                                        z-index: -2;
+                                    }
+                                    &:nth-child(3){
+                                        right: calc(100% + 123px);
+                                        z-index: -3;
+                                    }
+                                    &:nth-child(4){
+                                        right: calc(100% + 164px);
+                                        z-index: -4;
+                                    }
+                                    &:nth-child(5){
+                                        right: calc(100% + 205px);
+                                    }
+                                    &:nth-child(6){
+                                        right: calc(100% + 246px);
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__content{
+        padding-top: 18px;
+    }
+    &__title{
+        font-size: 20px;
+        font-family: var(--tp-ff-inter);
+        margin-bottom: 0;
+        line-height: 1.1;
+        & a{
+            &:hover{
+                color: var(--tp-theme-4-dark);
+            }
+        }
+    }
+    &__designation{
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--tp-text-1);
+        display: inline-block;
+        font-family: var(--tp-ff-space);
+        text-transform: uppercase;
+        line-height: 1;
+    }
+}

@@ -76,12 +76,6 @@
         height: calc(100% - 120px);
         @include background();
         z-index: 1;
-        
-        @include rtl{
-            left: auto;
-            right: 0;
-        }
-
         @media #{$md, $sm, $xs}{
             position: relative;
             width: 100%;
@@ -188,11 +182,6 @@
                 width: 14px;
                 height: 14px;
                 @extend %tp-transition;
-
-                @include rtl{
-                    right: auto;
-                    left: 0;
-                }
                 &::after{
                     position: absolute;
                     content: '';
@@ -243,12 +232,6 @@
                 color: var(--tp-text-1);
                 margin-bottom: 2px;
                 padding-right: 50px;
-
-                @include rtl{
-                    padding-right: 0;
-                    padding-left: 50px;
-                }
-
                 @media #{$sm, $xs}{
                     padding-right: 0;
 
@@ -297,18 +280,8 @@
             & p{
                 font-size: 16px;
                 padding-right: 85px;
-
-                @include rtl{
-                    padding-right: 0;
-                    padding-left: 85px;
-                }
-
                 @media #{$md, $sm, $xs}{
                     padding-right: 0;
-
-                    @include rtl{
-                        padding-left: 0;
-                    }
                 }
             }
         }
