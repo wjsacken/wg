@@ -19,9 +19,6 @@
           "options": {
             "outputPath": "dist/wg",
             "index": "src/index.html",
-            "styles": [
-              "src/styles.scss"
-            ],
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -34,7 +31,9 @@
               "src/sitemap.xml",
               "src/robots.txt"
             ],
-            
+            "styles": [
+              "src/styles.scss"
+            ],
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
               "./node_modules/isotope-layout/dist/isotope.pkgd.min.js"

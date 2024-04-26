@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { HomeLawyerComponent } from '../home/home-lawyer/home-lawyer.component';
+import { HomeLawyerComponent } from '../home/home-lawyer.component';
 import { ContactComponent } from '../pages/contact/contact.component';
 import { BlogGridSidebarComponent } from '../blog/blog-grid-sidebar/blog-grid-sidebar.component';
 import { BlogDetailsComponent } from '../blog/blog-details/blog-details.component';

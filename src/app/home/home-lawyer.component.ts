@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import Swiper from 'swiper';
-import { HeaderTwoComponent } from '../../shared/header/header-two/header-two.component';
-import { HeroBannerTwoComponent } from '../../shared/components/hero-banner/hero-banner-two/hero-banner-two.component';
-import { ServiceAreaTwoComponent } from '../../shared/components/service/service-area-two.component';
-import { BlogAreaTwoComponent } from '../../shared/components/blog/blog-area-two/blog-area-two.component';
-import { TestimonialTwoComponent } from '../../shared/components/testimonial/testimonial-two.component';
-import { TeamAreaTwoComponent } from '../../shared/components/team/team-area-two/team-area-two.component';
-import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.component';
-import { LawyerContactComponent } from '../../shared/components/contact/lawyer-contact/lawyer-contact.component';
+import { HeaderTwoComponent } from '../shared/header/header-two/header-two.component';
+import { HeroBannerTwoComponent } from '../shared/components/hero-banner/hero-banner-two/hero-banner-two.component';
+import { ServiceAreaTwoComponent } from '../shared/components/service/service-area-two.component';
+import { BlogAreaTwoComponent } from '../shared/components/blog/blog-area-two/blog-area-two.component';
+import { TestimonialTwoComponent } from '../shared/components/testimonial/testimonial-two.component';
+import { TeamAreaTwoComponent } from '../shared/components/team/team-area-two/team-area-two.component';
+import { FooterTwoComponent } from '../shared/footer/footer-two/footer-two.component';
+import { LawyerContactComponent } from '../shared/components/contact/lawyer-contact/lawyer-contact.component';
 import sal from 'sal.js';
 import { RouterModule } from '@angular/router';
 
