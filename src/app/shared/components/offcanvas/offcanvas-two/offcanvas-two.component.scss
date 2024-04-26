@@ -90,6 +90,16 @@ $xs:'(max-width: 575px)';
                 font-family: var(--tp-ff-space);
                 color: var(--tp-common-white);
                 border-color: var(--tp-border-1);
+                display: block;
+                float: left;
+                width: 90%;
+                padding: 10px 5%;
+                margin: 0;
+                text-align: left;
+                color: #fff;
+                border-top: 1px solid #e0e3ed;
+                text-decoration: none;
+                text-transform: uppercase;
             }
             .mean-container .mean-nav ul li a.mean-expand{
                 border: none !important;
@@ -226,32 +236,49 @@ $xs:'(max-width: 575px)';
 
     }
 }
-.mean-container .mean-bar {
-	padding: 0;
-	min-height: auto;
-	background: none;
-    float: left;
-    width: 100%;
-    position: relative;
-    padding: 4px 0;
-    min-height: 42px;
-    z-index: 999999;
+.mean-container{
+    & .mean-bar{
+        padding: 0;
+        min-height: auto;
+        background: none;
+        float: left;
+        width: 100%;
+        position: relative;
+        padding: 4px 0;
+        min-height: 42px;
+        z-index: 999999;
+    }
+    & .mean-nav{
+        & ul{
+            & li{
+                & a{
+                    display: block;
+                    float: left;
+                    width: 90%;
+                    padding: 10px 5%;
+                    margin: 0;
+                    text-align: left;
+                    color: #fff;
+                    border-top: 1px solid #e0e3ed;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        float: left;
+        width: 100%;
+        background: #141637;
+        margin-top: 44px;
+        & .mean-bar{
+            & *{
+                box-sizing: content-box;
+            }
+        }
+    }
 }
-.mean-container .mean-nav {
+.mean-nav {
     float: left;
     width: 100%;
     background: #141637;
     margin-top: 44px;
-}
-.mean-container .mean-nav ul li a {
-	display: block;
-	float: left;
-	width: 90%;
-	padding: 10px 5%;
-	margin: 0;
-	text-align: left;
-	color: #fff;
-	border-top: 1px solid #e0e3ed;
-	text-decoration: none;
-	text-transform: uppercase;
 }
