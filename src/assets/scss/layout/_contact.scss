@@ -36,17 +36,14 @@
     &__form{
         padding: 50px 50px;
         border: 2px solid var(--tp-border-5);
-
         @media #{$xl, $lg}{
             margin-left: 0;
         }
-
         @media #{$md, $sm, $xs}{
             margin-left: 0;
             margin-top: 50px;
             padding: 25px 25px;
         }
-
         &-2{
             padding: 73px 100px 95px;
             border: 2px solid #EAEAEF;
@@ -177,14 +174,10 @@
             color: var(--tp-common-black);
             font-family: var(--tp-ff-inter);
             padding: 0 25px;
-
-            
-
             @include tp-placeholder{
                 color: var(--tp-text-10);
                 font-family: var(--tp-ff-inter);
             }
-
             &:focus{
                 border-color: var(--tp-theme-4);
                 background-color: var(--tp-common-white);

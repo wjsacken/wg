@@ -1,4 +1,52 @@
-@use '../../../../../assets/scss/utils' as *;
+$xxxxl: 'only screen and (min-width: 1700px) and (max-width: 1899px)';
+$xxxl: 'only screen and (min-width: 1600px) and (max-width: 1699px)';
+$xxl: 'only screen and (min-width: 1400px) and (max-width: 1599px)';
+$xl: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$xsx: 'only screen and (min-width: 270px) and (max-width: 575px)';
+$xs3: 'only screen and (min-width: 398px) and (max-width: 575px)';
+$xs2: '(max-width: 366px)';
+$xs:'(max-width: 575px)';
+@mixin transition($time) {
+    -webkit-transition: all $time ease-out 0s;
+    -moz-transition: all $time ease-out 0s;
+    -ms-transition: all $time ease-out 0s;
+    -o-transition: all $time ease-out 0s;
+    transition: all $time ease-out 0s;
+}
+@mixin transform($transforms) {
+    -webkit-transform: $transforms;
+    -moz-transform: $transforms;
+    -ms-transform: $transforms;
+    -o-transform: $transforms;
+    transform: $transforms;
+}
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;       
+    -ms-box-shadow: $shadow;       
+    -o-box-shadow: $shadow;       
+    box-shadow: $shadow;
+}
+@mixin tp-placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+%tp-transition{
+    @include transition(.3s);
+}
 .sidebar{
     $self3 : &;
     &__author{
@@ -67,17 +115,8 @@
                 border: 1px solid #EAEAEF;
                 color: var(--tp-common-black);
                 margin-right: 3px;
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 3px;
-                }
-
                 &:last-child{
                     margin-right: 0;
-                    @include rtl{
-                        margin-left: 0;
-                    }
                 }
 
                 &:hover{
@@ -97,12 +136,6 @@
         background-color: var(--tp-common-white);
         box-shadow: 0px 1px 3px rgba(3, 4, 28, 0.06);
         margin-bottom: 6px;
-
-        @include rtl{
-            padding-right: 12px;
-            padding-left: 35px;
-        }
-
         &:hover{
             & .rc__post-thumb img{
                 @include transform(scale(1.1));
@@ -116,11 +149,6 @@
             overflow: hidden;
             margin-right: 25px;
             flex: 0 0 auto;
-
-            @include rtl{
-                margin-right: 0;
-                margin-left: 25px;
-            }
             & img{
                 width: 90px;
                 height: 90px;
@@ -144,11 +172,6 @@
             & svg,
             & i{
                 margin-right: 6px;
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 6px;
-                }
             }
             & svg{
                 @include transform(translateY(-2px));
@@ -183,10 +206,6 @@
         text-transform: capitalize;
         margin-bottom: 6px;
         margin-right: 2px;
-        @include rtl{
-            margin-right: 0;
-            margin-left: 2px;
-        }
         &:hover{
             background: var(--tp-theme-4);
             color: var(--tp-common-black);
@@ -195,6 +214,145 @@
     &-sm{
         & a{
             padding: 8px 12.5px;
+        }
+    }
+}
+
+.contact{
+    $self :&;
+    &__list{
+
+        &-item{
+            margin-bottom: 10px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &-11{
+                padding-top: 31px;
+                padding-bottom: 26px;
+                padding-right: 55px;
+                background-color: var(--tp-common-brown);
+                margin-bottom: 20px;
+                animation-delay: .3s;
+                animation-duration: 1s;
+                &:nth-child(2){
+                    animation-delay: .6s;
+                }
+                &:nth-child(3){
+                    animation-delay: .9s;
+                }
+                &:nth-child(4){
+                    animation-delay: 1.2s;
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &.is-green{
+                    background-color: var(--tp-common-green-light-5);
+                    #{$self}{
+                        &__list{
+                            &-icon-11{
+                                & span{
+                                    color: var(--tp-common-green-7);
+                                }
+                            }
+                        }
+                    }
+                }
+                &.is-brown{
+                    background-color:  var(--tp-common-brown-light);
+                    #{$self}{
+                        &__list{
+                            &-icon-11{
+                                & span{
+                                    color: var(--tp-common-brown-dark-2);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-icon{
+            & span{
+                display: inline-block;
+                width: 70px;
+                height: 70px;
+                line-height: 63px;
+                text-align: center;
+                font-size: 26px;
+                background-color: var(--tp-grey-8);
+                color: var(--tp-text-body);
+                margin-right: 20px;
+            }
+        }
+        &-content{
+            & h5{
+                font-family: var(--tp-ff-inter);
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing: -0.04em;
+                margin-bottom: 2px;
+                color: var(--tp-text-1);
+            }
+            & p{
+                font-family: var(--tp-ff-inter);
+                font-weight: 500;
+                font-size: 18px;
+                letter-spacing: -0.04em;
+                color: var(--tp-common-black);
+                margin-bottom: 0;
+
+            }
+        }
+    }
+    &__form{
+        padding: 50px 50px;
+        border: 2px solid var(--tp-border-5);
+        @media #{$xl, $lg}{
+            margin-left: 0;
+        }
+        @media #{$md, $sm, $xs}{
+            margin-left: 0;
+            margin-top: 50px;
+            padding: 25px 25px;
+        }
+    }
+    &__input{
+        margin-bottom: 20px;
+        & input,
+        & textarea{
+            width: 100%;
+            height: 60px;
+            border: 2px solid var(--tp-grey-7);
+            outline: 0;
+            background-color: var(--tp-grey-7);
+            color: var(--tp-common-black);
+            font-family: var(--tp-ff-inter);
+            padding: 0 25px;
+            @include tp-placeholder{
+                color: var(--tp-text-10);
+                font-family: var(--tp-ff-inter);
+            }
+            &:focus{
+                border-color: var(--tp-theme-4);
+                background-color: var(--tp-common-white);
+            }
+        }
+        & textarea{
+            height: 160px;
+            padding: 23px 25px;
+            resize: none;
+            &:focus{
+                border-color: var(--tp-theme-4);
+                background-color: var(--tp-common-white);
+            }
+        }
+    }
+    &__btn{
+        & .tp-btn-brown{
+            padding: 11px 32px 13px;
         }
     }
 }
