@@ -113,14 +113,7 @@
             padding-bottom: 235px;
         }
     }
-        border-bottom: 1px solid var(--tp-border-5);
-    &__style-2{
-        #{$self}{
-            &__title{
-                display: none;
-            }
-        }
-    }
+    border-bottom: 1px solid var(--tp-border-5);
     &__style-7{
         #{$self}{
             &__list{
