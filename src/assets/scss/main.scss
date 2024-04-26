@@ -1,5 +1,7 @@
-@forward '../css/font-awesome-pro.css';
+@forward 'layout/menu';
+@forward 'layout/meanmenu';
 @forward 'layout/slider';
+@forward '../css/font-awesome-pro.css';
 @forward 'components/theme';
 @forward 'components/sal';
 @forward 'components/spacing';
@@ -8,8 +10,9 @@
 @forward 'components/animation';
 @forward 'components/background';
 @forward 'components/offcanvas';
+@forward 'components/breadcrumb';
+@forward 'components/accordion';
+@forward 'components/tab';
 @forward 'components/section-title';
-@forward 'layout/menu';
-@forward 'layout/meanmenu';
 
 

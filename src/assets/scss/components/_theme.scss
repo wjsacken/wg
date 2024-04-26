@@ -1,9 +1,4 @@
 @use '../utils' as *;
-
-/*----------------------------------------*/
-/*  01. THEME DEFAULT CSS START
-/*----------------------------------------*/
-
 @import url($font-url);
 
 *{
@@ -11,10 +6,6 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
-/*---------------------------------
-	typography css start
----------------------------------*/
 body {
 	font-family: var(--tp-ff-body);
 	font-size: var(--tp-fz-body);
