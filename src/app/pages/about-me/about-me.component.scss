@@ -1,3 +1,38 @@
+$xxxxl: 'only screen and (min-width: 1700px) and (max-width: 1899px)';
+$xxxl: 'only screen and (min-width: 1600px) and (max-width: 1699px)';
+$xxl: 'only screen and (min-width: 1400px) and (max-width: 1599px)';
+$xl: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$xsx: 'only screen and (min-width: 270px) and (max-width: 575px)';
+$xs3: 'only screen and (min-width: 398px) and (max-width: 575px)';
+$xs2: '(max-width: 366px)';
+$xs:'(max-width: 575px)';
+@mixin transition($time) {
+    -webkit-transition: all $time ease-out 0s;
+    -moz-transition: all $time ease-out 0s;
+    -ms-transition: all $time ease-out 0s;
+    -o-transition: all $time ease-out 0s;
+    transition: all $time ease-out 0s;
+}
+@mixin transform($transforms) {
+    -webkit-transform: $transforms;
+    -moz-transform: $transforms;
+    -ms-transform: $transforms;
+    -o-transform: $transforms;
+    transform: $transforms;
+}
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;       
+    -ms-box-shadow: $shadow;       
+    -o-box-shadow: $shadow;       
+    box-shadow: $shadow;
+}
+%tp-transition{
+    @include transition(.3s);
+}
 .about{
     &__me{
         &-info{
@@ -150,6 +185,118 @@
                     background-color: var(--tp-theme-4);
                     color: var(--tp-common-black);
                 }
+            }
+        }
+    }
+    &__me{
+        $self2 : &;
+        &-title{
+            font-weight: 700;
+            font-size: 270px;
+            line-height: 1;
+            letter-spacing: -0.04em;
+            color: var(--tp-common-white);
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: var(--tp-common-white);
+
+            @media #{$xl}{
+                font-size: 255px;
+            }
+
+            @media #{$lg}{
+                font-size: 210px;
+            }
+
+            @media #{$md}{
+                font-size: 155px;
+            }
+
+            @media #{$sm}{
+                font-size: 115px;
+            }
+
+            @media #{$xs}{
+                font-size: 65px;
+            }
+
+        }
+        &-spacing{
+            padding-top: 420px;
+
+            @media #{$xl, $lg}{
+                padding-top: 350px;
+            }
+
+            @media #{$md}{
+                padding-top: 320px;
+            }
+
+            @media #{$sm, $xs}{
+                padding-top: 220px;
+            }
+
+        }
+        &-translate{
+            overflow: hidden;
+
+            #{$self2}{
+                &-title{
+                    @include transform(translateY(41%) translateX(40px));
+                }
+            }
+        }
+        &-info{
+            &-subtitle{
+                font-family: var(--tp-ff-space);
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 1;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: var(--tp-common-black);
+                position: relative;
+                padding-left: 13px;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 50%;
+                    @include transform(translateY(-50%));
+                    width: 3px;
+                    height: 100%;
+                    background-color: var(--tp-theme-1);
+                }
+            }
+            &-title{
+                font-size: 40px;
+                line-height: 1.15;
+                letter-spacing: -0.04em;
+                margin-bottom: 15px;
+
+            }
+            &-content{
+                & p{
+                    font-size: 18px;
+                    line-height: 1.56;
+                    color: #525258;
+                }
+            }
+        }
+    }
+}
+.about{
+    &__me{
+        &-spacing {padding-top: 420px;
+            @media #{$xl, $lg}{
+                padding-top: 350px;
+            }
+
+            @media #{$md}{
+                padding-top: 320px;
+            }
+
+            @media #{$sm, $xs}{
+                padding-top: 220px;
             }
         }
     }

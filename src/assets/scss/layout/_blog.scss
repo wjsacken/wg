@@ -140,11 +140,6 @@
             text-transform: uppercase;
             margin-right: 5px;
             margin-bottom: 12px;
-
-            @include rtl{
-                margin-right: 0;
-                margin-left: 5px;
-            }
             &:hover{
                 color: var(--tp-common-white);
                 background-color: var(--tp-theme-1);
@@ -162,11 +157,6 @@
             text-transform: uppercase;
             margin-right: 5px;
             margin-bottom: 12px;
-
-            @include rtl{
-                margin-right: 0;
-                margin-left: 5px;
-            }
             &:hover{
                 color: var(--tp-common-white);
                 background-color: var(--tp-theme-1);
@@ -183,7 +173,6 @@
                 color: var(--tp-theme-4);
                 background-color: #AB6C561A;
                 padding: 1px 13px;
-
                 &:hover{
                     color: var(--tp-common-white);
                     background-color: var(--tp-theme-4);
@@ -513,19 +502,12 @@
         & .swiper-container{
             margin-right: -600px;
             overflow: visible;
-
-            @include rtl{
-                margin-right: 0;
-                margin-left: -600px;
-            }
-
             @media #{$xl}{
                 margin-right: 0;
                 @include rtl{
                     margin-left: 0;
                 }
             }
-
             @media #{$lg}{
                 margin-right: -300px;
                 @include rtl{
@@ -533,7 +515,6 @@
                     margin-left: -300px;
                 }
             }
-
             @media #{$md}{
                 margin-right: -400px;
                 @include rtl{
@@ -541,7 +522,6 @@
                     margin-left: -400px;
                 }
             }
-
             @media #{$sm, $xs}{
                 margin-right: 0;
                 @include rtl{

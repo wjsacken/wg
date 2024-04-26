@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import Swiper from 'swiper';
 import { HeaderTwoComponent } from '../../shared/header/header-two/header-two.component';
 import { HeroBannerTwoComponent } from '../../shared/components/hero-banner/hero-banner-two/hero-banner-two.component';
-import { ServiceAreaTwoComponent } from '../../shared/components/service/service-area-two/service-area-two.component';
+import { ServiceAreaTwoComponent } from '../../shared/components/service/service-area-two.component';
 import { BlogAreaTwoComponent } from '../../shared/components/blog/blog-area-two/blog-area-two.component';
-import { TestimonialTwoComponent } from '../../shared/components/testimonial/testimonial-two/testimonial-two.component';
+import { TestimonialTwoComponent } from '../../shared/components/testimonial/testimonial-two.component';
 import { TeamAreaTwoComponent } from '../../shared/components/team/team-area-two/team-area-two.component';
 import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.component';
 import { LawyerContactComponent } from '../../shared/components/contact/lawyer-contact/lawyer-contact.component';
@@ -31,31 +31,6 @@ import { RouterModule } from '@angular/router';
   styleUrl: './home-lawyer.component.scss',
 })
 export class HomeLawyerComponent {
-  public award_images = [
-    '/assets/img/award/2018-top10-mesothelioma-verdicts-us-bill-graham.png',
-    '/assets/img/award/2018-top10-verdicts-us-john-hughes-iv.png',
-    '/assets/img/award/2018-top10-verdicts-us-mona-lisa-wallace.png',
-    '/assets/img/award/Monabadge.png',
-    '/assets/img/award/Johnbadge.png',
-  ];
-
-  public case_results = [
-    {
-      id: 1,
-      bg: '/assets/img/case/case-1.jpg',
-      price: 247,
-      title: 'Personal Injury Claims and Gun What You Need to Know',
-      text: 'If you are looking for a random city or town name to spark a location for a book, game, or a script millions.',
-    },
-    {
-      id: 2,
-      bg: '/assets/img/case/case-2.jpg',
-      price: 176,
-      title: 'Do Injured Workers Have to Be Treated the Same?',
-      text: 'If you are looking for a random city or town name to spark a location for a book, game, or a script millions.',
-    },
-  ];
-
   history_lists = [
     {
       year: '01',

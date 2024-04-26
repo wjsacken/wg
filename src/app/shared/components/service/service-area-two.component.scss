@@ -1,0 +1,166 @@
+$xxxxl: 'only screen and (min-width: 1700px) and (max-width: 1899px)';
+$xxxl: 'only screen and (min-width: 1600px) and (max-width: 1699px)';
+$xxl: 'only screen and (min-width: 1400px) and (max-width: 1599px)';
+$xl: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$xsx: 'only screen and (min-width: 270px) and (max-width: 575px)';
+$xs3: 'only screen and (min-width: 398px) and (max-width: 575px)';
+$xs2: '(max-width: 366px)';
+$xs:'(max-width: 575px)';
+@mixin transition($time) {
+    -webkit-transition: all $time ease-out 0s;
+    -moz-transition: all $time ease-out 0s;
+    -ms-transition: all $time ease-out 0s;
+    -o-transition: all $time ease-out 0s;
+    transition: all $time ease-out 0s;
+}
+@mixin transform($transforms) {
+    -webkit-transform: $transforms;
+    -moz-transform: $transforms;
+    -ms-transform: $transforms;
+    -o-transform: $transforms;
+    transform: $transforms;
+}
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;       
+    -ms-box-shadow: $shadow;       
+    -o-box-shadow: $shadow;       
+    box-shadow: $shadow;
+}
+%tp-transition{
+    @include transition(.3s);
+}
+
+.services{
+    $self: &;
+    &__item{
+        &-4{
+            border: 2px solid var(--tp-border-5);
+            background-color: var(--tp-common-white);
+            padding: 47px 40px 40px;
+            position: relative;
+            z-index: 1;
+
+            @media #{$lg}{
+                padding: 25px 15px 30px;
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                left: 15px;
+                top: 15px;
+                right: 15px;
+                bottom: 15px;
+                border: 2px solid #FFFFFF24;
+                z-index: -1;
+                opacity: 0;
+                visibility: hidden;
+                @include transform(scale(1.2));
+                @extend %tp-transition;
+            }
+            &:hover{
+                background-color: var(--tp-theme-4);
+                border-color: var(--tp-theme-4);
+
+                &::after{
+                    opacity: 1;
+                    visibility: visible;
+                    @include transform(scale(1))
+                }
+                & .services-link-btn{
+                    color: var(--tp-common-white);
+                    bottom: 35px;
+                    visibility: visible;
+                    opacity: 1;
+                    transition-delay: .1s;
+                }
+
+                #{$self}{
+                    &__title-4{
+                        color: var(--tp-common-white);
+                        @include transform(translateY(-93px));
+                        transition-delay: 0s;
+                        & a{
+                            color: var(--tp-common-white);
+                        }
+                    }
+                    &__thumb-4{
+                        opacity: .14;
+                    }
+                    &__icon-4{
+                        
+                        & i,
+                        & span{
+                            color: var(--tp-common-white);
+                            @include transform(scale(0));
+                        }
+                    }
+                    &__content-4{
+                        
+                        & p{
+                            color: var(--tp-common-white);
+                            @include transform(translateY(-93px));
+                            transition-delay: .1s;
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    &__title{
+        &-4{
+            font-family: var(--tp-ff-space);
+            font-size: 26px;
+            letter-spacing: -0.02em;
+            margin-bottom: 12px;
+            transition-duration: .4s;
+            transition-delay: .1s;
+            min-height: 95px;
+            @media #{$md}{
+                font-size: 22px;
+            }
+            @media #{$xs}{
+                font-size: 22px;
+            }
+        }
+    }
+    &__content{
+        & p{
+            font-family: var(--tp-ff-inter);
+            font-size: 16px;
+            color: var(--tp-text-1);
+            line-height: 1.4;
+            margin-bottom: 35px;
+        }
+
+        &-4{
+            position: relative;
+            z-index: 1;
+            
+            & p{
+                font-family: var(--tp-ff-inter);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: var(--tp-text-1);
+                transition-duration: .4s;
+                transition-delay: 0s;
+            }
+        }
+    }
+    &__thumb{
+        &-4{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+    }
+}

@@ -4,7 +4,6 @@ import sal from 'sal.js';
 import {Gallery,GalleryItem} from 'ng-gallery';
 import { Lightbox } from 'ng-gallery/lightbox';
 import { HeaderTwoComponent } from '../../shared/header/header-two/header-two.component';
-import { ServiceAreaSevenComponent } from '../../shared/components/service/service-area-seven/service-area-seven.component';
 import { UtilsService } from '../../shared/services/utils.service';
 import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.component';
 import { RouterModule } from '@angular/router';
@@ -17,7 +16,6 @@ import { Title, Meta } from '@angular/platform-browser';
     CommonModule,
     RouterModule,
     HeaderTwoComponent,
-    ServiceAreaSevenComponent,
     FooterTwoComponent,
   ],
   templateUrl: './about-me.component.html',

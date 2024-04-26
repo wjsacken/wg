@@ -17,18 +17,18 @@ export class TestimonialTwoComponent {
     {
       ratings: [1, 2, 3, 4, 5],
       name: "Sherry Crooke",
-      desc: "<p>Dad and I would like to express our thanks and appreciation for representing us in Mom’s workers’ compensation case.&nbsp; Your courtesy, kindness and professionalism was always displayed to us in all interactions with your firm.&nbsp; Amanda did a terrific job in keeping me informed and up to date through all emails and phone conversations.&nbsp;</p><p>Working with your firm throughout this whole process was a pleasure and without reservation would highly recommend Wallace and Graham to anyone needing legal services.</p><p>Sincerely,</p><p>Sherry Crooke, Daughter of Margie Ruth Cooper</p>",
+      desc: "Dad and I would like to express our thanks and appreciation for representing us in Mom’s workers’ compensation case.&nbsp; Your courtesy, kindness and professionalism was always displayed to us in all interactions with your firm.&nbsp; Amanda did a terrific job in keeping me informed and up to date through all emails and phone conversations.&nbsp;Working with your firm throughout this whole process was a pleasure and without reservation would highly recommend Wallace and Graham to anyone needing legal services.Sincerely,Daughter of Margie Ruth Cooper",
   },
 
   {
       ratings: [1, 2, 3, 4, 5],
       name: "Thomas",
-      desc: "<p>Wallace &amp; Graham have worked very hard for me on my hearing loss case. Mark and Frieda have done their homework and helped me win this case. It has not been easy or quick. Mark assured me that we had a good case, and that we would win. I am very satisfied with my attorney he dug deep and hit them hard – where it hurts. I know he had some trying times with Domtar’s lawyer and the industrial commission. I could not had made it without you. Thank you very much Mark and Frieda.</p>",
+      desc: "Wallace &amp; Graham have worked very hard for me on my hearing loss case. Mark and Frieda have done their homework and helped me win this case. It has not been easy or quick. Mark assured me that we had a good case, and that we would win. I am very satisfied with my attorney he dug deep and hit them hard – where it hurts. I know he had some trying times with Domtar’s lawyer and the industrial commission. I could not had made it without you. Thank you very much Mark and Frieda.",
   },
     {
       ratings: [1, 2, 3, 4, 5],
       name: "William Smith",
-      desc: "<p>I know I am dying.&nbsp; I &nbsp;have been up since 3 am because I am so sick.&nbsp; But I want you to know that Trish and everyone at Wallace &amp; Graham have been excellent and you are amazing people.&nbsp; I appreciate everything you have done.<u></u><u></u></p><p>I can never thank you enough and for what little life I have left, I always be indebted to your firm.</p>",
+      desc: "I know I am dying.&nbsp; I &nbsp;have been up since 3 am because I am so sick.&nbsp; But I want you to know that Trish and everyone at Wallace &amp; Graham have been excellent and you are amazing people.&nbsp; I appreciate everything you have done.<u></u><u></u>I can never thank you enough and for what little life I have left, I always be indebted to your firm.",
   },
   {
       ratings: [1, 2, 3, 4, 5],

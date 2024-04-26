@@ -1,15 +1,19 @@
-@use '../utils' as *;
-
-/*----------------------------------------*/
-/*  14. TESTIMONIAL CSS START
-/*----------------------------------------*/
-
+$xl: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$xs:'(max-width: 575px)';
+@mixin transform($transforms) {
+    -webkit-transform: $transforms;
+    -moz-transform: $transforms;
+    -ms-transform: $transforms;
+    -o-transform: $transforms;
+    transform: $transforms;
+}
 .testimonial{
     $self: &;
-
     &__content{
         position: relative;
-
         &-4{
             & p{
                 font-size: 20px;
@@ -44,6 +48,12 @@
                 font-size: 14px;
                 color: var(--tp-common-white);
                 margin-bottom: 0;
+                & p{
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: var(--tp-common-white);
+                    margin-bottom: 0;
+                }
             }
         }
 
