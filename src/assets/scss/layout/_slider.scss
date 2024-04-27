@@ -1,19 +1,5 @@
+@use '../utils' as *;
 
-@use '../utils/breakpoints' as *;
-@mixin transition($time) {
-    -webkit-transition: all $time ease-out 0s;
-    -moz-transition: all $time ease-out 0s;
-    -ms-transition: all $time ease-out 0s;
-    -o-transition: all $time ease-out 0s;
-    transition: all $time ease-out 0s;
-}
-@mixin transform($transforms) {
-    -webkit-transform: $transforms;
-    -moz-transform: $transforms;
-    -ms-transform: $transforms;
-    -o-transform: $transforms;
-    transform: $transforms;
-}
 /*----------------------------------------*/
 /*  06. SLIDER CSS START
 /*----------------------------------------*/
