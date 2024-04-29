@@ -80,9 +80,7 @@ $xs:'(max-width: 575px)';
 
                 #{$self}{
                     &__title-4{
-                        color: var(--tp-common-white);
-                        @include transform(translateY(-93px));
-                        transition-delay: 0s;
+
                         & a{
                             color: var(--tp-common-white);
                         }
@@ -121,6 +119,8 @@ $xs:'(max-width: 575px)';
             transition-duration: .4s;
             transition-delay: .1s;
             min-height: 95px;
+            text-align: center;
+            align-content: center;
             @media #{$md}{
                 font-size: 22px;
             }
