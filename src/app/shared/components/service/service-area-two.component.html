@@ -19,7 +19,7 @@
      <div class="row">
         <div *ngFor="let item of practice_data;let i = index" class="col-xxl-4 col-lg-4 col-md-6">
            <div class="services__item-4 mb-30 fix">
-            <div class="services__thumb-4 include-bg" style="background-image: url('{{item.img}}') "  loading="lazy"></div>
+            <div class="services__thumb-4 include-bg" [style.backgroundImage]="'url(' + item.img + ')'" loading="lazy"></div>
               <div class="services__content-4">
                  <h4 class="services__title-4">
                     <a [routerLink]="'/practice/' + item.slug" [innerHTML]="item.name">{{item.title}}</a>
