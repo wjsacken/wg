@@ -17,7 +17,7 @@
                     </div>
                     <h1 class="job__details-title" [innerHTML]="practice?.name"></h1>
                     <div class="job__details-thumb m-img mb-60">
-                      <img [src]="practice?.img" alt="">
+                      <img class="job__details-thumb-img" [src]="practice?.img" [alt]="practice?.name">
                     </div>
                 </div>
                 <div class="job__details-about mb-35" [innerHTML]="practice?.content"></div>

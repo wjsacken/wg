@@ -32,6 +32,11 @@
                 line-height: 1.55;
                 color: var(--tp-common-black);
             }
+        }
+        &-thumb{
+            &-img{
+                width: -webkit-fill-available;
+            }
         }           
     }
 }
