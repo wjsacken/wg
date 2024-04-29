@@ -16,7 +16,6 @@
     $self : &;
     &__thumb{
         &-4{
-            @include transform(translateY(0px));
             padding-top: 40px;
 
             @media #{$xl}{
@@ -25,7 +24,6 @@
 
             @media #{$md, $sm, $xs}{
                 padding-top: 0;
-                @include transform(translateY(0));
 
             }
             & img{
