@@ -53,33 +53,9 @@ export class HomeLawyerComponent {
   ];
 
   ngOnInit(): void {
-    new Swiper('.award__slider-active', {
-      slidesPerView: 4,
-      spaceBetween: 30,
-      breakpoints: {
-        '1400': {
-          slidesPerView: 4,
-        },
-        '1200': {
-          slidesPerView: 4,
-        },
-        '992': {
-          slidesPerView: 4,
-        },
-        '768': {
-          slidesPerView: 4,
-        },
-        '576': {
-          slidesPerView: 4,
-        },
-        '0': {
-          slidesPerView: 3,
-        },
-      },
-    });
   }
 
   ngAfterViewInit() {
-    sal({ threshold: 0.1, once: true, root: null });
+    sal({ threshold: 0.0, once: true, root: null });
   }
 }
