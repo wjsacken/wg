@@ -13,7 +13,7 @@
 
     @mixin tp-afbf-default($content: '', $top: 50%, $left: 0, $right: auto, $x:0%, $y:-50%, $height: 12px, $width:1px, $bg-color: var(--tp-common-black)) {
         position: absolute;
-        content: $content;
+        content: $content; 
         top: $top;
         left: $left;
         right: $right;
