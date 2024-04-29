@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import Swiper from 'swiper';
 import { register } from 'swiper/element';
+import lozad from 'lozad';
+
 register();
 
 @Component({
@@ -68,5 +70,8 @@ export class TestimonialTwoComponent {
         prevEl: ".testimonial-4-button-prev",
       },
     });
+    // Initialize lozad
+    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+    observer.observe();
   }
 }
