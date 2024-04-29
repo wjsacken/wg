@@ -15,18 +15,6 @@
 	letter-spacing: -0.02em;
 
 	& i,
-	& svg{
-		margin-left: 5px;
-
-		@include rtl{
-			margin-left: 0;
-			margin-right: 5px;
-		}
-	}
-
-	& svg{
-		@include transform(translateY(-2px));
-	}
 
 	&:hover{
 		color: var(--tp-common-white);
@@ -34,17 +22,6 @@
 	}
 	&:focus{
 		color: var(--tp-common-white);
-	}
-
-	&-black{
-		background-color: var(--tp-common-black);
-		color: var(--tp-common-white);
-		font-size: 15px;
-		padding: 8px 29px 10px;
-		&:hover{
-			background-color: var(--tp-theme-1);
-			color: var(--tp-common-white);
-		}
 	}
 
 }
