@@ -2,13 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { NgOptimizedImage } from '@angular/common'; // Import NgOptimizedImage
+import lozad from 'lozad';
 import practice_data from '../../data/practice-data';
 
 @Component({
   selector: 'app-service-area-two',
   standalone: true,
-  imports: [CommonModule,RouterModule, NgOptimizedImage],
+  imports: [CommonModule,RouterModule],
   templateUrl: './service-area-two.component.html',
   styleUrl: './service-area-two.component.scss'
 })
@@ -23,5 +23,11 @@ export class ServiceAreaTwoComponent {
       // Use localeCompare for case-insensitive sorting
       return b.title.localeCompare(a.title);
     });
+    ngOnInit(): void {
+      // Initialize lozad
+      const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+      observer.observe();
+    }
     
 }
+ 
