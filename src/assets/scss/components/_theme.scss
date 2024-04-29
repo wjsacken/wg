@@ -374,19 +374,7 @@ input[type="color"] {
 		height: auto;
 		width: auto;
 		@extend %tp-transition;
-
-		@include rtl{
-			right: auto;
-			left: 0;
-		}
 	}
-
-	& .option{
-		@include rtl{
-			text-align: right;
-		}
-	}
-
 	&.open{
 		&::after{
 			@include transform(translateY(-50%) rotate(-180deg));
