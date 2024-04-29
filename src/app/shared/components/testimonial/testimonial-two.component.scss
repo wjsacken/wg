@@ -75,3 +75,7 @@ $xs:'(max-width: 575px)';
     }
 
 }
+[data-overlay=dark]:before {
+    background-color: var(--tp-common-black);
+    opacity: .6;
+}
