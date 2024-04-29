@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import Swiper from 'swiper';
 import { HeaderTwoComponent } from '../shared/header/header-two/header-two.component';
 import { HeroBannerTwoComponent } from '../shared/components/hero-banner/hero-banner-two/hero-banner-two.component';
 import { ServiceAreaTwoComponent } from '../shared/components/service/service-area-two.component';
