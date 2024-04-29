@@ -79,11 +79,6 @@
                 @include tp-gradient((329deg, #FF91FA 13.55%, #FA6490 48.54%, #F7D86A 86.44%));
                 @include transform(matrix(-1, 0, 0, 1, 0, 0));
                 @include transition(.6s);
-
-                @include rtl{
-                    left: 0;
-                    right: auto;
-                }
             }
 
 
@@ -92,11 +87,6 @@
                     width: 100%;
                     left: 0;
                     right: auto;
-
-                    @include rtl{
-                        left: auto;
-                        right: 0
-                    }
 
                 }
                 #{$self}{
@@ -139,11 +129,6 @@
         top: 51%;
         right: 14.5%;
         z-index: 99;
-
-        @include rtl{
-            right: auto;
-            left: 14.5%;
-        }
         & img{
             box-shadow: 0px 20px 30px rgba(3, 4, 28, 0.2);
             @include transform(scaleY(0));
@@ -153,10 +138,6 @@
         @media #{$xs}{
             top: 90%;
             right: 9.5%;
-            @include rtl{
-                right: auto;
-                left: 9.5%;
-            }
         }
     }
 }

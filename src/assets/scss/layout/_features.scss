@@ -79,10 +79,6 @@
                         #{$self}{
                             &__item-15{
                                border-right: 0;
-
-                               @include rtl{
-                                    border-left: 0;
-                               }
                             }
                         }
                     }
@@ -110,11 +106,6 @@
             height: 2px;
             background-color: var(--tp-common-blue-3);
             @extend %tp-transition;
-
-            @include rtl{
-                left: 0;
-                right: auto;
-            }
         }
         &:hover{
             box-shadow: 0px 30px 30px rgba(13, 18, 30, 0.08);
@@ -253,12 +244,6 @@
             padding: 65px 60px 45px;
             border-right: 1px solid #EAEAEF;
             height: 100%;
-
-            @include rtl{
-                border-right: 0;
-                border-left: 1px solid #EAEAEF;
-            }
-
             @media #{$lg, $xs}{
                 padding-left: 20px;
                 padding-right: 20px;
@@ -322,12 +307,6 @@
                 border: 1px solid rgba(3, 4, 28, 0.1);
                 border-radius: 45px;
                 color: var(--tp-common-black);
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 16px;
-                }
-
                 & svg{
                     @include transform(translateY(-1px));
                 }
@@ -366,11 +345,6 @@
                     height: 58px;
                     border-radius: 50%;
                     @include tp-gradient((314.27deg, rgba(245, 9, 99, 0.12) 0%, rgba(255, 255, 255, 0) 79.01%));
-
-                    @include rtl{
-                        left: auto;
-                        right: 6px;
-                    }
                 }
 
                 & svg,
@@ -487,11 +461,6 @@
                 height: 0;
                 background-color: var(--tp-common-black);
                 @extend %tp-transition;
-
-                @include rtl{
-                    left: auto;
-                    right: 0;
-                }
             }
 
             &:last-child{
@@ -708,11 +677,6 @@
             border-radius: 20px;
             padding: 2px 25px;
             margin-right: 15px;
-
-            @include rtl{
-                margin-right: 0;
-                margin-left: 15px;
-            }
         }
 
         & p{
@@ -771,17 +735,8 @@
             z-index: 1;
             padding-right: 12px;
 
-            @include rtl{
-                padding-right: 0;
-                padding-left: 12px;
-            }
-
             @media #{$xl}{
                 padding-right: 0;
-
-                @include rtl{
-                    padding-left: 0;
-                }
             }
 
             & .nav-tabs{
@@ -839,11 +794,6 @@
                 z-index: -1;
                 border-radius: 45px;
                 @extend %tp-transition;
-
-                @include rtl{
-                    left: auto;
-                    right: 3px;
-                }
             }
 
             &-inner{
@@ -853,10 +803,6 @@
             }
         }
         &-icon{
-            @include rtl{
-                margin-right: 0;
-                margin-left: 20px;
-            }
             @media #{$xs}{
                 margin-bottom: 20px;
             }
@@ -873,10 +819,6 @@
             color: var(--tp-common-black-11);
             margin-bottom: 0;
             text-align: left;
-
-            @include rtl{
-                text-align: right;
-            }
             & a{
                 &:hover{
                     color: var(--tp-theme-7);
@@ -926,29 +868,13 @@
                 top: 0;
                 box-shadow: 0px 40px 70px rgba(86, 55, 8, 0.1);
                 border-radius: 20px;
-
-                @include rtl{
-                    left: auto;
-                    right: 45px;
-                }
-
                 @media #{$lg, $md}{
                     left: 0;
-
-                    @include rtl{
-                        left: auto;
-                        right: 0;
-                    }
                 }
 
                 @media #{$sm}{
                     left: 45px;
                     top: 0;
-
-                    @include rtl{
-                        left: auto;
-                        right: 45px;
-                    }
                 }
 
                 @media #{$xs}{
@@ -963,30 +889,14 @@
                 left: 19%;
                 box-shadow: 0px 30px 70px rgba(86, 55, 8, 0.1);
                 border-radius: 20px;
-
-                @include rtl{
-                    left: auto;
-                    right: 19%;
-                }
-
                 @media #{$lg}{
                     left: 0;
-
-                    @include rtl{
-                        left: auto;
-                        right: 0;
-                    }
                 }
 
                 @media #{$sm}{
                     position: relative;
                     top: 0;
                     left: 0;
-
-                    @include rtl{
-                        left: auto;
-                        right: 0;
-                    }
                 }
 
                 @media #{$xs}{
@@ -1002,31 +912,15 @@
                 right: 13%;
                 z-index: -1;
                 border-radius: 10px;
-
-                @include rtl{
-                    right: auto;
-                    left: 13%;
-                }
-
                 @media #{$md}{
                     bottom: 22%;
                     right: -14%;
-
-                    @include rtl{
-                        right: auto;
-                        left: -14%;
-                    }
                 }
 
                 @media #{$sm}{
                     position: relative;
                     bottom: 0;
                     right: 0;
-
-                    @include rtl{
-                        right: auto;
-                        left: 0;
-                    }
                 }
 
                 @media #{$xs}{
@@ -1064,11 +958,6 @@
                         position: relative;
                         padding-left: 0;
                         display: inline-block;
-
-                        @include rtl{
-                            padding-right: 0;
-                        }
-
                         &::after{
                             position: absolute;
                             content: '';
@@ -1082,11 +971,6 @@
                             visibility: hidden;
                             opacity: 0;
                             @extend %tp-transition;
-
-                            @include rtl{
-                                left: auto;
-                                right: 0;
-                            }
                         }
 
                         &::before{
@@ -1098,11 +982,6 @@
                             height: 2px;
                             background-color: var(--tp-common-black);
                             @extend %tp-transition;
-
-                            @include rtl{
-                                left: auto;
-                                right: 23px;
-                            }
                         }
                     }
 
@@ -1113,11 +992,6 @@
                     &.active{
                         & h3{
                             padding-left: 23px;
-
-                            @include rtl{
-                                padding-left: 0;
-                                padding-right: 23px;
-                            }
                             &::after{
                                 opacity: 1;
                                 visibility: visible;
@@ -1135,10 +1009,6 @@
             @media #{$sm, $xs}{
                 margin-top: 30px;
                 padding-left: 0;
-
-                @include rtl{
-                    padding-right: 0;
-                }
             }
             & *{
                 height: 100%;
@@ -1163,11 +1033,6 @@
                 height: 100%;
                 @include tp-gradient((329deg, #FF91FA 13.55%, #FA6490 48.54%, #F7D86A 86.44%));
                 z-index: -1;
-
-                @include rtl{
-                    right: auto;
-                    left: -20px;
-                }
             }
         }
 
@@ -1194,11 +1059,6 @@
                 background-color: var(--tp-common-white);
                 padding: 20px 40px 25px;
                 width: 294px;
-
-                @include rtl{
-                    left: auto;
-                    right: 0;
-                }
                 & p{
                     font-family: var(--tp-ff-syne);
                     font-size: 18px;
@@ -1217,11 +1077,6 @@
 
                     &:not(:first-child){
                         margin-left: -18px;
-
-                        @include rtl{
-                            margin-left: 0;
-                            margin-right: -18px;
-                        }
                     }
                 }
             }

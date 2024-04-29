@@ -68,10 +68,6 @@
                 background-color: var(--tp-theme-1);
                 border-radius: 50%;
                 opacity: 0;
-                @include rtl{
-                    left: auto;
-                    right: 0;
-                }
             }
 
         }
@@ -169,12 +165,6 @@
                 line-height: 1;
                 position: relative;
                 padding-left: 25px;
-
-                @include rtl{
-                    padding-left: 0;
-                    padding-right: 25px;
-                }
-
                 &::after{
                     position: absolute;
                     content: '';
@@ -184,11 +174,6 @@
                     width: 17px;
                     background-color: var(--tp-text-1);
                     height: 1px;
-
-                    @include rtl{
-                        left: auto;
-                        right: 0;
-                    }
                 }
             }
         }
@@ -197,18 +182,9 @@
         &-wrapper{
             @media #{$xl}{
                 padding-right: 55px;
-
-                @include rtl{
-                    padding-right: 0;
-                    padding-left: 55px;
-                }
             }
             @media #{$lg}{
                 padding-right: 80px;
-                @include rtl{
-                    padding-right: 0;
-                    padding-left: 80px;
-                }
             }
         }
         &-subtitle{

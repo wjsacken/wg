@@ -21,32 +21,16 @@
 
     }
     &__wrapper{
-
-        @include rtl{
-            padding-right: 0;
-            padding-left: 95px;
-        }
         @media #{$xl}{
             padding-right: 135px;
 
-            @include rtl{
-                padding-right: 0;
-                padding-left: 135px;
-            }
         }
         @media #{$lg}{
             padding-right: 0;
-            @include rtl{
-                padding-left: 0;
-            }
         }
         @media #{$md, $sm, $xs}{
             margin-top: 50px;
             padding-right: 0;
-
-            @include rtl{
-                padding-left: 0;
-            }
         }
         & > p{
             font-size: 16px;
@@ -58,40 +42,24 @@
         &-3{
             @media #{$xl}{
                 padding-left: 65px;
-                @include rtl{
-                    padding-left: 0;
-                    padding-right: 65px;
-                }
             }
             @media #{$lg}{
                 padding-left: 0;
-                @include rtl{
-                    padding-right: 0;
-                }
             }
 
             @media #{$md, $sm, $xs}{
                 padding-left: 0;
                 margin-top: 50px;
-                @include rtl{
-                    padding-right: 0;
-                }
             }
         }
         &-4{
             @media #{$lg, $md, $sm, $xs}{
                 padding-right: 0;
-                @include rtl{
-                    padding-left: 0;
-                }
             }
 
             @media #{$md, $sm, $xs}{
                 padding-right: 0;
                 margin-top: 60px;
-                @include rtl{
-                    padding-left: 0;
-                }
             }
             & > p{
 
@@ -100,25 +68,12 @@
                 letter-spacing: -0.02em;
                 padding-right: 25px;
                 margin-bottom: 23px;
-
-                @include rtl{
-                    padding-right: 0;
-                    padding-left: 25px;
-                }
             }
         }
         &-5{
 
-            @include rtl{
-                padding-right: 0;
-                padding-left: 90px;
-            }
-
             @media #{$lg, $sm, $xs}{
                 padding-right: 0;
-                @include rtl{
-                    padding-left: 0;
-                }
             }
             & > p{
                 font-size: 18px;
@@ -128,23 +83,13 @@
             }
         }
         &-8{
-            @include rtl{
-                padding-left: 0;
-                padding-right: 70px;
-            }
             @media #{$lg}{
                 padding-left: 0;
-                @include rtl{
-                    padding-right: 0;
-                }
             }
 
             @media #{$md, $sm, $xs}{
                 padding-left: 0;
                 margin-top: 50px;
-                @include rtl{
-                    padding-right: 0;
-                }
             }
             & > p{
                 font-family: var(--tp-ff-space);
@@ -179,12 +124,6 @@
                 position: relative;
                 padding-left: 13px;
                 margin-bottom: 0;
-
-                @include rtl{
-                    padding-left: 0;
-                    padding-right: 13px;
-                }
-
                 &::after{
                     position: absolute;
                     content: '';
@@ -194,11 +133,6 @@
                     width: 3px;
                     height: 20px;
                     @include tp-gradient((329deg, #FF91FA 13.55%, #FA6490 48.54%, #F7D86A 86.44%));
-
-                    @include rtl{
-                        left: auto;
-                        right: 0;
-                    }
                 }
 
             }
@@ -231,76 +165,36 @@
                 color: #A3A3AA;
                 padding-right: 180px;
                 margin-bottom: 50px;
-
-                @include rtl{
-                    padding-right: 0;
-                    padding-left: 180px;
-                }
-
                 @media #{$lg}{
                     padding-right: 80px;
-                    @include rtl{
-                        padding-right: 0;
-                        padding-left: 80px;
-                    }
                 }
 
                 @media #{$md, $sm, $xs}{
                     padding-right: 0;
-                    @include rtl{
-                        padding-left: 0;
-                    }
                 }
             }
         }
         &-14{
             margin-right: -50px;
-
-            @include rtl{
-                margin-right: 0;
-                margin-left: -50px;
-            }
-
             @media #{$xl, $lg, $md, $sm, $xs}{
                 padding-left: 0;
                 margin-right: 0;
-                @include rtl{
-                    padding-right: 0;
-                    margin-left: 0;
-                }
             }
             & p{
                 font-size: 16px;
                 line-height: 1.62;
                 margin-bottom: 42px;
                 padding-right: 150px;
-
-                @include rtl{
-                    padding-right: 0;
-                    padding-left: 150px;
-                }
-
                 @media #{$lg}{
                     padding-right: 50px;
-                    @include rtl{
-                        padding-right: 0;
-                        padding-left: 50px;
-                    }
                 }
 
                 @media #{$sm}{
                     padding-right: 130px;
-                    @include rtl{
-                        padding-right: 0;
-                        padding-left: 130px;
-                    }
                 }
 
                 @media #{$xs}{
                     padding-right: 0;
-                    @include rtl{
-                        padding-left: 0;
-                    }
                 }
             }
 
@@ -318,16 +212,10 @@
         &-15{
             @media #{$xl, $lg}{
                 padding-left: 0;
-                @include rtl{
-                    padding-right: 0;
-                }
             }
             @media #{$md, $sm, $xs}{
                 padding-left: 0;
                 margin-top: 50px;
-                @include rtl{
-                    padding-right: 0;
-                }
             }
         }
     }
@@ -340,29 +228,13 @@
         &-wrapper{
             position: relative;
             z-index: 1;
-
-            @include rtl{
-                padding-right: 0;
-                margin-left: 0;
-                margin-right: 70px;
-                padding-left: 100px;
-            }
-
             @media #{$md, $sm}{
                 margin-left: 0;
-
-                @include rtl{
-                    margin-right: 0;
-                }
             }
 
             @media #{$xs}{
                 margin-left: 0;
                 padding-right: 0;
-                @include rtl{
-                    margin-right: 0;
-                    padding-left: 0;
-                }
             }
 
             &-7{
@@ -372,23 +244,12 @@
                 @media #{$xs}{
                     padding-right: 0;
                     padding-bottom: 0;
-
-                    @include rtl{
-                        padding-left: 0;
-                    }
                 }
             }
 
             &-8{
-                @include rtl{
-                    padding-right: 0;
-                    padding-left: 100px;
-                }
                 @media #{$xs}{
                     padding-right: 0;
-                    @include rtl{
-                        padding-left: 0;
-                    }
                 }
             }
         }
@@ -399,34 +260,16 @@
             @include transform(rotate(-90deg) translateY(-188px));
             z-index: -1;
 
-
-            @include rtl{
-                left: auto;
-                right: 0;
-                @include transform(rotate(-90deg) translateY(188px));
-            }
-
             @media #{$md,$sm}{
                 left: auto;
                 right: 0;
                 @include transform(rotate(-90deg) translateY(110px) scale(-1, -1));
-
-                @include rtl{
-                    left: 0;
-                    right: auto;
-
-                }
             }
 
             @media #{$xs}{
                 left: auto;
                 top: 0;
                 @include transform(rotate(0) translateY(-43px));
-
-                @include rtl{
-                    left: 0;
-                    right: auto;
-                }
             }
             & h3{
                 color: var(--tp-grey-3);
@@ -450,11 +293,6 @@
                     -moz-animation: about-text 2s ease-in-out 1s forwards infinite alternate-reverse;
                     -webkit-animation: about-text 2s ease-in-out 1s forwards infinite alternate-reverse;
                     animation: about-text 2s ease-in-out 1s forwards infinite alternate-reverse;
-
-                    @include rtl{
-                        left: auto;
-                        right: 0;
-                    }
                 }
 
             }
@@ -485,11 +323,6 @@
                 animation-delay: .7s;
                 -webkit-animation-name: aboutGradient;
                 animation-name: aboutGradient;
-
-                @include rtl{
-                    left: auto;
-                    right: 0;
-                }
                 @media #{$xs}{
                     width: 260px;
                     height: 399px;
@@ -502,19 +335,9 @@
             background-color: var(--tp-common-green-dark);
             position: relative;
             z-index: 1;
-
-            @include rtl{
-                margin-left: 100px;
-                margin-right: 130px;
-            }
-
             @media #{$lg}{
                 margin-left: 0;
                 margin-right: 30px;
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 30px;
-                }
             }
 
             @media #{$sm}{
@@ -532,40 +355,21 @@
                 margin-left: -50px;
                 margin-top: -100px;
 
-                @include rtl{
-                    margin-right: -50px;
-                    margin-left: 0;
-                }
-
                 @media #{$xl}{
                     margin-left: -75px;
-                    @include rtl{
-                        margin-left: 0;
-                        margin-right: -75px;
-                    }
                 }
 
                 @media #{$lg}{
                     margin-left: -20px;
-                    @include rtl{
-                        margin-left: 0;
-                        margin-right: -20px;
-                    }
                 }
 
                 @media #{$sm}{
                     margin-left: 0;
-                    @include rtl{
-                        margin-right: 0;
-                    }
                 }
 
                 @media #{$xs}{
                     margin-left: 0;
                     max-width: 100%;
-                    @include rtl{
-                        margin-right: 0;
-                    }
                 }
             }
         }
@@ -587,11 +391,6 @@
                 background-color: #F8ECFF;
                 z-index: -1;
 
-                @include rtl{
-                    left: auto;
-                    right: -11%;
-                }
-
                 @media #{$md}{
                     top: 0%;
                 }
@@ -612,19 +411,9 @@
                 border-radius: 50%;
                 background-color: #EFF8ED;
                 z-index: -1;
-
-                @include rtl{
-                    right: auto;
-                    left: -26%;
-                }
-
                 @media #{$xxl, $xl, $lg, $md, $sm, $xs}{
                     right: 0;
                     bottom: -17%;
-                    @include rtl{
-                        right: auto;
-                        left: 0;
-                    }
                 }
             }
             & .about-main-5{
@@ -634,22 +423,11 @@
                 border-radius: 14px;
                 width: 641px;
                 height: 450px;
-
-                @include rtl{
-                    left: auto;
-                    right: 20px;
-                }
-
                 @media #{$xl}{
                     top: 17px;
                     left: 16px;
                     width: 515px;
                     height: 357px;
-
-                    @include rtl{
-                        left: auto;
-                        right: 16px;
-                    }
                 }
 
                 @media #{$lg}{
@@ -658,11 +436,6 @@
                     width: 430px;
                     height: 300px;
                     border-radius: 7px;
-
-                    @include rtl{
-                        left: auto;
-                        right: 15px;
-                    }
                 }
 
                 @media #{$md}{
@@ -670,11 +443,6 @@
                     left: 20px;
                     width: 655px;
                     height: 458px;
-
-                    @include rtl{
-                        left: auto;
-                        right: 20px;
-                    }
                 }
 
                 @media #{$sm}{
@@ -683,11 +451,6 @@
                     border-radius: 8px;
                     width: 483px;
                     height: 339px;
-
-                    @include rtl{
-                        left: auto;
-                        right: 17px;
-                    }
                 }
 
                 @media #{$xs}{
@@ -697,11 +460,6 @@
                     width: 95%;
                     height: 89%;
                     object-fit: cover;
-
-                    @include rtl{
-                        left: auto;
-                        right: 9px;
-                    }
                 }
             }
 
@@ -717,27 +475,12 @@
                 text-align: center;
                 color: var(--tp-common-white);
                 box-shadow: 0px 4px 10px rgba(91, 29, 8, 0.36);
-
-                @include rtl{
-                    left: auto;
-                    right: 44%;
-                }
-
                 @media #{$xl, $lg, $md, $sm, $xs}{
                     left: 50%;
-
-                    @include rtl{
-                        left: auto;
-                        right: 35%;
-                    }
                 }
 
                 & svg{
                     @include transform(translate(2px, -3px));
-
-                    @include rtl{
-                        @include transform(translate(-2px, -3px));
-                    }
                 }
 
                 &:hover{
@@ -755,12 +498,6 @@
                 @include tp-gradient((45deg, #F96033 15%, #FFAD91 85.5%));
                 border-radius: 50%;
                 @extend %tp-transition;
-
-                @include rtl{
-                    left: auto;
-                    right: 0;
-                }
-
             }
         }
         &-mockup{
@@ -779,11 +516,6 @@
                 z-index: -1;
                 width: auto;
                 height: 100%;
-
-                @include rtl{
-                    right: auto;
-                    left: 0;
-                }
             }
             &-2{
                 position: absolute;
@@ -794,36 +526,17 @@
                 height: 120px;
                 border-radius: 50%;
                 box-shadow: 0px 20px 30px rgba(3, 4, 28, 0.1);
-
-                @include rtl{
-                    right: auto;
-                    left: 7%;
-                }
-
                 @media #{$lg}{
                     right: 0;
-                    @include rtl{
-                        right: auto;
-                        left: 0;
-                    }
                 }
 
                 @media #{$sm}{
                     right: -2%;
-                    @include rtl{
-                        right: auto;
-                        left: -2%;
-                    }
                 }
 
                 @media #{$xs}{
                     top: 74%;
                     right: 8px;
-
-                    @include rtl{
-                        right: auto;
-                        left: 8px;
-                    }
                 }
 
 
@@ -837,27 +550,13 @@
                     left: 50%;
                     @include transform(translate(-50%, -50%));
 
-                    @include rtl{
-                        left: auto;
-                        right: 50%;
-                        @include transform(translate(50%, -50%));
-                    }
-
                 }
             }
         }
         &-7{
             margin-left: -70px;
-
-            @include rtl{
-                margin-left: 0;
-                margin-right: -70px;
-            }
             @media #{$sm, $xs}{
                 margin-left: 0;
-                @include rtl{
-                    margin-right: 0;
-                }
             }
             & img{
                 border-radius: 40px;
@@ -873,29 +572,14 @@
                 bottom: 0;
                 right: 20px;
 
-                @include rtl{
-                    right: auto;
-                    left: 20px;
-                }
-
                 @media #{$xs}{
                     right: 0;
-
-                    @include rtl{
-                        right: auto;
-                        left: 0;
-                    }
                 }
 
                 &-content{
                     position: absolute;
                     bottom: 38px;
                     left: 58px;
-
-                    @include rtl{
-                        left: auto;
-                        right: 58px;
-                    }
                     & p{
                         font-family: var(--tp-ff-space);
                         font-weight: 700;
@@ -909,10 +593,6 @@
                     position: absolute;
                     top: 48px;
                     right: 52px;
-                    @include rtl{
-                        right: auto;
-                        left: 52px;
-                    }
                     & p{
                         font-family: var(--tp-ff-space);
                         font-weight: 700;
@@ -921,10 +601,6 @@
                         text-align: right;
                         text-transform: uppercase;
                         color: #FFFFFF;
-
-                        @include rtl{
-                            text-align: left;
-                        }
                     }
                 }
             }
@@ -935,25 +611,12 @@
                 position: relative;
                 z-index: 1;
                 margin-top: -200px;
-
-                @include rtl{
-                    float: left;
-                }
-
                 @media #{$xl}{
                     margin-right: 25px;
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 25px;
-                    }
                 }
 
                 @media #{$lg}{
                     margin-right: 20px;
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 20px;
-                    }
                 }
 
                 @media #{$xs}{
@@ -966,16 +629,8 @@
             margin-left: 75px;
             margin-right: 25px;
 
-            @include rtl{
-                margin-left: 25px;
-                margin-right: 75px;
-            }
-
             @media #{$md, $sm, $xs}{
                 margin-left: 30px;
-                @include rtl{
-                    margin-left: 30px;
-                }
             }
             &-shape{
                 position: absolute;
@@ -986,10 +641,6 @@
                 background-color: var(--tp-theme-1);
                 overflow: hidden;
                 z-index: -1;
-                @include rtl{
-                    left: auto;
-                    right: -30px;
-                }
                 & img{
                     opacity: .3;
                     position: absolute;
@@ -997,18 +648,9 @@
                     top: -40%;
                     width: auto;
 
-                    @include rtl{
-                        left: auto;
-                        right: -55%;
-                    }
-
                     @media #{$md}{
                         left: -29%;
                         top: -15%;
-                        @include rtl{
-                            left: auto;
-                            right: -29%;
-                        }
                     }
                 }
 
@@ -1018,10 +660,6 @@
                     bottom: -15%;
                     left: 6%;
                     z-index: -1;
-                    @include rtl{
-                        left: auto;
-                        right: 6%;
-                    }
                     @media #{$xs}{
                         width: 70% !important;
                     }
@@ -1043,22 +681,11 @@
             -webkit-text-fill-color: transparent;
             width: 350px;
             height: 490px;
-
-            @include rtl{
-                padding-left: 86px;
-                padding-right: 17px;
-            }
-
             @media #{$xs}{
                 font-size: 80px;
                 padding: 135px 86px 0px 47px;
                 width: 250px;
                 height: 300px;
-
-                @include rtl{
-                    padding-left: 86px;
-                    padding-right: 47px;
-                }
             }
 
             &::after,
@@ -1092,18 +719,11 @@
     }
     &__author{
         &-inner{
-            @include rtl{
-                margin-left: 10px;
-            }
             @media #{$xs}{
                 margin-bottom: 20px;
             }
         }
         &-thumb{
-            @include rtl{
-                margin-right: 0;
-                margin-left: 10px;
-            }
             & img{
                 width: 40px;
                 height: 40px;
@@ -1117,10 +737,6 @@
             font-family: var(--tp-ff-inter);
             margin-bottom: 0;
             margin-right: 10px;
-            @include rtl{
-                margin-right: 0;
-                margin-left: 10px;
-            }
             & span{
                 font-weight: 700;
                 color: var(--tp-common-black);
@@ -1167,20 +783,9 @@
         background-color: var(--tp-common-white);
         box-shadow: 0px 30px 50px rgba(3, 4, 28, 0.1);
         z-index: 99;
-
-        @include rtl{
-            right: auto;
-            left: 20px;
-            text-align: left;
-        }
-
         @media #{$xs}{
             right: 0;
             bottom: 0;
-            @include rtl{
-                right: auto;
-                left: 0;
-            }
         }
 
         & h4{
@@ -1212,29 +817,14 @@
             background-color: rgba($color: #AB6C56, $alpha: .85);
             box-shadow: 0px 20px 30px rgba(50, 15, 3, 0.2);
             backdrop-filter: blur(20px);
-
-            @include rtl{
-                left: auto;
-                right: 0;
-            }
-
             @media #{$lg}{
                 left: -15px;
-                @include rtl{
-                    left: auto;
-                    right: -15px;
-                }
             }
         }
 
         &-icon{
             &-4{
                 margin-top: 8px;
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 15px;
-                }
                 & i{
                     font-size: 40px;
                     color: var(--tp-common-white);
@@ -1271,10 +861,6 @@
             padding: 33px 0 35px;
         }
         &-text{
-            @include rtl{
-                margin-right: 0;
-                margin-left: 15px;
-            }
             & h3{
                 font-size: 50px;
                 font-weight: 300;
@@ -1312,10 +898,6 @@
 
                 &:not(:last-child){
                     margin-right: 24px;
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 24px;
-                    }
                 }
             }
             & .nav-link{
@@ -1336,10 +918,6 @@
 
                 &:not(:last-child){
                     margin-right: 30px;
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 30px;
-                    }
                 }
                 &:hover,
                 &.active{
@@ -1348,11 +926,6 @@
                         width: 100%;
                         left: 0;
                         right: auto;
-
-                        @include rtl{
-                            left: auto;
-                            right: 0;
-                        }
                     }
                 }
 
@@ -1367,11 +940,6 @@
                         height: 2px;
                         background-color: var(--tp-theme-3);
                         @include transition(.3s);
-
-                        @include rtl{
-                            left: 0;
-                            right: auto;
-                        }
                     }
                 }
             }
@@ -1387,13 +955,6 @@
                 height: 2px;
                 background-color: var(--tp-theme-3);
                 @extend %tp-transition;
-
-                @include rtl{
-                    left: auto;
-                    right: 0;
-                    display: none !important;
-                }
-
             }
         }
     }
@@ -1433,11 +994,6 @@
                         background-color: var(--tp-common-white);
                         opacity: .4;
                         @extend %tp-transition;
-
-                        @include rtl{
-                            right: auto;
-                            left: 0;
-                        }
                     }
 
                     &:hover{
@@ -1445,10 +1001,6 @@
                             width: 100%;
                             left: 0;
                             right: auto;
-                            @include rtl{
-                                left: auto;
-                                right: 0;
-                            }
                         }
                     }
                 }
@@ -1472,12 +1024,6 @@
                     font-family: var(--tp-ff-inter);
                     position: relative;
                     padding-left: 14px;
-
-                    @include rtl{
-                        padding-left: 0;
-                        padding-right: 14px;
-                    }
-
                     &::after{
                         position: absolute;
                         content: '';
@@ -1487,10 +1033,6 @@
                         height: 5px;
                         border-radius: 50%;
                         background-color: #44C987;
-                        @include rtl{
-                            left: auto;
-                            right: 0;
-                        }
                     }
                 }
             }
@@ -1525,22 +1067,11 @@
     }
     &__info{
         &-item{
-            @include rtl{
-                margin-right: 0;
-                margin-left: 40px;
-            }
             &:last-child{
                 margin-right: 0;
-                @include rtl{
-                    margin-left: 0;
-                }
             }
         }
         &-icon{
-            @include rtl{
-                margin-right: 0;
-                margin-left: 15px;
-            }
             & span{
                 display: inline-block;
                 width: 44px;
@@ -1588,10 +1119,6 @@
             }
 
             &-8{
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 20px;
-                }
                 & span{
                     display: inline-block;
                     font-size: 18px;
@@ -1610,10 +1137,6 @@
             }
         }
         &-content{
-
-            @include rtl{
-                margin-right: 10px;
-            }
             & h4{
                 font-size: 14px;
                 font-weight: 400;
@@ -1661,11 +1184,6 @@
             top: 24%;
             -webkit-animation: tpleftright 1s infinite  alternate;
             animation: tpleftright 1s infinite  alternate;
-
-            @include rtl{
-                left: auto;
-                right: 11%;
-            }
         }
         &-2{
             position: absolute;
@@ -1673,11 +1191,6 @@
             top: 41%;
             -webkit-animation: tpupdown 1s infinite  alternate;
             animation: tpupdown 1s infinite  alternate;
-
-            @include rtl{
-                left: auto;
-                right: 3%;
-            }
         }
         &-3{
             position: absolute;
@@ -1687,10 +1200,6 @@
             -moz-animation: tprotate 3s ease-in-out 1s forwards infinite alternate;
             -webkit-animation: tprotate 3s ease-in-out 1s forwards infinite alternate;
             animation: tprotate 3s ease-in-out 1s forwards infinite alternate;
-            @include rtl{
-                left: auto;
-                right: 4%;
-            }
         }
         &-4{
             position: absolute;
@@ -1700,11 +1209,6 @@
             -moz-animation: tpleftright 1s ease-in-out 1s forwards infinite alternate;
             -webkit-animation: tpleftright 1s ease-in-out 1s forwards infinite alternate;
             animation: tpleftright 1s ease-in-out 1s forwards infinite alternate;
-
-            @include rtl{
-                left: auto;
-                right: 6%;
-            }
         }
         &-5{
             position: absolute;
@@ -1714,11 +1218,6 @@
             -moz-animation: tpupdown 1s ease-in-out 1s forwards infinite alternate;
             -webkit-animation: tpupdown 1s ease-in-out 1s forwards infinite alternate;
             animation: tpupdown 1s ease-in-out 1s forwards infinite alternate;
-
-            @include rtl{
-                right: auto;
-                left: 6%;
-            }
 
             @media #{$lg}{
                 top: 22%;
@@ -1740,22 +1239,12 @@
             -moz-animation: tprotate 5s ease-in-out 1s forwards infinite alternate;
             -webkit-animation: tprotate 5s ease-in-out 1s forwards infinite alternate;
             animation: tprotate 5s ease-in-out 1s forwards infinite alternate;
-
-            @include rtl{
-                right: auto;
-                left: 14%;
-            }
         }
         &-7{
             position: absolute;
             top: -9%;
             right: 0;
             z-index: -1;
-
-            @include rtl{
-                right: auto;
-                left: 0;
-            }
 
             @media #{$lg}{
                 top: -6%;
@@ -1778,18 +1267,9 @@
             -webkit-animation: tpupdown 1s ease-in-out 1s forwards infinite alternate;
             animation: tpupdown 1s ease-in-out 1s forwards infinite alternate;
 
-            @include rtl{
-                left: auto;
-                right: -22%;
-            }
-
             @media #{$xs}{
                 bottom: -45%;
                 left: -35%;
-                @include rtl{
-                    left: auto;
-                    right: -35%;
-                }
             }
         }
         &-9{
@@ -1800,11 +1280,6 @@
             -moz-animation: tpupdown 3s ease-in-out 1s forwards infinite alternate;
             -webkit-animation: tpupdown 3s ease-in-out 1s forwards infinite alternate;
             animation: tpupdown 3s ease-in-out 1s forwards infinite alternate;
-
-            @include rtl{
-                right: auto;
-                left: 1%;
-            }
         }
     }
     &__features{
@@ -1816,10 +1291,6 @@
             position: relative;
             margin-bottom: 60px;
             padding-right: 25px;
-            @include rtl{
-                padding-right: 0;
-                padding-left: 25px;
-            }
 
             &:last-child{
                 margin-bottom: 0;
@@ -1837,10 +1308,6 @@
                 width: 1px;
                 height: 82%;
                 border: 1px dashed rgba(13, 18, 30, 0.2);
-                @include rtl{
-                    left: auto;
-                    right: 26px;
-                }
             }
 
         }
@@ -1867,21 +1334,11 @@
                 box-shadow: 0px 10px 30px rgba(13, 18, 30, 0.12);
                 color: var(--tp-common-pink-4);
                 margin-right: 30px;
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 30px;
-                }
-
                 & svg{
                     &:not(.center-icon){
                         @include transform(translateY(-2px));
                     }
                     @include transform(translateY(-1px) translateX(3px));
-
-                    @include rtl{
-                        @include transform(translateY(-2px) translateX(2px));
-                    }
                 }
             }
         }
@@ -1968,18 +1425,8 @@
             background-color: var(--tp-common-blue-4);
             z-index: 1;
 
-            @include rtl{
-                right: auto;
-                left: 100px;
-            }
-
             @media #{$lg}{
                 right: 50px;
-
-                @include rtl{
-                    right: auto;
-                    left: 50px;
-                }
             }
 
             @media #{$sm, $xs}{
@@ -1990,23 +1437,11 @@
                 padding-right: 53px;
                 margin-right: 38px;
 
-                @include rtl{
-                    padding-right: 0;
-                    margin-right: 0;
-                    padding-left: 53px;
-                    margin-left: 38px;
-                }
-
                 @media #{$xs}{
                    padding-right: 0;
                    margin-right: 0;
                    margin-bottom: 20px;
                    padding-bottom: 20px;
-
-                   @include rtl{
-                    padding-left: 0;
-                    margin-left: 0;
-                   }
                 }
 
                 &:last-child{
@@ -2014,11 +1449,6 @@
                     padding-right: 0;
                     margin-bottom: 0;
                     padding-bottom: 0;
-
-                    @include rtl{
-                        margin-left: 0;
-                        padding-left: 0;
-                    }
                     &::after{
                         display: none;
                     }
@@ -2032,12 +1462,6 @@
                     height: 70px;
                     border: 1px solid rgba($color: #fff, $alpha: .2);
                     @include transform(translateY(-50%));
-
-                    @include rtl{
-                        right: auto;
-                        left: 0;
-                    }
-
                     @media #{$xs}{
                         width: 100%;
                         height: 1px;
@@ -2061,11 +1485,6 @@
                     margin-bottom: 0;
                     margin-left: 7px;
                     font-family: var(--tp-ff-roboto);
-
-                    @include rtl{
-                        margin-left: 0;
-                        margin-right: 7px;
-                    }
                 }
             }
         }
@@ -2078,31 +1497,14 @@
         padding: 52px 40px;
         padding-right: 50px;
         border-radius: 20px;
-
-        @include rtl{
-            right: auto;
-            left: 70px;
-            padding-left: 50px;
-        }
-
         @media #{$sm}{
             right: 0;
-
-            @include rtl{
-                right: auto;
-                left: 0;
-            }
         }
 
         @media #{$xs}{
             position: static;
             margin-top: 50px;
             right: 0;
-
-            @include rtl{
-                right: auto;
-                left: 0;
-            }
         }
         &-icon{
             margin-bottom: 37px;
@@ -2181,23 +1583,12 @@
         padding-right: 200px;
         margin-bottom: 27px;
 
-        @include rtl{
-            padding-right: 0;
-            padding-left: 200px;
-        }
-
         @media #{$xs}{
             padding-right: 0;
-            @include rtl{
-                padding-left: 0;
-            }
         }
 
         @media #{$lg}{
             padding-right: 100px;
-            @include rtl{
-                padding-left: 100px;
-            }
         }
         &-counter{
             counter-reset: count;
@@ -2207,10 +1598,6 @@
         }
         &-icon{
             margin-right: 18px;
-            @include rtl{
-                margin-right: 0;
-                margin-left: 18px;
-            }
             & span{
                 display: inline-block;
                 width: 40px;
@@ -2252,15 +1639,8 @@
         &-2{
             overflow: hidden;
             padding-right: 46px;
-            @include rtl{
-                padding-right: 0;
-                padding-left: 46px;
-            }
             @media #{$xs}{
                 padding-right: 0;
-                @include rtl{
-                    padding-left: 0;
-                }
             }
             & ul{
                 & li{
@@ -2272,13 +1652,6 @@
                     float: left;
                     width: 50%;
                     margin-bottom: 14px;
-
-                    @include rtl{
-                        padding-left: 0;
-                        padding-right: 14px;
-                        float: right;
-                    }
-
                     @media #{$xs}{
                         float: none;
                         width: 100%;
@@ -2293,11 +1666,6 @@
                         height: 5px;
                         border-radius: 50%;
                         background-color: var(--tp-common-black);
-
-                        @include rtl{
-                            left: auto;
-                            right: 0;
-                        }
                     }
                 }
             }
@@ -2367,11 +1735,6 @@
                 width: 100%;
                 height: 100%;
                 background: rgba($color: #03041C, $alpha: .56);
-
-                @include rtl{
-                    left: auto;
-                    right: 0;
-                }
             }
         }
     }
@@ -2431,26 +1794,12 @@
                 z-index: 9;
                 font-size: 24px;
                 @include transform(translateY(-50%));
-
-                @include rtl{
-                    left: auto;
-                    right: -9%;
-                }
-
                 @media #{$xl}{
                     left: -3%;
-                    @include rtl{
-                        left: auto;
-                        right: -3%;
-                    }
                 }
 
                 @media #{$lg}{
                     left: -5%;
-                    @include rtl{
-                        left: auto;
-                        right: -5%;
-                    }
                 }
 
                 @media #{$md}{
@@ -2458,11 +1807,6 @@
                     height: 60px;
                     line-height: 60px;
                     left: -4%;
-
-                    @include rtl{
-                        left: auto;
-                        right: -4%;
-                    }
                 }
 
                 @media #{$sm}{
@@ -2470,10 +1814,6 @@
                     height: 60px;
                     line-height: 60px;
                     left: -4%;
-                    @include rtl{
-                        left: auto;
-                        right: -4%;
-                    }
                 }
 
                 @media #{$xs}{
@@ -2481,11 +1821,6 @@
                     height: 60px;
                     line-height: 60px;
                     left: 0%;
-
-                    @include rtl{
-                        left: auto;
-                        right: 0%;
-                    }
                 }
 
                 & span{
@@ -2523,45 +1858,20 @@
                 &.about-button-next{
                     left: auto;
                     right: -9%;
-
-                    @include rtl{
-                        left: -9%;
-                        right: auto;
-                    }
                     @media #{$xl}{
                         right: -3%;
-                        @include rtl{
-                            right: auto;
-                            left: -3%;
-                        }
                     }
                     @media #{$lg}{
                         right: -5%;
-                        @include rtl{
-                            right: auto;
-                            left: -5%;
-                        }
                     }
                     @media #{$md}{
                         right: -4%;
-                        @include rtl{
-                            right: auto;
-                            left: -4%;
-                        }
                     }
                     @media #{$sm}{
                         right: -4%;
-                        @include rtl{
-                            right: auto;
-                            left: -4%;
-                        }
                     }
                     @media #{$xs}{
                         right: 0%;
-                        @include rtl{
-                            right: auto;
-                            left: 0%;
-                        }
                     }
                 }
             }
@@ -2622,9 +1932,6 @@
                 &-title{
                     @include transform(translateY(41%) translateX(40px));
 
-                    @include rtl{
-                        @include transform(translateY(41%) translateX(-40px));
-                    }
                 }
             }
         }
@@ -2639,12 +1946,6 @@
                 color: var(--tp-common-black);
                 position: relative;
                 padding-left: 13px;
-
-                @include rtl{
-                    padding-left: 0;
-                    padding-right: 13px;
-                }
-
                 &::after{
                     position: absolute;
                     content: '';
@@ -2654,10 +1955,6 @@
                     width: 3px;
                     height: 100%;
                     background-color: var(--tp-theme-1);
-                    @include rtl{
-                        left: auto;
-                        right: 0;
-                    }
                 }
             }
             &-title{
@@ -2686,32 +1983,12 @@
                     position: relative;
                     padding-right: 13px;
                     margin-right: 10px;
-
-                    @include rtl{
-                        padding-right: 0;
-                        margin-right: 0;
-                        padding-left: 13px;
-                        margin-left: 10px;
-                    }
-
                     & i{
                         margin-right: 2px;
-
-                        @include rtl{
-                            margin-right: 0;
-                            margin-left: 2px;
-                        }
                     }
                     &:not(:last-child){
                         padding-right: 13px;
                         margin-right: 8px;
-
-                        @include rtl{
-                            padding-right: 0;
-                            margin-right: 0;
-                            padding-left: 13px;
-                            margin-left: 8px;
-                        }
                         &::after{
                             position: absolute;
                             content: '';
@@ -2721,11 +1998,6 @@
                             width: 1px;
                             height: 100%;
                             background-color: #EAEAEF;
-
-                            @include rtl{
-                                right: auto;
-                                left: 0;
-                            }
                         }
                     }
                     &:hover{
@@ -2735,10 +2007,6 @@
                 }
             }
             &-btn{
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 30px;
-                }
                 @media #{$xs}{
                     margin-bottom: 20px;
                 }
@@ -2760,35 +2028,17 @@
         &-3{
             &-inner{
                 margin-right: 16px;
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 16px;
-                }
             }
         }
         &-4{
             & .tp-btn-brown{
                 padding: 10px 26px 10px;
                 border: 2px solid var(--tp-theme-4);
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 30px;
-                }
                 &:hover{
                     border-color: #EAEAEF;
                     background-color: transparent;
                     color: var(--tp-common-black);
                 }
-            }
-        }
-        &-8{
-            & .tp-btn-border-8{
-               @include rtl{
-                margin-right: 0;
-                margin-left: 30px;
-               }
             }
         }
     }
@@ -2832,11 +2082,6 @@
         margin-right: 13px;
         position: relative;
         z-index: 1;
-
-        @include rtl{
-            margin-right: 0;
-            margin-left: 13px;
-        }
         &::after{
             display: inline-block;
             position: relative;
@@ -2853,18 +2098,10 @@
 
         & img{
             @include transform(translate(2px, 2px));
-
-            @include rtl{
-                @include transform(translate(2px, 2px));
-            }
         }
 
         & svg{
             @include transform(translate(2px, -2px));
-
-            @include rtl{
-                @include transform(translate(2px, -2px));
-            }
         }
     }
 

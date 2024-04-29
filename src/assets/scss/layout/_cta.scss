@@ -152,27 +152,13 @@
     }
     &__form{
         padding-left: 200px;
-
-        @include rtl{
-            padding-left: 0;
-            padding-right: 200px;
-        }
-
         @media #{$lg}{
             padding-left: 0;
-
-            @include rtl{
-                padding-right: 0;
-            }
         }
 
         @media #{$md, $sm, $xs}{
             padding-left: 0;
             margin-top: 50px;
-
-            @include rtl{
-                padding-right: 0;
-            }
         }
 
         &-10{
@@ -202,14 +188,6 @@
             padding-left: 25px;
             padding-right: 150px;
             background-color: var(--tp-common-white);
-
-            @include rtl{
-                padding-left: 0;
-                padding-right: 0;
-                padding-left: 150px;
-                padding-right: 25px;
-                text-align: right;
-            }
             @include tp-placeholder{
                 color: var(--tp-text-6);
                 font-size: 15px;
@@ -222,10 +200,6 @@
 
             @media #{$xs}{
                padding-right: 25px;
-               @include rtl{
-                padding-right: 0;
-                padding-left: 25px;
-               }
             }
         }
 
@@ -234,21 +208,10 @@
             top: 7px;
             right: 7px;
             padding: 10px 30px;
-
-            @include rtl{
-                right: auto;
-                left: 7px;
-            }
-
             @media #{$xs}{
                 position: relative;
                 right: auto;
                 left: 0;
-
-                @include rtl{
-                    left: auto;
-                    right: 0;
-                }
             }
 
             &:hover{
@@ -259,18 +222,8 @@
         &-10{
             margin-right: 20px;
             margin-bottom: 20px;
-
-            @include rtl{
-                margin-right: 0;
-                margin-left: 20px;
-            }
-
             @media #{$xs}{
                 margin-right: 0;
-
-                @include rtl{
-                    margin-left: 0;
-                }
             }
             & input{
                 height: 56px;
@@ -283,10 +236,6 @@
                 font-family: var(--tp-ff-space);
                 font-size: 16px;
                 padding: 0 24px;
-
-                @include rtl{
-                    text-align: right;
-                }
 
                 @include tp-placeholder{
                     color: var(--tp-common-white);
@@ -304,10 +253,6 @@
 
             &.sm-input{
                 margin-right: 0;
-
-                @include rtl{
-                    margin-left: 0;
-                }
                 & input{
                     width: 150px;
                 }
@@ -323,13 +268,6 @@
                 font-size: 15px;
                 font-family: var(--tp-ff-roboto);
                 padding-right: 170px;
-
-                @include rtl{
-                    padding-right: 29px;
-                    padding-left: 170px;
-                    text-align: right;
-                }
-
                 @include tp-placeholder{
                     color: #7D7F82;
                 }
@@ -340,11 +278,6 @@
 
                 @media #{$xs}{
                     padding-right: 26px;
-
-                    @include rtl{
-                        padding-right: 0;
-                        padding-left: 26px;
-                    }
                 }
             }
             & .tp-btn{
@@ -357,12 +290,6 @@
                 color: var(--tp-common-white);
                 background-color: var(--tp-common-black);
                 padding: 10px 42px;
-
-                @include rtl{
-                    right: auto;
-                    left: 10px;
-                }
-
                 @media #{$xs}{
                     position: static;
                     margin-top: 15px;
@@ -580,16 +507,8 @@
         }
         &-6{
             padding-right: 50px;
-
-            @include rtl{
-                padding-right: 0;
-                padding-left: 50px;
-            }
             @media #{$xs}{
                 padding-right: 0;
-                @include rtl{
-                    padding-left: 0;
-                }
             }
         }
     }
@@ -614,15 +533,6 @@
                 & .tp-cta-btn-yellow{
                     @media #{$lg}{
                         padding: 35px 30px 32px 30px;
-                    }
-                }
-
-                & a{
-                    &:first-child{
-                       @include rtl{
-                        margin-right: 0;
-                        margin-left: 20px;
-                       }
                     }
                 }
             }
@@ -725,17 +635,9 @@
     &__counter{
         margin-left: 50px;
         margin-top: 28px;
-        @include rtl{
-            margin-left: 0;
-            margin-right: 50px;
-        }
         @media #{$xs}{
             margin-left: 0;
             margin-top: 50px;
-
-            @include rtl{
-                margin-right: 0;
-            }
         }
         &-icon{
             margin-bottom: 42px;
@@ -836,23 +738,11 @@
         #{$self}{
             &__btn-wrapper-7{
                 padding-left: 60px;
-
-                @include rtl{
-                    padding-left: 0;
-                    padding-right: 60px;
-                }
-
                 @media #{$md}{
                     padding-left: 0;
-                    @include rtl{
-                        padding-right: 0;
-                    }
                 }
                 @media #{$sm, $xs}{
                     padding-left: 0;
-                    @include rtl{
-                        padding-right: 0;
-                    }
                 }
 
                 & .tp-cta-btn{
@@ -861,10 +751,6 @@
                     padding: 25px 55px 23px 35px;
                     @media #{$xl}{
                         padding-right: 35px;
-                        @include rtl{
-                            padding-right: 30px;
-                            padding-left: 30px;
-                        }
                     }
 
                     &:hover{
@@ -880,10 +766,6 @@
 
                         @media #{$xl}{
                             padding-right: 35px;
-                            @include rtl{
-                                padding-right: 55px;
-                                padding-left: 35px;
-                            }
                         }
 
                         &:hover{
@@ -975,12 +857,6 @@
             padding-right: 135px;
             border: 0;
             background-color: var(--tp-common-white);
-
-            @include rtl{
-                padding-right: 24px;
-                padding-left: 135px;
-                text-align: right;
-            }
             @include tp-placeholder{
                 color: rgba(65, 70, 81, 0.7);
             }
@@ -998,12 +874,6 @@
             color: var(--tp-common-white);
             background-color: var(--tp-common-black-9);
             font-family: var(--tp-ff-roboto);
-
-            @include rtl{
-                right: auto;
-                left: 7px;
-            }
-
             &:hover{
                 color: var(--tp-common-white);
                 background-color: var(--tp-theme-6);
@@ -1036,19 +906,8 @@
                 outline: 0;
                 font-family: var(--tp-ff-space);
                 font-size: 16px;
-
-                @include rtl{
-                    padding-right: 25px;
-                    padding-left: 190px;
-                    text-align: right
-                }
-
                 @media #{$xs}{
                     padding-right: 25px;
-                    @include rtl{
-                        padding-right: 0;
-                        padding-left: 25px;
-                    }
                 }
 
                 @include tp-placeholder{
@@ -1065,24 +924,10 @@
                 padding: 20px 33px 18px;
                 border-top-left-radius: 0;
                 border-bottom-left-radius: 0;
-
-                @include rtl{
-                    right: auto;
-                    left: 0;
-                    border-top-right-radius: 0;
-                    border-bottom-right-radius: 0;
-                    border-top-left-radius: 6px;
-                    border-bottom-left-radius: 6px;
-                }
-
                 @media #{$xs}{
                     position: relative;
                     margin-top: 15px;
                     text-align: left;
-
-                    @include rtl{
-                        text-align: right;
-                    }
                 }
                 &:hover{
                     @include transform(inherit);
@@ -1109,18 +954,8 @@
                 padding-right: 170px;
                 outline: 0;
                 border: 0;
-
-                @include rtl{
-                    padding-left: 170px;
-                    padding-right: 34px;
-                }
-
                 @media #{$xs}{
                     padding-right: 34px;
-                    @include rtl{
-                        padding-right: 0;
-                        padding-left: 34px;
-                    }
                 }
                 @include tp-placeholder{
                     color: #84848B;
@@ -1185,12 +1020,6 @@
                 position: relative;
                 padding-left: 17px;
                 margin-bottom: 27px;
-
-                @include rtl{
-                    padding-left: 0;
-                    padding-right: 17px;
-                }
-
                 &::after{
                     position: absolute;
                     content: '';
@@ -1200,11 +1029,6 @@
                     width: 4px;
                     height: calc(100% + 10px);
                     background-color: var(--tp-theme-1);
-
-                    @include rtl{
-                        left: auto;
-                        right: 0;
-                    }
                 }
             }
         }
@@ -1254,16 +1078,8 @@
                     list-style: none;
                     margin-right: 30px;
                     display: inline-block;
-
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 30px;
-                    }
                     &:last-child{
                         margin-right: 0;
-                        @include rtl{
-                            margin-left: 0;
-                        }
                     }
                     & span{
                         font-size: 15px;
@@ -1271,11 +1087,6 @@
                         font-family: var(--tp-ff-roboto);
                         & i{
                             margin-right: 5px;
-
-                            @include rtl{
-                                margin-right: 0;
-                                margin-left: 5px;
-                            }
                         }
                     }
                 }
@@ -1292,19 +1103,8 @@
                 border: 0;
                 outline: 0;
                 background-color: var(--tp-common-white);
-
-                @include rtl{
-                    padding-right: 26px;
-                    padding-left: 180px;
-                    text-align: right;
-                }
-
                 @media #{$xs}{
                     padding-right: 26px;
-                    @include rtl{
-                        padding-right: 0;
-                        padding-left: 26px;
-                    }
                 }
             }
             & button{
@@ -1317,12 +1117,6 @@
                 color: var(--tp-common-white);
                 background-color: var(--tp-common-black);
                 padding: 17px 36px;
-
-                @include rtl{
-                    right: auto;
-                    left: 0;
-                }
-
                 @media #{$xs}{
                     position: static;
                     margin-top: 20px;
@@ -1342,22 +1136,12 @@
             z-index: -1;
             bottom: 0;
             right: 0;
-
-            @include rtl{
-                right: auto;
-                left: 0;
-            }
         }
         &-2{
             position: absolute;
             z-index: -1;
             top: 0;
             left: 0;
-
-            @include rtl{
-                left: auto;
-                right: 0;
-            }
         }
         &-3{
             position: absolute;
@@ -1381,12 +1165,6 @@
             box-shadow: 0px 1px 2px 1px rgba(50, 5, 48, 0.06);
             color: rgba($color: #051214, $alpha: .7);
             margin-right: 4px;
-
-            @include rtl{
-                margin-right: 0;
-                margin-left: 1px;
-            }
-
             &:hover{
                 color: var(--tp-common-white);
                 background-color: var(--tp-theme-1);
@@ -1401,18 +1179,10 @@
 
         @media #{$lg}{
             @include transform(translateX(-170px));
-
-            @include rtl{
-                @include transform(translateX(170px));
-            }
         }
 
         @media #{$md}{
             @include transform(scale(.8) translateY(122px) translateX(-320px));
-
-            @include rtl{
-                @include transform(scale(.8) translateY(122px) translateX(320px));
-            }
         }
         @media #{$xs}{
             display: none;
@@ -1421,10 +1191,6 @@
         & img{
             @media #{$sm}{
                 @include transform(translate(-400px, 200px) scale(.6));
-
-                @include rtl{
-                    @include transform(translate(400px, 200px) scale(.6));
-                }
             }
         }
 
@@ -1443,11 +1209,6 @@
                 animation: tp-hotspot 3s infinite cubic-bezier(.4,0,1,1);
                 animation-delay: 0s;
                 @extend %tp-transition;
-
-                @include rtl{
-                    left: auto;
-                    right: 20%;
-                }
             }
             &-1{
                 animation-delay: 1s;

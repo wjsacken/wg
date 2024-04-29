@@ -112,11 +112,6 @@
         @media #{$xs}{
             right: 20px;
             top: 20px;
-
-            @include rtl{
-                right: auto;
-                left: 20px;
-            }
         }
         &-btn{
             display: inline-block;
@@ -266,10 +261,6 @@
             color: var(--tp-common-black);
             margin-right: 5px;
             border: 2px solid var(--tp-border-5);
-            @include rtl{
-                margin-right: 0;
-                margin-left: 5px;
-            }
             &:hover{
                 background: var(--tp-theme-1);
                 color: var(--tp-common-white);
@@ -288,11 +279,6 @@
                 margin-right: 5px;
                 border: 2px solid rgba($color: #fff, $alpha: .1);
                 border-radius: 50%;
-
-                @include rtl{
-                   margin-right: 0;
-                   margin-left: 5px;
-                }
                 &:hover{
                     background-color: var(--tp-common-white);
                     color: var(--tp-common-black);
@@ -460,11 +446,6 @@
                 color: var(--tp-common-white);
                 margin-right: 9px;
                 @include transform(translateY(0));
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 9px;
-                }
             }
 
             &:hover{

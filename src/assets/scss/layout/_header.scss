@@ -217,28 +217,12 @@
         &-left{
             &-11{
                 margin-left: -90px;
-
-                @include rtl{
-                    margin-left: 0;
-                    margin-right: -90px;
-                }
             }
         }
         &-right{
-            @include rtl{
-                padding-left: 0;
-                padding-right: 30px;
-            }
             &-6{
-                @include rtl{
-                    padding-left: 0;
-                    padding-right: 30px;
-                }
                 @media #{$xl}{
                     padding-left: 0;
-                    @include rtl{
-                        padding-right: 0;
-                    }
                 }
             }
         }
@@ -252,14 +236,6 @@
                 padding: 4px 0;
                 padding-right: 20px;
                 position: relative;
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 14px;
-                    padding-right: 0;
-                    padding-left: 20px;
-                }
-
                 &::after{
                     position: absolute;
                     content: '';
@@ -268,11 +244,6 @@
                     width: 1px;
                     height: 104%;
                     background-color: var(--tp-border-1);
-
-                    @include rtl{
-                        right: auto;
-                        left: 0;
-                    }
                 }
 
                 & a,
@@ -292,13 +263,6 @@
                     & span{
                         margin-right: 4px;
                         color: var(--tp-common-white);
-
-
-                        @include rtl{
-                            margin-right: 0;
-                            margin-left: 4px;
-                        }
-
                         & svg{
                             width: 16px;
                             height: 16px;
@@ -310,17 +274,8 @@
         }
         &-item{
             margin-right: 60px;
-
-            @include rtl{
-                margin-right: 0;
-                margin-left: 60px;
-            }
-
             &:last-child{
                 margin-right: 0;
-                @include rtl{
-                    margin-left: 0;
-                }
             }
         }
         &-icon{
@@ -335,12 +290,6 @@
                 color: var(--tp-theme-4);
                 border-radius: 50%;
                 margin-right: 10px;
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 10px;
-                }
-
                 & svg{
                     width: 18px;
                     height: 18px;
@@ -376,21 +325,9 @@
         }
     }
     &__hamburger{
-
-        @include rtl{
-            margin-left: 0;
-            margin-right: 50px;
-        }
-
         &-2{
             margin-top: 0;
             margin-left: 18px;
-
-            @include rtl{
-                margin-left: 0;
-                margin-right: 18px;
-            }
-
             & .hamburger-btn-black{
                 &:hover{
                     & span{
@@ -423,11 +360,6 @@
                 width: 1px;
                 height: 100%;
                 background-color: var(--tp-border-1);
-
-                @include rtl{
-                    right: auto;
-                    left: 0;
-                }
             }
             & li{
                 list-style: none;
@@ -445,19 +377,10 @@
                     width: 1px;
                     height: 100%;
                     background-color: var(--tp-border-1);
-
-                    @include rtl{
-                        left: auto;
-                        right: 0;
-                    }
                 }
                 &:last-child{
                     margin-right: 0;
                     padding-right: 0;
-                    @include rtl{
-                        margin-left: 0;
-                        padding-left: 0;
-                    }
                 }
 
                 & a{
@@ -488,18 +411,8 @@
                     display: inline-block;
                     list-style: none;
                     margin-right: 23px;
-
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 23px;
-                    }
-
                     &:last-child{
                         margin-right: 0;
-
-                        @include rtl{
-                            margin-left: 0;
-                        }
                     }
                     & a{
                         color: var(--tp-common-white);
@@ -518,18 +431,8 @@
                     display: inline-block;
                     list-style: none;
                     margin-right: 25px;
-
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 25px;
-                    }
-
                     &:last-child{
                         margin-right: 0;
-
-                        @include rtl{
-                            margin-left: 0;
-                        }
                     }
                     & a{
                         color: var(--tp-common-white);
@@ -552,10 +455,6 @@
 
                     &:last-child{
                         margin-right: 0;
-
-                        @include rtl{
-                            margin-left: 0;
-                        }
                     }
                     & a{
                         color: var(--tp-common-black);
@@ -580,26 +479,13 @@
         }
         &-13{
             margin-left: 42px;
-            @include rtl{
-                margin-left: 0;
-                margin-right: 42px;
-            }
             & ul{
                 & li{
                     list-style: none;
                     display: inline-block;
                     margin-right: 19px;
-
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 19px;
-                    }
                     &:last-child{
                         margin-right: 0;
-
-                        @include rtl{
-                            margin-left: 0;
-                        }
                     }
                     & a,
                     & button{
@@ -784,11 +670,6 @@
                                         padding-top: 0;
                                         padding-left: 25px;
                                         padding-bottom: 1px;
-
-                                        @include rtl{
-                                            padding-left: 0;
-                                            padding-right: 25px;
-                                        }
                                         color: var(--tp-common-white);
 
                                         &::after{
@@ -799,11 +680,6 @@
                                     &:hover{
                                         & > a{
                                             padding-left: 43px;
-
-                                            @include rtl{
-                                                padding-left: 0;
-                                                padding-right: 43px;
-                                            }
                                             color: var(--tp-theme-8);
 
                                             &::after{
@@ -855,18 +731,9 @@
                         & li{
                             &:last-child{
                                 margin-right: 0;
-
-                                @include rtl{
-                                    margin-left: 0;
-                                }
                             }
                             @media #{$lg}{
                                 margin-right: 15px;
-
-                                @include rtl{
-                                    margin-right: 0;
-                                    margin-left: 15px;
-                                }
                             }
                         }
                     }
@@ -978,24 +845,11 @@
                                     padding-top: 0;
                                     padding-left: 25px;
                                     padding-bottom: 1px;
-
-
-
-                                    @include rtl{
-                                        padding-right: 25px;
-                                        padding-left: 43px;
-                                    }
                                 }
 
                                 &:hover{
                                     & > a{
                                         padding-left: 43px;
-
-                                        @include rtl{
-                                            padding-left: 0;
-                                            padding-right: 43px;
-                                        }
-
                                     }
                                 }
                             }
@@ -1009,18 +863,9 @@
                                 &:hover{
                                     & > .mega-menu-title{
                                         padding-left: 0;
-
-                                        @include rtl{
-                                            padding-right: 0;
-                                        }
                                     }
                                     & > a{
                                         padding-left: 18px;
-
-                                        @include rtl{
-                                            padding-left: 0;
-                                            padding-right: 18px;
-                                        }
                                     }
                                 }
                             }
@@ -1060,12 +905,6 @@
                                     padding-top: 0;
                                     padding-left: 25px;
                                     padding-bottom: 1px;
-
-                                    @include rtl{
-                                        padding-left: 0;
-                                        padding-right: 25px;
-                                    }
-
                                     &::before{
                                         background-color: var(--tp-theme-4);
                                     }
@@ -1074,11 +913,6 @@
                                 &:hover{
                                     & > a{
                                         padding-left: 43px;
-
-                                        @include rtl{
-                                            padding-left: 0;
-                                            padding-right: 43px;
-                                        }
                                     }
                                 }
                             }
@@ -1118,12 +952,6 @@
                                     padding-top: 0;
                                     padding-left: 25px;
                                     padding-bottom: 1px;
-
-                                    @include rtl{
-                                        padding-left: 0;
-                                        padding-right: 25px;
-                                    }
-
                                     &::before{
                                         background-color: var(--tp-theme-5);
                                     }
@@ -1132,11 +960,6 @@
                                 &:hover{
                                     & > a{
                                         padding-left: 43px;
-
-                                        @include rtl{
-                                            padding-left: 0;
-                                            padding-right: 43px;
-                                        }
                                     }
                                 }
                             }
@@ -1176,12 +999,6 @@
                                     padding-top: 0;
                                     padding-left: 25px;
                                     padding-bottom: 1px;
-
-                                    @include rtl{
-                                        padding-left: 0;
-                                        padding-right: 25px;
-                                    }
-
                                     &::before{
                                         background-color: var(--tp-theme-6);
                                     }
@@ -1190,10 +1007,6 @@
                                 &:hover{
                                     & > a{
                                         padding-left: 43px;
-                                        @include rtl{
-                                            padding-left: 0;
-                                            padding-right: 43px;
-                                        }
                                     }
                                 }
                             }
@@ -1233,12 +1046,6 @@
                                     padding-top: 0;
                                     padding-left: 25px;
                                     padding-bottom: 1px;
-
-                                    @include rtl{
-                                        padding-left: 0;
-                                        padding-right: 25px;
-                                    }
-
                                     &::before{
                                         background-color: var(--tp-theme-7);
                                     }
@@ -1247,11 +1054,6 @@
                                 &:hover{
                                     & > a{
                                         padding-left: 43px;
-
-                                        @include rtl{
-                                            padding-left: 0;
-                                            padding-right: 43px;
-                                        }
                                     }
                                 }
                             }
@@ -1293,11 +1095,6 @@
                                     padding-top: 0;
                                     padding-left: 25px;
                                     padding-bottom: 1px;
-
-                                    @include rtl{
-                                        padding-left: 0;
-                                        padding-right: 25px;
-                                    }
                                     &::before{
                                         background-color: var(--tp-theme-8);
                                     }
@@ -1306,11 +1103,6 @@
                                 &:hover{
                                     & > a{
                                         padding-left: 43px;
-
-                                        @include rtl{
-                                            padding-left: 0;
-                                            padding-right: 43px;
-                                        }
                                     }
                                 }
                             }
@@ -1351,12 +1143,6 @@
                                     padding-top: 0;
                                     padding-left: 25px;
                                     padding-bottom: 1px;
-
-                                    @include rtl{
-                                        padding-left: 0;
-                                        padding-right: 25px;
-                                    }
-
                                     &::before{
                                         background-color: var(--tp-common-black);
                                     }
@@ -1365,11 +1151,6 @@
                                 &:hover{
                                     & > a{
                                         padding-left: 43px;
-
-                                        @include rtl{
-                                            padding-left: 0;
-                                            padding-right: 43px;
-                                        }
                                     }
                                 }
                             }
@@ -1406,12 +1187,6 @@
                                     padding-top: 0;
                                     padding-left: 25px;
                                     padding-bottom: 1px;
-
-                                    @include rtl{
-                                        padding-left: 0;
-                                        padding-right: 25px;
-                                    }
-
                                     &::before{
                                         background-color: var(--tp-theme-10);
                                     }
@@ -1420,11 +1195,6 @@
                                 &:hover{
                                     & > a{
                                         padding-left: 43px;
-
-                                        @include rtl{
-                                            padding-left: 0;
-                                            padding-right: 43px;
-                                        }
                                     }
                                 }
                             }
@@ -1452,17 +1222,6 @@
         position: relative;
         $self:&;
         z-index: 99;
-        @include rtl{
-            margin-left: 0;
-            padding-left: 0;
-            padding-right: 28px;
-
-            @include rtl{
-                margin-right: 0;
-                padding-right: 0;
-                padding-left: 28px;
-            }
-        }
         & .nice-select{
             padding: 0;
             padding-right: 18px;
@@ -1471,11 +1230,6 @@
             border: 0;
             color: var(--tp-common-white);
             background-color: transparent;
-
-            @include rtl{
-                padding-right: 28px;
-                padding-left: 28px;
-            }
             & .current{
                 color: var(--tp-common-white);
                 font-size: 14px;
@@ -1487,12 +1241,6 @@
                 margin-top: 0;
                 left: auto;
                 right: 0;
-
-                @include rtl{
-                    left: 0;
-                    right: auto;
-                }
-
                 & .option{
                     color: var(--tp-text-1);
                     &:hover,
@@ -1512,12 +1260,6 @@
             position: relative;
             padding-right: 15px;
             @extend %tp-transition;
-
-            @include rtl{
-                padding-left: 15px;
-                padding-right: 0;
-            }
-
             &:hover{
                 cursor: pointer;
                 color: var(--tp-theme-1);
@@ -1535,11 +1277,6 @@
                 font-size: 14px;
                 font-family: var(--tp-ff-fontawesome);
                 @extend %tp-transition;
-
-                @include rtl{
-                    right: auto;
-                    left: -15px;
-                }
             }
         }
 
@@ -1554,11 +1291,6 @@
             visibility: hidden;
             opacity: 0;
             @include transition(.2s);
-
-            @include rtl{
-                right: auto;
-                left: 0;
-            }
             &.tp-lang-list-open{
                 visibility: visible;
                 opacity: 1;
@@ -1568,10 +1300,6 @@
                 list-style: none;
                 color: var(--tp-common-black);
                 text-align: left;
-
-                @include rtl{
-                    text-align: right;
-                }
                 &:hover{
                     color: var(--tp-theme-1);
                     cursor: pointer;
@@ -1583,11 +1311,6 @@
             padding-left: 0;
             padding-top: 5px;
             padding-bottom: 6px;
-
-            @include rtl{
-                margin-left: 0;
-                padding-right: 20px;
-            }
             #{$self}{
                 &-selected-lang{
                     padding-top: 5px;
@@ -1627,26 +1350,6 @@
         }
     }
     &__btn{
-        &-5{
-            @include rtl{
-                margin-left: 0;
-                margin-right: 30px;
-            }
-        }
-        &-7{
-            & a:last-child{
-               @include rtl{
-                    margin-right: 30px;
-                    margin-left: 0;
-               }
-            }
-        }
-        &-10{
-            @include rtl{
-                margin-left: 0;
-                margin-right: 30px;
-            }
-        }
         &-12{
             & .header-btn-12{
                 font-family: var(--tp-ff-inter);
@@ -1668,12 +1371,6 @@
                         border-radius: 50%;
                         margin-left: 15px;
                         @extend %tp-transition;
-
-                        @include rtl{
-                            margin-left: 0;
-                            margin-right: 15px;
-                        }
-
                         & svg{
                             @include transform(translateY(-2px));
                         }
@@ -1697,11 +1394,6 @@
         float: right;
         @media #{$xl}{
             margin-left: -35px;
-
-            @include rtl{
-                margin-left: 0;
-                margin-right: -35px;
-            }
         }
         & p{
             display: inline-block;
@@ -1711,24 +1403,9 @@
             position: relative;
             padding-right: 20px;
             margin-right: 15px;
-
-            @include rtl{
-                padding-right: 0;
-                margin-right: 0;
-                padding-left: 20px;
-                margin-left: 15px;
-            }
-
-
             &:last-child{
                 margin-right: 0;
                 padding-right: 0;
-
-                @include rtl{
-                    margin-left: 0;
-                    padding-left: 0;
-                }
-
                 &::after{
                     display: none;
                 }
@@ -1743,20 +1420,10 @@
                 width: 1px;
                 height: 34px;
                 opacity: .2;
-
-                @include rtl{
-                    right: auto;
-                    left: 0;
-                }
             }
             & i{
                 color: var(--tp-theme-4);
                 margin-right: 3px;
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 3px;
-                }
             }
         }
     }
@@ -1829,12 +1496,6 @@
                 color: var(--tp-theme-5);
                 margin-right: 13px;
                 margin-top: 5px;
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 13px;
-                }
-
                 & svg{
                     @include transform(translateY(-2px));
                 }
@@ -2275,11 +1936,6 @@
                     & li{
                         padding: 5px 0;
                         padding-right: 20px;
-
-                        @include rtl{
-                            padding-left: 0;
-                            padding-right: 20px;
-                        }
                         &::after{
                             background-color: #EAEAEF;
                         }
@@ -2304,12 +1960,6 @@
                 padding-right: 0;
                 $self2: &;
                 z-index: 99;
-
-                @include rtl{
-                    padding-left: 0;
-                    padding-right: 28px;
-                }
-
                 & .nice-select{
                     padding: 0;
                     padding-right: 18px;
@@ -2318,11 +1968,6 @@
                     border: 0;
                     color: var(--tp-common-white);
                     background-color: transparent;
-
-                    @include rtl{
-                        padding-right: 28px;
-                        padding-left: 18px;
-                    }
                     & .current{
                         color: var(--tp-common-white);
                         font-size: 14px;
@@ -2334,12 +1979,6 @@
                         margin-top: 0;
                         left: auto;
                         right: 0;
-
-                        @include rtl{
-                            left: 0;
-                            right: auto;
-                        }
-
                         & .option{
                             color: var(--tp-text-1);
                             &:hover,

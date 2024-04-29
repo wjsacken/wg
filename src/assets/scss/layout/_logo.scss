@@ -40,11 +40,6 @@
 
             @media #{$lg}{
                 right: 0;
-
-                @include rtl{
-                    right: auto;
-                    left: 0;
-                }
             }
         }
     }

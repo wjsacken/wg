@@ -148,19 +148,8 @@
     transition-duration: .3s;
     visibility: hidden;
     opacity: 0;
-
-    @include rtl{
-        left: auto;
-        right: 40px;
-    }
-
     @media #{$lg}{
         left: 20px;
-
-        @include rtl{
-            left: auto;
-            right: 20px;
-        }
     }
     & i{
         display: inline-block;
@@ -172,11 +161,6 @@
         border-radius: 50%;
         margin-left: 5px;
         @extend %tp-transition;
-
-        @include rtl{
-            margin-left: 0;
-            margin-right: 5px;
-        }
     }
 
     &:hover{

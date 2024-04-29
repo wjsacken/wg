@@ -33,11 +33,6 @@
             width: 100%;
             mix-blend-mode: overlay;
             z-index: -1;
-
-            @include rtl{
-                right: auto;
-                left: 0;
-            }
             &.has-opacity-6{
                 opacity: .6;
             }
@@ -50,11 +45,6 @@
         color: var(--tp-common-white);
         margin-bottom: 15px;
         margin-right: 10px;
-
-        @include rtl{
-            margin-right: 0;
-            margin-left: 10px;
-        }
     }
     &__number{
         margin-bottom: 15px;
@@ -79,17 +69,9 @@
         right: 40px;
         top: 50%;
         @include transform(translateY(-50%));
-        @include rtl{
-            right: auto;
-            left: 40px;
-        }
         
         @media #{$xs}{
             right: 20px;
-            @include rtl{
-                right: auto;
-                left: 20px;
-            }
         }
         & span{
             font-size: 50px;
@@ -106,27 +88,13 @@
         min-height: 130px;
         padding-right: 90px;
 
-        @include rtl{
-            padding-right: 0;
-            padding-left: 90px;
-        }
-
         @media #{$md}{
             padding: 20px;
             padding-right: 35px;
-
-            @include rtl{
-                padding-right: 0;
-                padding-left: 35px;
-            }
         }
 
         @media #{$xs}{
             padding-right: 15px;
-            @include rtl{
-                padding-right: 0;
-                padding-left: 15px;
-            }
         }
         & #{$self}{
             &__title{

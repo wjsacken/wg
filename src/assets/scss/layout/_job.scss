@@ -11,12 +11,6 @@
         background: var(--tp-common-white);
         border: 1px solid #EAEAEF;
         padding: 33px 60px 32px 40px;
-
-        @include rtl{
-            padding-right: 40px;
-            padding-left: 60px;
-        }
-
         @media #{$sm, $xs}{
             padding: 33px 30px 32px 30px;
         }
@@ -42,11 +36,6 @@
     &__meta{
         &-item{
             margin-right: 14px;
-
-            @include rtl{
-                margin-right: 0;
-                margin-left: 14px;
-            }
             & span{
                 font-size: 14px;
                 display: inline-block;
@@ -59,12 +48,6 @@
                 &:not(:last-child){
                     margin-right: 15px;
                     padding-right: 18px;
-                    @include rtl{
-                        margin-right: 0;
-                        padding-right: 0;
-                        margin-left: 15px;
-                        padding-left: 18px;
-                    }
                     &::after{
                         position: absolute;
                         content: '';
@@ -74,11 +57,6 @@
                         width: 1px;
                         height: 20px;
                         background-color: #D9D9D9;
-
-                        @include rtl{
-                            right: auto;
-                            left: 0;
-                        }
                     }
                 }
 
@@ -87,11 +65,6 @@
                 & i,
                 & svg{
                     margin-right: 4px;
-
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 4px;
-                    }
                 }
                 & svg{
                     @include transform(translateY(-1px));
@@ -118,10 +91,6 @@
     &__btn{
         @media #{$lg, $md}{
             padding-left: 0;
-
-            @include rtl{
-                padding-right: 0;
-            }
         }
         & a{
             font-size: 16px;
@@ -144,19 +113,8 @@
                 width: 1px;
                 height: 80px;
                 background-color: #EAEAEF;
-
-                @include rtl{
-                    left: auto;
-                    right: -68px;
-                }
-
                 @media #{$lg}{
                     left: -35px;
-
-                    @include rtl{
-                        left: auto;
-                        right: -35px;
-                    }
                 }
 
                 @media #{$md, $xs}{

@@ -17,19 +17,9 @@
 
         &-2{
             margin-right: -30px;
-
-            @include rtl{
-                margin-right: 0;
-                margin-left: -30px;
-            }
-
             @media #{$md, $sm, $xs}{
                 margin-bottom: 30px;
                 margin-right: 0;
-
-                @include rtl{
-                    margin-left: 0;
-                }
             }
         }
     }
@@ -71,16 +61,8 @@
             padding: 60px 50px 70px 50px;
             background-color: var(--tp-common-white);
             box-shadow: 0px 2px 4px rgba(3, 4, 28, 0.1);
-
-            @include rtl{
-                margin-left: 0;
-                margin-right: 70px;
-            }
             @media #{$md, $sm, $xs}{
              margin-left: 0;
-             @include rtl{
-                margin-right: 0;
-             }
             }
 
             @media #{$sm, $xs}{
@@ -91,17 +73,11 @@
 
             @media #{$lg, $md}{
                 padding-left: 0;
-                @include rtl{
-                    padding-right: 0;
-                }
             }
 
             @media #{$sm, $xs}{
                 margin-top: 40px;
                 padding-left: 0;
-                @include rtl{
-                    padding-right: 0;
-                }
             }
             &-title{
                 font-family: var(--tp-ff-syne);
@@ -125,17 +101,10 @@
             @media #{$xs}{
                 margin-left: 0;
                 padding: 30px 25px;
-
-                @include rtl{
-                    margin-right: 0;
-                }
             }
         }
         &-call{
             display: none;
-            @include rtl{
-                text-align: left;
-            }
             @media #{$sm, $xs}{
                 margin-top: 15px;
             }
@@ -257,11 +226,6 @@
 
                 &::after{
                     right: 26px;
-
-                    @include rtl{
-                        right: auto;
-                        left: 26px;
-                    }
                 }
 
                 & .list{
@@ -341,10 +305,6 @@
         &-9{
             @media #{$lg, $md, $sm, $xs}{
                 margin-right: 0;
-
-                @include rtl{
-                    margin-left: 0;
-                }
             }
         }
         &-item{
@@ -374,11 +334,6 @@
                     @include tp-gradient((329deg, #FF91FA 13.55%, #FA6490 48.54%, #F7D86A 86.44%));
                     z-index: -1;
                     @include transition(.15s);
-
-                    @include rtl{
-                        left: auto;
-                        right: 0;
-                    }
                 }
 
                 &:hover{
@@ -412,11 +367,6 @@
                 margin-bottom: 20px;
                 animation-delay: .3s;
                 animation-duration: 1s;
-
-                @include rtl{
-                    padding-right: 0;
-                    padding-left: 55px;
-                }
 
                 &:nth-child(2){
                     animation-delay: .6s;
@@ -472,11 +422,6 @@
                 background-color: var(--tp-grey-8);
                 color: var(--tp-text-body);
                 margin-right: 20px;
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 20px;
-                }
             }
 
             &-9{
@@ -486,12 +431,6 @@
                     margin-right: 30px;
                     position: relative;
                     color: var(--tp-common-black);
-
-                    @include rtl{
-                        margin-right: 0;
-                        margin-left: 30px;
-                    }
-
                     @media #{$xs}{
                         margin-bottom: 25px;
                     }
@@ -500,11 +439,6 @@
                         position: absolute;
                         bottom: -12px;
                         right: -16px;
-
-                        @include rtl{
-                            right: auto;
-                            left: -16px;
-                        }
                     }
                     & svg,
                     & i{
@@ -582,22 +516,12 @@
                             height: 2px;
                             background-color: var(--tp-common-black);
                             @extend %tp-transition;
-
-                            @include rtl{
-                                left: 0;
-                                right: auto;
-                            }
                         }
                         &:hover{
                            &::after{
                                 width: 100%;
                                 left: 0;
                                 right: auto;
-
-                                @include rtl{
-                                    left: auto;
-                                    right: 0;
-                                }
                            }
                         }
                     }
@@ -606,11 +530,6 @@
 
             &-11{
                 margin-left: 3px;
-
-                @include rtl{
-                    margin-left: 0;
-                    margin-right: 3px;
-                }
                 & h5{
                     font-family: var(--tp-ff-rajdhani);
                     font-weight: 600;
@@ -669,11 +588,6 @@
             height: 250px;
             border-radius: 50%;
             @include tp-gradient((329deg, rgba(255, 145, 250, 0.1) 13.55%, rgba(250, 100, 144, 0.1) 48.54%, rgba(247, 216, 106, 0.1) 86.44%));
-
-            @include rtl{
-                left: auto;
-                right: 15%;
-            }
         }
         &-2{
             position: absolute;
@@ -682,12 +596,6 @@
             z-index: 1;
             animation-delay: .5s;
             animation-duration: 1s;
-
-            @include rtl{
-                right: auto;
-                left: -17%;
-            }
-
             @media #{$xs}{
                 display: none;
             }
@@ -703,11 +611,6 @@
             border:1px solid rgba($color: #7737FF, $alpha: .1);
             background-color: transparent;
             z-index: -1;
-
-            @include rtl{
-                right: auto;
-                left: -13%;
-            }
         }
     }
     &__inner{
@@ -809,11 +712,6 @@
         &-item{
             &:not(:last-child){
                 margin-right: 46px;
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 46px;
-                }
             }
             &:hover{
                 #{$self}{
@@ -848,11 +746,6 @@
                     height: 38px;
                     @include tp-gradient((151.63deg, rgba(99, 100, 219, 0) 4.91%, rgba(99, 100, 219, 0.12) 88.78%));
                     border-radius: 50%;
-
-                    @include rtl{
-                        left: auto;
-                        right: 0
-                    }
                 }
                 & svg{
                     @include transform(translateY(-2px));
@@ -933,20 +826,10 @@
                 color: var(--tp-text-1);
                 font-family: var(--tp-ff-inter);
 
-                @include rtl{
-                    padding-left: 0;
-                    padding-right: 10px;
-                }
-
                 & a{
                     color: var(--tp-common-black);
                     font-weight: 600;
                     padding-left: 4px;
-
-                    @include rtl{
-                        padding-left: 0;
-                        padding-right: 4px;
-                    }
                     &:hover{
                         color: var(--tp-theme-1);
                     }
@@ -981,17 +864,8 @@
             }
         }
         &-icon{
-            @include rtl{
-                margin-right: 0;
-                margin-left: 45px;
-            }
             @media #{$sm}{
                 margin-right: 15px;
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 15px;
-                }
             }
             @media #{$xs}{
                 margin-bottom: 20px;

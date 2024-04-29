@@ -185,11 +185,6 @@
             & a{
                 margin-right: 10px;
                 color: var(--tp-common-white);
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 10px;
-                }
                 &:hover{
                     opacity: .7;
                 }
@@ -226,17 +221,8 @@
                 border-radius: 6px;
                 margin-right: 2px;
                 color: var(--tp-common-white);
-
-                @include rtl{
-                    margin-right: 0;
-                    margin-left: 2px;
-                }
                 &:last-child{
                     margin-right: 0;
-
-                    @include rtl{
-                        margin-left: 0;
-                    }
                 }
                 &:hover{
                     background-color: var(--tp-common-white);

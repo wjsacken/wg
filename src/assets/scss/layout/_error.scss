@@ -170,27 +170,14 @@
         @include transform(translate(-150px, 0));
         z-index: -1;
 
-        @include rtl{
-            left: auto;
-            right: 0;
-            @include transform(translate(150px, 0));
-        }
-
         @media #{$md}{
             @include transform(translate(-98px, 0));
             font-size: 385px;
-            @include rtl{
-                @include transform(translate(98px, 0));
-            }
         }
 
         @media #{$sm}{
             @include transform(translate(0px, 60px));
             font-size: 268px;
-
-            @include rtl{
-                @include transform(translate(0px, -60px));
-            }
         }
 
         @media #{$xs}{

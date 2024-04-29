@@ -15,28 +15,16 @@
         @media #{$md}{
             padding: 60px 60px;
             background-position: left;
-
-            @include rtl{
-                background-position: right;
-            }
         }
 
         @media #{$sm}{
             padding: 45px;
             background-position: left;
-
-            @include rtl{
-                background-position: right;
-            }
         }
 
         @media #{$xs}{
             padding: 35px;
             background-position: left;
-
-            @include rtl{
-                background-position: right;
-            }
         }
     }
     &__title{
