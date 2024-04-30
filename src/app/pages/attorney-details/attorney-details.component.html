@@ -53,19 +53,19 @@
                 <h3 class="attorney__details-about-title">Education</h3>
                 <div [innerHTML]="attorney?.edu"></div>
               </div>
-              <div class="attorney__details-about-content mt-20" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
+              <div class="attorney__details-about-content mt-20" *ngIf="attorney?.cases" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
                 <h3 class="attorney__details-about-title">Cases</h3>
                 <div [innerHTML]="attorney?.cases"></div>
               </div>
-              <div class="attorney__details-about-content mt-20" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
+              <div class="attorney__details-about-content mt-20" *ngIf="attorney?.affliliations" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
                 <h3 class="attorney__details-about-title">Affiliations</h3>
                 <div [innerHTML]="attorney?.affliliations"></div>
               </div>
-              <div class="attorney__details-about-content mt-20" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
+              <div class="attorney__details-about-content mt-20" data-sal="slide-up" *ngIf="attorney?.appointments" data-sal-delay="130" data-sal-duration="1000">
                 <h3 class="attorney__details-about-title">Appointments</h3>
                 <div [innerHTML]="attorney?.appointments"></div>
               </div>
-              <div class="attorney__details-about-content mt-20" data-sal="slide-up" data-sal-delay="130" data-sal-duration="1000">
+              <div class="attorney__details-about-content mt-20" data-sal="slide-up" *ngIf="attorney?.charity" data-sal-delay="130" data-sal-duration="1000">
                 <h3 class="attorney__details-about-title">Charity</h3>
                 <div [innerHTML]="attorney?.charity"></div>
               </div>
