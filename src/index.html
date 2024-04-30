@@ -23,23 +23,20 @@
 </head>
 <body>
   <app-root></app-root>
-<script async="true" defer>
-  (function(ng, a, g, e, l, i, ve){
-    l = a.createElement(g);
-    l.async = 1;
-    l.src = ng + e;
-    var c = a.getElementsByTagName(g)[0];
-    c.parentNode.insertBefore(l, c);
-    var i = a.createElement('div');
-    var ve = 'style';
-    i.id = 'nGageLH';
-    i[ve].position = 'fixed';
-    i[ve].right = '0px';
-    i[ve].bottom = '0px';
-    i[ve].zIndex = '5000';
-    a.body && a.body.appendChild(i);
-  })('https://messenger.ngageics.com/ilnksrvr.aspx?websiteid=', document, 'script', '124-56-19-172-25-200-12-183');
-</script>
+  <script>
+    function loadNgageicsScript() {
+      var script = document.createElement('script');
+      script.src = 'https://messenger.ngageics.com/ilnksrvr.aspx?websiteid=124-56-19-172-25-200-12-183';
+      script.async = true;
+      script.defer = true; // Deferring the script loading can also help with performance
+      document.body.appendChild(script);
+    }
+
+    window.onload = function() {
+      // Load the ngageics script after the page content has loaded
+      loadNgageicsScript();
+    };
+  </script>
 
 </body>
 </html>
