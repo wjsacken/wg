@@ -266,6 +266,17 @@ $xs:'(max-width: 575px)';
                     backdrop-filter: blur(14px);
                 }
             }
+            &-wrapper{
+                @media #{$sm, $xs}{
+                    padding: inherit
+                }
+            }
+            & img {
+                @media #{$sm, $xs}{
+                width: -webkit-fill-available;
+                height: auto;
+                }
+            }
 
         }
         &__year{

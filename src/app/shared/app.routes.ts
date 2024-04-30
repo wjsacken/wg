@@ -30,7 +30,7 @@ export const routes: Routes = [
       { path: ':slug', component: JobDetailsComponent, data: { title: 'Practice Area - Wallace & Graham' } },
     ]
   },
-  {path:'contact',component:ContactComponent,title:'Contact - Harry'},
+  {path:'contact',component:ContactComponent,title:'Contact - Wallace & Graham'},
   { path: 'new-blog', component: BlogGridSidebarComponent, data: { title: 'Wallace & Graham Blog' } },
   { path: ':slug', component: BlogDetailsComponent, data: { title: 'Blog Title' } },
   {path:'**',component:NotFoundComponent,title:'Page Not Found - Wallace & Graham'},
