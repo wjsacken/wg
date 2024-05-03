@@ -8,7 +8,7 @@ const team_data:ITeamDT[] = [
     title: 'NCCP',
     mail: 'anorton@wallacegraham.com',
     phone: '205',
-    img: 'assets/img/team/directory/Amanda_Norton_2021.jpg',
+    img: 'assets/img/team/directory/Amanda_Norton.jpg',
     page: 'team',
 
 },
@@ -138,7 +138,7 @@ const team_data:ITeamDT[] = [
     title: 'Clerical',
     mail: 'drodriguez@wallacegraham.com',
     phone: '298',
-    img: 'assets/img/team/directory/Dana_Rodriguez_2021.jpg',
+    img: 'assets/img/team/directory/Dana_Rodriguez.jpg',
     page: 'team',
 
 },
@@ -208,7 +208,7 @@ const team_data:ITeamDT[] = [
     title: 'Legal Assistant',
     mail: 'gsouto@wallacegraham.com',
     phone: '156',
-    img: 'assets/img/team/directory/Gennevi_Souto_2021.jpg',
+    img: 'assets/img/team/directory/Genni_Souto.jpg',
     page: 'team',
 
 },
@@ -218,7 +218,7 @@ const team_data:ITeamDT[] = [
     title: 'PI Paralegal',
     mail: 'jhooper@wallacegraham.com',
     phone: '121',
-    img: 'assets/img/team/directory/PlaceHolder-01.svg',
+    img: 'assets/img/team/directory/Janelle_Hooper.jpg',
     page: 'team',
 
 },
@@ -228,7 +228,7 @@ const team_data:ITeamDT[] = [
     title: 'Legal Assistant',
     mail: 'jsnider@wallacegraham.com',
     phone: '217',
-    img: 'assets/img/team/directory/jessi_snider.jpg',
+    img: 'assets/img/team/directory/Jessi_Snider.jpg',
     page: 'team',
 
 },
@@ -248,7 +248,7 @@ const team_data:ITeamDT[] = [
     title: 'Paralegal',
     mail: 'jsavage@wallacegraham.com',
     phone: '192',
-    img: 'assets/img/team/directory/PlaceHolder-01.svg',
+    img: 'assets/img/team/directory/Jolie_Savage.jpg',
     page: 'team',
 
 },
@@ -258,7 +258,7 @@ const team_data:ITeamDT[] = [
     title: 'Claims Coordinator',
     mail: 'jgraham@wallacegraham.com',
     phone: '226',
-    img: 'assets/img/team/directory/PlaceHolder-01.svg',
+    img: 'assets/img/team/directory/Jordan_Graham.jpg',
     page: 'team',
 
 },
@@ -278,7 +278,7 @@ const team_data:ITeamDT[] = [
     title: 'Clerical',
     mail: 'kcervantes@wallacegraham.com',
     phone: '110',
-    img: 'assets/img/team/directory/PlaceHolder-01.svg',
+    img: 'assets/img/team/directory/Kaila_Cervantes.jpg',
     page: 'team',
 
 },
@@ -298,7 +298,7 @@ const team_data:ITeamDT[] = [
     title: 'Clerical',
     mail: 'kmonroe@wallacegraham.com',
     phone: '139',
-    img: 'assets/img/team/directory/PlaceHolder-01.svg',
+    img: 'assets/img/team/directory/Katie_Monroe.jpg',
     page: 'team',
 
 },
@@ -318,7 +318,7 @@ const team_data:ITeamDT[] = [
     title: 'CLWC',
     mail: 'kregier@wallacegraham.com',
     phone: '220',
-    img: 'assets/img/team/directory/PlaceHolder-01.svg',
+    img: 'assets/img/team/directory/Krystal_Biskner.jpg',
     page: 'team',
 
 },
@@ -348,7 +348,7 @@ const team_data:ITeamDT[] = [
     title: 'Clerk',
     mail: 'lkimball@wallacegraham.com',
     phone: '111',
-    img: 'assets/img/team/directory/PlaceHolder-01.svg',
+    img: 'assets/img/team/directory/Lorin_Kimball.jpg',
     page: 'team',
 
 },
@@ -388,7 +388,7 @@ const team_data:ITeamDT[] = [
     title: 'Paralegal',
     mail: 'mfrye@wallacegraham.com',
     phone: '163',
-    img: 'assets/img/team/directory/PlaceHolder-01.svg',
+    img: 'assets/img/team/directory/Melanie_Frye.jpg',
     page: 'team',
 
 },
@@ -428,7 +428,7 @@ const team_data:ITeamDT[] = [
     title: 'Paralegal',
     mail: 'plefler@wallacegraham.com',
     phone: '140',
-    img: 'assets/img/team/directory/Paige_Lefler_new.jpg',
+    img: 'assets/img/team/directory/Paige_Lefler.jpg',
     page: 'team',
 
 },
@@ -508,7 +508,7 @@ const team_data:ITeamDT[] = [
     title: 'Computer Technician - Mail Room Supervisor',
     mail: 'tcoon@wallacegraham.com',
     phone: '130',
-    img: 'assets/img/team/directory/Tammy.jpg',
+    img: 'assets/img/team/directory/Tammy_Coon.jpg',
     page: 'team',
 
 },
