@@ -228,7 +228,7 @@ const team_data:ITeamDT[] = [
     title: 'Paralegal',
     mail: 'jsnider@wallacegraham.com',
     phone: '217',
-    img: 'assets/img/team/directory/Jessi_Snider.jpg',
+    img: 'assets/img/team/directory/Jessi__Snider.jpg',
     page: 'team',
 
 },
