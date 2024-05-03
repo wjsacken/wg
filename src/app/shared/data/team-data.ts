@@ -225,7 +225,7 @@ const team_data:ITeamDT[] = [
 {
     id: 485,
     name: 'Jessalyn Snider',
-    title: 'Legal Assistant',
+    title: 'Paralegal',
     mail: 'jsnider@wallacegraham.com',
     phone: '217',
     img: 'assets/img/team/directory/Jessi_Snider.jpg',
@@ -488,7 +488,7 @@ const team_data:ITeamDT[] = [
     title: 'CLWC',
     mail: 'scasper@wallacegraham.com',
     phone: '132',
-    img: 'assets/img/team/directory/PlaceHolder-01.svg',
+    img: 'assets/img/team/directory/Sarah_Casper.jpg',
     page: 'team',
 
 },
