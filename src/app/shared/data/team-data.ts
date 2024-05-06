@@ -5,7 +5,7 @@ const team_data:ITeamDT[] = [
   {
     id: 322,
     name: 'Amanda Norton',
-    title: 'NCCP',
+    title: 'NC Certified Paralegal',
     mail: 'anorton@wallacegraham.com',
     phone: '205',
     img: 'assets/img/team/directory/Amanda_Norton.jpg',
