@@ -24,23 +24,45 @@
 <body>
   <a href="#main-content" class="hide">Skip to main content</a>
   <app-root></app-root>
-<script async="true" defer>
-  (function(ng, a, g, e, l, i, ve){
-    l = a.createElement(g);
-    l.async = 1;
-    l.src = ng + e;
-    var c = a.getElementsByTagName(g)[0];
-    c.parentNode.insertBefore(l, c);
-    var i = a.createElement('div');
-    var ve = 'style';
-    i.id = 'nGageLH';
-    i[ve].position = 'fixed';
-    i[ve].right = '0px';
-    i[ve].bottom = '0px';
-    i[ve].zIndex = '5000';
-    a.body && a.body.appendChild(i);
-  })('https://messenger.ngageics.com/ilnksrvr.aspx?websiteid=', document, 'script', '124-56-19-172-25-200-12-183');
-</script>
+  <script async="true" defer>
+    (function(ng, a, g, e, l, i, ve){
+      l = a.createElement(g);
+      l.async = 1;
+      l.src = ng + e;
+      var c = a.getElementsByTagName(g)[0];
+      c.parentNode.insertBefore(l, c);
+      var i = a.createElement('div');
+      var ve = 'style';
+      i.id = 'nGageLH';
+      i[ve].position = 'fixed';
+      i[ve].right = '0px';
+      i[ve].bottom = '0px';
+      i[ve].zIndex = '5000';
+      a.body && a.body.appendChild(i);
+      
+      l.onload = function() {
+        // Add tabindex and role to the image
+        var dismissImage = document.getElementById('chat-window-top-content-dismiss-image');
+        if (dismissImage) {
+          dismissImage.setAttribute('tabindex', '0');
+          dismissImage.setAttribute('role', 'button');
+        }
+        
+        // Add tabindex and role to the chat window link
+        var chatWindowLink = document.getElementById('chat-window-link');
+        if (chatWindowLink) {
+          chatWindowLink.setAttribute('role', 'button');
+        }
+  
+        // Add tabindex and role to the black circle background image container
+        var blackCircleContainer = document.getElementById('black-circle-background-image-container');
+        if (blackCircleContainer) {
+          blackCircleContainer.setAttribute('role', 'button');
+        }
+      };
+    })('https://messenger.ngageics.com/ilnksrvr.aspx?websiteid=', document, 'script', '124-56-19-172-25-200-12-183');
+  </script>
+  
 
 </body>
 </html>
