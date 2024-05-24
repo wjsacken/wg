@@ -2,7 +2,7 @@
   <div class="row">
      <div class="col-md-6">
         <div class="contact__input">
-           <input name="name" type="text" placeholder="First Name" formControlName="firstName">
+           <input name="name" type="text" placeholder="First Name" formControlName="firstName"  aria-label="First Name" aria-required="true">
            <span *ngIf="firstName?.hasError('required') && (firstName?.touched || formSubmitted)" class="text-danger">
              First Name is required
           </span>
@@ -10,13 +10,13 @@
      </div>
      <div class="col-md-6">
         <div class="contact__input">
-           <input name="l_name" type="text" placeholder="Last Name" formControlName="lastName">
+           <input name="l_name" type="text" placeholder="Last Name" formControlName="lastName" aria-label="Last Name" aria-required="true">
            <span *ngIf="lastName?.hasError('required') && (lastName?.touched || formSubmitted)" class="text-danger"> Last Name is required </span>
         </div>
      </div>
      <div class="col-md-6">
         <div class="contact__input">
-           <input name="email" type="email" placeholder="Email" formControlName="email">
+           <input name="email" type="email" placeholder="Email" formControlName="email" aria-label="Email" aria-required="true">
            <span *ngIf="(email?.hasError('required') && email?.touched) || (email?.hasError('email') && email?.dirty) || (formSubmitted && !email?.value)" class="text-danger">
             Email is required and must be a valid email address
           </span>
@@ -24,13 +24,13 @@
      </div>
      <div class="col-md-6">
         <div class="contact__input">
-           <input name="phone" type="text" placeholder="Phone" formControlName="phone">
+           <input name="phone" type="text" placeholder="Phone" formControlName="phone" aria-label="Phone" aria-required="true">
            <span *ngIf="phone?.hasError('required') && (phone?.touched || formSubmitted)" class="text-danger"> Phone is required </span>
         </div>
      </div>
      <div class="col-md-12">
         <div class="contact__input">
-           <textarea name="message" placeholder="Case Details" formControlName="message"></textarea>
+           <textarea name="message" placeholder="Case Details" formControlName="message" aria-label="Case Details" aria-required="true"></textarea>
            <span *ngIf="message?.hasError('required') && (message?.touched || formSubmitted)" class="text-danger"> Message is required </span>
         </div>
      </div>
