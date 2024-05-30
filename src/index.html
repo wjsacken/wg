@@ -71,6 +71,8 @@
                         var newImageUrl = "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat"; // Replace with your new image URL
                         console.log("Replacing black bubble image with: " + newImageUrl);
                         blackBubbleImage.src = newImageUrl;
+                        blackBubbleImage.width = 45; // Set width to 45
+                        blackBubbleImage.height = 45; // Set height to 45
                     } else {
                         console.log("Black bubble image not found");
                     }
@@ -81,6 +83,8 @@
                         var newOperatorImageUrl = "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat"; // Replace with your new operator image URL
                         console.log("Replacing chat window operator image with: " + newOperatorImageUrl);
                         chatOperatorImage.src = newOperatorImageUrl;
+                        chatOperatorImage.width = 28; // Set width to 28
+                        chatOperatorImage.height = 28; // Set height to 28
                     } else {
                         console.log("Chat window operator image not found");
                     }
@@ -104,6 +108,5 @@
         })('https://messenger.ngageics.com/ilnksrvr.aspx?websiteid=', document, 'script', '124-56-19-172-25-200-12-183');
     });
 </script>
-
 </body>
 </html>
