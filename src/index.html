@@ -40,6 +40,8 @@
             i[ve].right = '0px';
             i[ve].bottom = '0px';
             i[ve].zIndex = '5000';
+            i[ve].width = 'auto'; // Prevent setting fixed width
+            i[ve].height = 'auto'; // Prevent setting fixed height
             a.body && a.body.appendChild(i);
             
             l.onload = function() {
@@ -67,26 +69,22 @@
                 function replaceImages() {
                     // Replace the black bubble background image
                     var blackBubbleImage = document.querySelector('.black-bubble-background-image');
-                    if (blackBubbleImage) {
+                    if (blackBubbleImage && blackBubbleImage.src !== "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat") {
                         var newImageUrl = "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat"; // Replace with your new image URL
                         console.log("Replacing black bubble image with: " + newImageUrl);
                         blackBubbleImage.src = newImageUrl;
                         blackBubbleImage.width = 45; // Set width to 45
                         blackBubbleImage.height = 45; // Set height to 45
-                    } else {
-                        console.log("Black bubble image not found");
                     }
 
                     // Replace the chat window operator image
                     var chatOperatorImage = document.querySelector('.chat-window-operator-image');
-                    if (chatOperatorImage) {
+                    if (chatOperatorImage && chatOperatorImage.src !== "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat") {
                         var newOperatorImageUrl = "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat"; // Replace with your new operator image URL
                         console.log("Replacing chat window operator image with: " + newOperatorImageUrl);
                         chatOperatorImage.src = newOperatorImageUrl;
                         chatOperatorImage.width = 28; // Set width to 28
                         chatOperatorImage.height = 28; // Set height to 28
-                    } else {
-                        console.log("Chat window operator image not found");
                     }
                 }
 
@@ -102,11 +100,12 @@
                 // Observe changes in the body
                 observer.observe(document.body, { childList: true, subtree: true });
 
-                // Periodic check to replace images in case observer misses changes
-                setInterval(replaceImages, 500);
+                // Initial run to replace images
+                replaceImages();
             };
         })('https://messenger.ngageics.com/ilnksrvr.aspx?websiteid=', document, 'script', '124-56-19-172-25-200-12-183');
     });
 </script>
+
 </body>
 </html>
