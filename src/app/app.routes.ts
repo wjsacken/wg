@@ -15,6 +15,7 @@ import { PortfolioTwoComponent } from './portfolio/portfolio-two/portfolio-two.c
 import { PortfolioDetailsComponent } from './portfolio/portfolio-details/portfolio-details.component';
 import { AttorneyComponent } from './pages/attorneys/attorney.component';
 import { AttorneyDetailsComponent } from './pages/attorney-details/attorney-details.component';
+import { WorkersComponent } from './pages/workers-comp/workers.component';
 export const routes: Routes = [
   { path: '', component: HomeLawyerComponent, data: { title: 'Wallace & Graham' } },
   { path: 'attorneys', component: AttorneyComponent, data: { title: 'Experienced Attorneys in North Carolina | Wallace & Graham' } },
@@ -31,6 +32,7 @@ export const routes: Routes = [
     ]
   },
   {path:'contact',component:ContactComponent,title:'Contact - Harry'},
+  {path:'workers-comp',component:WorkersComponent,title:'NC Workers Comp Attorneys'},
   { path: 'new-blog', component: BlogGridSidebarComponent, data: { title: 'Wallace & Graham Blog' } },
   { path: ':slug', component: BlogDetailsComponent, data: { title: 'Blog Title' } },
   {path:'**',component:NotFoundComponent,title:'Page Not Found - Wallace & Graham'},
