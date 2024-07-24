@@ -25,102 +25,86 @@
 <body>
     <script async defer>
         document.addEventListener('DOMContentLoaded', function() {
-            (function(ng, a, g, e, l, i, ve) {
-                if (!a.getElementById('nGageLH')) {
-                    console.log("Creating nGageLH element");
-        
-                    // Create and append the script element if it doesn't exist
-                    if (!a.querySelector(`script[src^="${ng}"]`)) {
-                        l = a.createElement(g);
-                        l.async = 1;
-                        l.src = ng + e;
-                        var c = a.getElementsByTagName(g)[0];
-                        c.parentNode.insertBefore(l, c);
+            (function(ng, a, g, e, l, i, ve){
+                l = a.createElement(g);
+                l.async = 1;
+                l.src = ng + e;
+                var c = a.getElementsByTagName(g)[0];
+                c.parentNode.insertBefore(l, c);
+                var i = a.createElement('div');
+                var ve = 'style';
+                i.id = 'nGageLH';
+                i[ve].position = 'fixed';
+                i[ve].right = '0px';
+                i[ve].bottom = '0px';
+                i[ve].zIndex = '5000';
+                a.body && a.body.appendChild(i);
+                
+                l.onload = function() {
+                    // Add tabindex and role to the image
+                    var dismissImage = document.getElementById('chat-window-top-content-dismiss-image');
+                    if (dismissImage) {
+                        dismissImage.setAttribute('tabindex', '0');
+                        dismissImage.setAttribute('role', 'button');
+                        dismissImage.setAttribute('aria-label', 'Chat window close');
                     }
-        
-                    // Create and append the chat widget container if it doesn't exist
-                    i = a.createElement('div');
-                    i.id = 'nGageLH';
-                    i.className = 'hide';
-                    i.style.position = 'fixed';
-                    i.style.right = '0px';
-                    i.style.bottom = '0px';
-                    i.style.zIndex = '5000';
-        
-                    if (a.body) {
-                        a.body.appendChild(i);
+                    
+                    // Add tabindex and role to the chat window link
+                    var chatWindowLink = document.getElementById('chat-window-link');
+                    if (chatWindowLink) {
+                        chatWindowLink.setAttribute('role', 'button');
                     }
-        
-                    l.onload = function() {
-                        console.log("Script loaded");
-        
-                        var dismissImage = document.getElementById('chat-window-top-content-dismiss-image');
-                        if (dismissImage) {
-                            dismissImage.setAttribute('tabindex', '0');
-                            dismissImage.setAttribute('role', 'button');
-                            dismissImage.setAttribute('aria-label', 'Chat window close');
+            
+                    // Add tabindex and role to the black circle background image container
+                    var blackCircleContainer = document.getElementById('black-circle-background-image-container');
+                    if (blackCircleContainer) {
+                        blackCircleContainer.setAttribute('role', 'button');
+                    }
+    
+                    // Function to replace images
+                    function replaceImages() {
+                        // Replace the black bubble background image
+                        var blackBubbleImage = document.querySelector('.black-bubble-background-image');
+                        if (blackBubbleImage) {
+                            var newImageUrl = "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat"; // Replace with your new image URL
+                            console.log("Replacing black bubble image with: " + newImageUrl);
+                            blackBubbleImage.src = newImageUrl;
+                            blackBubbleImage.width = 45; // Set width to 45
+                            blackBubbleImage.height = 45; // Set height to 45
+                        } else {
+                            console.log("Black bubble image not found");
                         }
-        
-                        var chatWindowLink = document.getElementById('chat-window-link');
-                        if (chatWindowLink) {
-                            chatWindowLink.setAttribute('role', 'button');
+    
+                        // Replace the chat window operator image
+                        var chatOperatorImage = document.querySelector('.chat-window-operator-image');
+                        if (chatOperatorImage) {
+                            var newOperatorImageUrl = "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat"; // Replace with your new operator image URL
+                            console.log("Replacing chat window operator image with: " + newOperatorImageUrl);
+                            chatOperatorImage.src = newOperatorImageUrl;
+                            chatOperatorImage.width = 28; // Set width to 28
+                            chatOperatorImage.height = 28; // Set height to 28
+                        } else {
+                            console.log("Chat window operator image not found");
                         }
-        
-                        var blackCircleContainer = document.getElementById('black-circle-background-image-container');
-                        if (blackCircleContainer) {
-                            blackCircleContainer.setAttribute('role', 'button');
-                        }
-        
-                        function replaceImages() {
-                            var blackBubbleImage = document.querySelector('.black-bubble-background-image');
-                            if (blackBubbleImage && blackBubbleImage.src !== "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat") {
-                                var newImageUrl = "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat";
-                                console.log("Replacing black bubble image with: " + newImageUrl);
-                                blackBubbleImage.src = newImageUrl;
-                                blackBubbleImage.width = 45;
-                                blackBubbleImage.height = 45;
+                    }
+    
+                    // Use MutationObserver to wait for images to be loaded
+                    var observer = new MutationObserver(function(mutations) {
+                        mutations.forEach(function(mutation) {
+                            if (mutation.addedNodes.length) {
+                                replaceImages();
                             }
-        
-                            var chatOperatorImage = document.querySelector('.chat-window-operator-image');
-                            if (chatOperatorImage && chatOperatorImage.src !== "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat") {
-                                var newOperatorImageUrl = "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat";
-                                console.log("Replacing chat window operator image with: " + newOperatorImageUrl);
-                                chatOperatorImage.src = newOperatorImageUrl;
-                                chatOperatorImage.width = 28;
-                                chatOperatorImage.height = 28;
-                            }
-                        }
-        
-                        // Handle unexpected <div> elements
-                        function removeUnexpectedDivs() {
-                            var unexpectedDivs = document.querySelectorAll('div');
-                            unexpectedDivs.forEach(function(div) {
-                                if (div.textContent === "250px250px") {
-                                    console.log("Unexpected div found and removed: ", div);
-                                    div.parentNode.removeChild(div);
-                                }
-                            });
-                        }
-        
-                        var observer = new MutationObserver(function(mutations) {
-                            mutations.forEach(function(mutation) {
-                                if (mutation.addedNodes.length) {
-                                    console.log("Mutation detected, nodes added: ", mutation.addedNodes);
-                                    replaceImages();
-                                    removeUnexpectedDivs();
-                                }
-                            });
                         });
-        
-                        observer.observe(document.body, { childList: true, subtree: true });
-        
-                        replaceImages();
-                        removeUnexpectedDivs(); // Initial check
-                    };
-                }
+                    });
+    
+                    // Observe changes in the body
+                    observer.observe(document.body, { childList: true, subtree: true });
+    
+                    // Periodic check to replace images in case observer misses changes
+                    setInterval(replaceImages, 500);
+                };
             })('https://messenger.ngageics.com/ilnksrvr.aspx?websiteid=', document, 'script', '124-56-19-172-25-200-12-183');
         });
-        </script>
-        
+    </script>
 </body>
 </html>
