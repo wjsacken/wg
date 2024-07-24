@@ -28,8 +28,9 @@
   <script async defer>
     document.addEventListener('DOMContentLoaded', function() {
         (function(ng, a, g, e, l, i, ve) {
-            // Check if the element with id 'nGageLH' already exists
+            // Check if the elements already exist to prevent duplicates
             if (!a.getElementById('nGageLH')) {
+                // Create script element and load external script
                 l = a.createElement(g);
                 l.async = 1;
                 l.src = ng + e;
@@ -39,42 +40,32 @@
                 // Create the chat window container div
                 i = a.createElement('div');
                 i.id = 'nGageLH';
-                i.className = 'hide'; // Add class name 'hide'
+                i.className = 'hide';
                 i.style.position = 'fixed';
                 i.style.right = '0px';
                 i.style.bottom = '0px';
                 i.style.zIndex = '5000';
-                i.style.width = 'auto'; // Prevent setting fixed width
-                i.style.height = 'auto'; // Prevent setting fixed height
 
-                // Append the chat window container div to the body if the body exists
+                // Append the chat window container div to the body if it exists
                 if (a.body) {
                     a.body.appendChild(i);
                 }
 
+                // On script load, add necessary attributes and event listeners
                 l.onload = function() {
-                    // Check if the elements are already added
-                    var alreadyAdded = a.getElementById('nGageLH').getElementsByClassName('dismiss-image').length > 0;
-
-                    if (alreadyAdded) {
-                        return;
-                    }
-
-                    // Add tabindex and role to the image
+                    // Add attributes and roles for accessibility
                     var dismissImage = document.getElementById('chat-window-top-content-dismiss-image');
                     if (dismissImage) {
                         dismissImage.setAttribute('tabindex', '0');
                         dismissImage.setAttribute('role', 'button');
                         dismissImage.setAttribute('aria-label', 'Chat window close');
                     }
-                    
-                    // Add tabindex and role to the chat window link
+
                     var chatWindowLink = document.getElementById('chat-window-link');
                     if (chatWindowLink) {
                         chatWindowLink.setAttribute('role', 'button');
                     }
-            
-                    // Add tabindex and role to the black circle background image container
+
                     var blackCircleContainer = document.getElementById('black-circle-background-image-container');
                     if (blackCircleContainer) {
                         blackCircleContainer.setAttribute('role', 'button');
@@ -82,28 +73,26 @@
 
                     // Function to replace images
                     function replaceImages() {
-                        // Replace the black bubble background image
                         var blackBubbleImage = document.querySelector('.black-bubble-background-image');
                         if (blackBubbleImage && blackBubbleImage.src !== "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat") {
-                            var newImageUrl = "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat"; // Replace with your new image URL
+                            var newImageUrl = "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat";
                             console.log("Replacing black bubble image with: " + newImageUrl);
                             blackBubbleImage.src = newImageUrl;
-                            blackBubbleImage.width = 45; // Set width to 45
-                            blackBubbleImage.height = 45; // Set height to 45
+                            blackBubbleImage.width = 45;
+                            blackBubbleImage.height = 45;
                         }
 
-                        // Replace the chat window operator image
                         var chatOperatorImage = document.querySelector('.chat-window-operator-image');
                         if (chatOperatorImage && chatOperatorImage.src !== "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat") {
-                            var newOperatorImageUrl = "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat"; // Replace with your new operator image URL
+                            var newOperatorImageUrl = "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat";
                             console.log("Replacing chat window operator image with: " + newOperatorImageUrl);
                             chatOperatorImage.src = newOperatorImageUrl;
-                            chatOperatorImage.width = 28; // Set width to 28
-                            chatOperatorImage.height = 28; // Set height to 28
+                            chatOperatorImage.width = 28;
+                            chatOperatorImage.height = 28;
                         }
                     }
 
-                    // Use MutationObserver to wait for images to be loaded
+                    // MutationObserver to monitor DOM changes and replace images
                     var observer = new MutationObserver(function(mutations) {
                         mutations.forEach(function(mutation) {
                             if (mutation.addedNodes.length) {
@@ -122,5 +111,6 @@
         })('https://messenger.ngageics.com/ilnksrvr.aspx?websiteid=', document, 'script', '124-56-19-172-25-200-12-183');
     });
 </script>
+
 </body>
 </html>
