@@ -96,6 +96,7 @@
                                 replaceImages();
                                 mutation.addedNodes.forEach(function(node) {
                                     if (node.nodeType === Node.ELEMENT_NODE) {
+                                        console.log("Added node: ", node.outerHTML);
                                         var unexpectedDiv = node.querySelector('div');
                                         if (unexpectedDiv && unexpectedDiv.textContent === "250px250px") {
                                             console.log("Unexpected div found and removed: ", unexpectedDiv);
@@ -115,6 +116,7 @@
         })('https://messenger.ngageics.com/ilnksrvr.aspx?websiteid=', document, 'script', '124-56-19-172-25-200-12-183');
     });
 </script>
+
 
 
 </body>
