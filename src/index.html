@@ -30,6 +30,8 @@
         (function(ng, a, g, e, l, i, ve) {
             // Check if the elements already exist to prevent duplicates
             if (!a.getElementById('nGageLH')) {
+                console.log("Creating nGageLH element");
+
                 // Create script element and load external script
                 l = a.createElement(g);
                 l.async = 1;
@@ -53,6 +55,8 @@
 
                 // On script load, add necessary attributes and event listeners
                 l.onload = function() {
+                    console.log("Script loaded");
+
                     // Add attributes and roles for accessibility
                     var dismissImage = document.getElementById('chat-window-top-content-dismiss-image');
                     if (dismissImage) {
@@ -97,6 +101,16 @@
                         mutations.forEach(function(mutation) {
                             if (mutation.addedNodes.length) {
                                 replaceImages();
+                                // Check for and log the unexpected div
+                                mutation.addedNodes.forEach(function(node) {
+                                    if (node.nodeType === Node.ELEMENT_NODE) {
+                                        var unexpectedDiv = node.querySelector('div');
+                                        if (unexpectedDiv && unexpectedDiv.textContent === "250px250px") {
+                                            console.log("Unexpected div found and removed: ", unexpectedDiv);
+                                            unexpectedDiv.parentNode.removeChild(unexpectedDiv);
+                                        }
+                                    }
+                                });
                             }
                         });
                     });
