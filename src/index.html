@@ -33,18 +33,23 @@
             l.src = ng + e;
             var c = a.getElementsByTagName(g)[0];
             c.parentNode.insertBefore(l, c);
-            var i = a.createElement('div');
-            var ve = 'style';
+
+            // Create the chat window container div
+            i = a.createElement('div');
             i.id = 'nGageLH';
             i.className = 'hide'; // Add class name 'hide'
-            i[ve].position = 'fixed';
-            i[ve].right = '0px';
-            i[ve].bottom = '0px';
-            i[ve].zIndex = '5000';
-            i[ve].width = 'auto'; // Prevent setting fixed width
-            i[ve].height = 'auto'; // Prevent setting fixed height
-            a.body && a.body.appendChild(i);
-            
+            i.style.position = 'fixed';
+            i.style.right = '0px';
+            i.style.bottom = '0px';
+            i.style.zIndex = '5000';
+            i.style.width = 'auto'; // Prevent setting fixed width
+            i.style.height = 'auto'; // Prevent setting fixed height
+
+            // Append the chat window container div to the body if the body exists
+            if (a.body) {
+                a.body.appendChild(i);
+            }
+
             l.onload = function() {
                 // Add tabindex and role to the image
                 var dismissImage = document.getElementById('chat-window-top-content-dismiss-image');
@@ -107,6 +112,7 @@
         })('https://messenger.ngageics.com/ilnksrvr.aspx?websiteid=', document, 'script', '124-56-19-172-25-200-12-183');
     });
 </script>
+
 
 </body>
 </html>
