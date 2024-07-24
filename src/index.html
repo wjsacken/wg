@@ -28,18 +28,15 @@
   <script async defer>
     document.addEventListener('DOMContentLoaded', function() {
         (function(ng, a, g, e, l, i, ve) {
-            // Check if the elements already exist to prevent duplicates
             if (!a.getElementById('nGageLH')) {
                 console.log("Creating nGageLH element");
 
-                // Create script element and load external script
                 l = a.createElement(g);
                 l.async = 1;
                 l.src = ng + e;
                 var c = a.getElementsByTagName(g)[0];
                 c.parentNode.insertBefore(l, c);
 
-                // Create the chat window container div
                 i = a.createElement('div');
                 i.id = 'nGageLH';
                 i.className = 'hide';
@@ -48,16 +45,13 @@
                 i.style.bottom = '0px';
                 i.style.zIndex = '5000';
 
-                // Append the chat window container div to the body if it exists
                 if (a.body) {
                     a.body.appendChild(i);
                 }
 
-                // On script load, add necessary attributes and event listeners
                 l.onload = function() {
                     console.log("Script loaded");
 
-                    // Add attributes and roles for accessibility
                     var dismissImage = document.getElementById('chat-window-top-content-dismiss-image');
                     if (dismissImage) {
                         dismissImage.setAttribute('tabindex', '0');
@@ -75,7 +69,6 @@
                         blackCircleContainer.setAttribute('role', 'button');
                     }
 
-                    // Function to replace images
                     function replaceImages() {
                         var blackBubbleImage = document.querySelector('.black-bubble-background-image');
                         if (blackBubbleImage && blackBubbleImage.src !== "https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/03bea1ad-3b17-4ff9-3496-415e2edabf00/chat") {
@@ -96,12 +89,11 @@
                         }
                     }
 
-                    // MutationObserver to monitor DOM changes and replace images
                     var observer = new MutationObserver(function(mutations) {
                         mutations.forEach(function(mutation) {
                             if (mutation.addedNodes.length) {
+                                console.log("Mutation detected, nodes added: ", mutation.addedNodes);
                                 replaceImages();
-                                // Check for and log the unexpected div
                                 mutation.addedNodes.forEach(function(node) {
                                     if (node.nodeType === Node.ELEMENT_NODE) {
                                         var unexpectedDiv = node.querySelector('div');
@@ -115,16 +107,15 @@
                         });
                     });
 
-                    // Observe changes in the body
                     observer.observe(document.body, { childList: true, subtree: true });
 
-                    // Initial run to replace images
                     replaceImages();
                 };
             }
         })('https://messenger.ngageics.com/ilnksrvr.aspx?websiteid=', document, 'script', '124-56-19-172-25-200-12-183');
     });
 </script>
+
 
 </body>
 </html>
