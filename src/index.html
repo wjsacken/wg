@@ -53,6 +53,13 @@
                 }
 
                 l.onload = function() {
+                    // Check if the elements are already added
+                    var alreadyAdded = a.getElementById('nGageLH').getElementsByClassName('dismiss-image').length > 0;
+
+                    if (alreadyAdded) {
+                        return;
+                    }
+
                     // Add tabindex and role to the image
                     var dismissImage = document.getElementById('chat-window-top-content-dismiss-image');
                     if (dismissImage) {
