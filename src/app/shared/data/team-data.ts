@@ -275,7 +275,7 @@ const team_data:ITeamDT[] = [
 {
     id: 465,
     name: 'Kaila Cervantes',
-    title: 'Clerical',
+    title: 'Legal Assistant',
     mail: 'kcervantes@wallacegraham.com',
     phone: '110',
     img: 'assets/img/team/directory/Kaila_Cervantes.jpg',
