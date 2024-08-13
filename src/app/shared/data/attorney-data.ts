@@ -202,7 +202,7 @@ const  attorney_data:IAttorneyDT[] = [
         civic: '',
         charity: '',
         partner: '',
-        img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/e1cce736-b48b-4d10-3e1b-a0fb08d17a00/attorney',
+        img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/3decb126-f57c-4bd4-1ea3-c82de390e500/attorney',
         url: 'olivia-smith',
         description: 'Olivia began working for Wallace & Graham during law school and continued her career with the firm after becoming a North Carolina-licensed attorney.'
         },
