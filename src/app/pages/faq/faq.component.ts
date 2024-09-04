@@ -776,6 +776,12 @@ export class FaqComponent {
               desc: "Wallace &amp; Graham exemplify professionalism, integrity, compassion, and consistency. They took out the time to visit my dad, to explain the step by step process of his claim. My family and I, without reservations, highly recommend them for any legal matters. ",
               parent: "general-1_accordion",
           },
+          {
+            id: "1441",
+            title: "Michael E. McGee",
+            desc: "I was very pleased with the way Wallace and Graham handled my Workers Compensation claim.  They handled it professionally and swiftly.  I would recommend Wallace and Graham to anyone.  Thank you very much for your hard work and hours spent to settle my claim. ",
+            parent: "general-1_accordion",
+        },
           ]
     },
 

@@ -251,6 +251,28 @@ const  attorney_data:IAttorneyDT[] = [
         url: 'aren-hendrickson',
         description: 'After earning her bachelor’s degree in psychology from the New College of Florida, Aren relocated to North Carolina to attend Wake Forest University School of Law.'
         },
+        {
+            id: 498,
+            name:'Noelle Musolino',
+            title: 'Attorney',
+            mail: 'nmusolino@wallacegraham.com',
+            phone: '(704) 633-5244',
+            bio: 'Noelle grew up in Pennsylvania and graduated from The Pennsylvania State University summa cum laude in 2021. She then graduated from Harvard Law School in 2024 and is licensed to practice law in North Carolina.<br> Noelle has a background in food and environmental law and worked at the US Food and Drug Administration, Harvard Law School’s Food Law and Policy Clinic, and the Harvard Environmental and Energy Law Program along with being a technical editor for the Harvard Environmental Law Review.',
+            edu: '<ul class="minus-list"><li><a style="line-height: 1.6em;" href="https://www.psu.edu/">Pennsylvania State University, 2021</a></li><li><a id="Harvard Law School" href="https://law.wfu.edu/" style="line-height: 1.6em;" name="Harvard Law School">Harvard Law School, 2024</a></li></ul>',
+            practice: '',
+            award: '',
+            award_banner_img: '',
+            award_banner_img1: '',
+            cases: '',
+            affliliations: '',
+            appointments: '',
+            civic: '',
+            charity: '',
+            partner: '',
+            img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/49e5f83c-6150-45e3-5024-cedc4fb37000/attorney',
+            url: 'noelle-musolino',
+            description: 'Noelle grew up in Pennsylvania and graduated from The Pennsylvania State University summa cum laude in 2021.'
+            },
 
   ]
   export default attorney_data;
