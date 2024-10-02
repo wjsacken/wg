@@ -1,43 +1,47 @@
-<form id="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-  <div class="row">
-     <div class="col-md-6">
-        <div class="contact__input">
-           <input name="name" type="text" placeholder="First Name" formControlName="firstName"  aria-label="First Name" aria-required="true">
-           <span *ngIf="firstName?.hasError('required') && (firstName?.touched || formSubmitted)" class="text-danger">
-             First Name is required
-          </span>
-        </div>
+<!-- src/app/lawyer-form/lawyer-form.component.html -->
+
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+   <div>
+     <label for="name">Name:</label>
+     <input id="name" formControlName="name" type="text" />
+     <div *ngIf="formSubmitted && name?.invalid">
+       <small>Name is required.</small>
      </div>
-     <div class="col-md-6">
-        <div class="contact__input">
-           <input name="l_name" type="text" placeholder="Last Name" formControlName="lastName" aria-label="Last Name" aria-required="true">
-           <span *ngIf="lastName?.hasError('required') && (lastName?.touched || formSubmitted)" class="text-danger"> Last Name is required </span>
-        </div>
+   </div>
+ 
+   <div>
+     <label for="email">Email:</label>
+     <input id="email" formControlName="email" type="email" />
+     <div *ngIf="formSubmitted && email?.invalid">
+       <small *ngIf="email?.errors?.['required']">Email is required.</small>
+       <small *ngIf="email?.errors?.['email']">Invalid email format.</small>
      </div>
-     <div class="col-md-6">
-        <div class="contact__input">
-           <input name="email" type="email" placeholder="Email" formControlName="email" aria-label="Email" aria-required="true">
-           <span *ngIf="(email?.hasError('required') && email?.touched) || (email?.hasError('email') && email?.dirty) || (formSubmitted && !email?.value)" class="text-danger">
-            Email is required and must be a valid email address
-          </span>
-        </div>
+   </div>
+ 
+   <div>
+     <label for="phone">Phone:</label>
+     <input id="phone" formControlName="phone" type="tel" />
+     <div *ngIf="formSubmitted && phone?.invalid">
+       <small>Phone number is required.</small>
      </div>
-     <div class="col-md-6">
-        <div class="contact__input">
-           <input name="phone" type="text" placeholder="Phone" formControlName="phone" aria-label="Phone" aria-required="true">
-           <span *ngIf="phone?.hasError('required') && (phone?.touched || formSubmitted)" class="text-danger"> Phone is required </span>
-        </div>
+   </div>
+ 
+   <div>
+     <label for="practice_area">Practice Area:</label>
+     <input id="practice_area" formControlName="practice_area" type="text" />
+     <div *ngIf="formSubmitted && practice_area?.invalid">
+       <small>Practice area is required.</small>
      </div>
-     <div class="col-md-12">
-        <div class="contact__input">
-           <textarea name="message" placeholder="Case Details" formControlName="message" aria-label="Case Details" aria-required="true"></textarea>
-           <span *ngIf="message?.hasError('required') && (message?.touched || formSubmitted)" class="text-danger"> Message is required </span>
-        </div>
+   </div>
+ 
+   <div>
+     <label for="message">Message:</label>
+     <textarea id="message" formControlName="message"></textarea>
+     <div *ngIf="formSubmitted && message?.invalid">
+       <small>Message is required.</small>
      </div>
-     <div class="col-md-12">
-        <div class="contact__btn">
-           <button type="submit" class="tp-btn-brown">Send Message</button>
-        </div>
-     </div>
-  </div>
-</form>
+   </div>
+ 
+   <button type="submit">Submit</button>
+ </form>
+ 

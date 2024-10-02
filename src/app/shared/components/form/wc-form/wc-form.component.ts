@@ -36,8 +36,7 @@ export class WcFormComponent implements OnInit {
           message: this.contactForm.value.message
         };
 
-        // Replace 'https://your-cloudflare-worker-domain.workers.dev' with your actual Worker URL
-        const workerUrl = '/api/submit-form'; // Assuming the Worker is deployed as a function under /api
+        const workerUrl = '/api/submit-form'; // Cloudflare Pages Function endpoint
 
         const response = await fetch(workerUrl, {
           method: 'POST',

@@ -1,28 +1,29 @@
+// src/app/lawyer-form/lawyer-form.component.ts
+
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { FormsModule,ReactiveFormsModule,FormControl,FormGroup,Validators } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { FormsModule, ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-lawyer-form',
   standalone: true,
-  imports: [CommonModule, FormsModule,ReactiveFormsModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule],
   templateUrl: './lawyer-form.component.html',
-  styleUrl: './lawyer-form.component.scss'
+  styleUrls: ['./lawyer-form.component.scss']
 })
-export class LawyerFormComponent {
+export class LawyerFormComponent implements OnInit {
 
   public contactForm!: FormGroup;
   public formSubmitted = false;
 
-
-  ngOnInit () {
+  ngOnInit() {
     this.contactForm = new FormGroup({
-      firstName:new FormControl(null,Validators.required),
-      lastName:new FormControl(null,Validators.required),
-      email:new FormControl(null,[Validators.required,Validators.email]),
-      phone:new FormControl(null,Validators.required),
-      message:new FormControl(null,Validators.required),
-    })
+      name: new FormControl(null, Validators.required),
+      email: new FormControl(null, [Validators.required, Validators.email]),
+      phone: new FormControl(null, Validators.required),
+      practice_area: new FormControl(null, Validators.required),
+      message: new FormControl(null, Validators.required),
+    });
   }
 
   async onSubmit() {
@@ -30,14 +31,15 @@ export class LawyerFormComponent {
     if (this.contactForm.valid) {
       try {
         const formData = {
-          FirstName: this.contactForm.value.firstName,
-          LastName: this.contactForm.value.lastName,
-          Email: this.contactForm.value.email,
-          Phone: this.contactForm.value.phone,
-          Message: this.contactForm.value.message
+          firstname: this.contactForm.value.name,
+          email: this.contactForm.value.email,
+          phone: this.contactForm.value.phone,
+          practice_area: this.contactForm.value.practice_area,
+          message: this.contactForm.value.message
         };
 
-        const response = await fetch('https://webhook.site/WallaceGraham', {
+        // Send form data to the Cloudflare Worker endpoint
+        const response = await fetch('/api/submit-form', { // The Worker endpoint path
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -52,19 +54,17 @@ export class LawyerFormComponent {
         alert('Form submitted successfully!');
         // Reset the form
         this.contactForm.reset();
-        this.formSubmitted = false; // Reset formSubmitted to false
+        this.formSubmitted = false;
       } catch (error) {
         console.error('An error occurred while submitting the form:', error);
-        alert('An error occurred while submitting the form: ');
+        alert('An error occurred while submitting the form.');
       }
     }
   }
 
-
-  get firstName() { return this.contactForm.get('firstName') }
-  get lastName() { return this.contactForm.get('lastName') }
-  get email() { return this.contactForm.get('email') }
-  get phone() { return this.contactForm.get('phone') }
-  get message() { return this.contactForm.get('message') }
-
+  get name() { return this.contactForm.get('name'); }
+  get email() { return this.contactForm.get('email'); }
+  get phone() { return this.contactForm.get('phone'); }
+  get practice_area() { return this.contactForm.get('practice_area'); }
+  get message() { return this.contactForm.get('message'); }
 }
