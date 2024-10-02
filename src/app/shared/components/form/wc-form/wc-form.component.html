@@ -1,37 +1,44 @@
-<form id="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-  <div class="row">
-     <div class="col-md-12">
-        <div class="contact__input-2">
-           <input class="wcinput" name="name" type="text" placeholder="Enter your name" formControlName="name">
-           <span *ngIf="name?.hasError('required') && (name?.touched || formSubmitted)" class="text-danger">
-             Name is required
-           </span>
-        </div>
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+   <div>
+     <label for="name">Name:</label>
+     <input id="name" formControlName="name" type="text" />
+     <div *ngIf="formSubmitted && name?.invalid">
+       Name is required.
      </div>
-     <div class="col-md-12">
-        <div class="contact__input-2">
-           <input class="wcinput" name="email" type="email" placeholder="Enter your email" formControlName="email">
-           <span *ngIf="(email?.hasError('required') && email?.touched) || (email?.hasError('email') && email?.dirty) || (formSubmitted && !email?.value)" class="text-danger">
-             Email is required and must be a valid email address
-           </span>
-        </div>
+   </div>
+ 
+   <div>
+     <label for="email">Email:</label>
+     <input id="email" formControlName="email" type="email" />
+     <div *ngIf="formSubmitted && email?.invalid">
+       A valid email is required.
      </div>
-     <div class="col-md-12">
-        <div class="contact__input-2">
-           <input class="wcinput" name="phone" type="text" placeholder="Phone Number" formControlName="phone">
-           <span *ngIf="phone?.hasError('required') && (phone?.touched || formSubmitted)" class="text-danger"> Phone is required </span>
-        </div>
+   </div>
+ 
+   <div>
+     <label for="phone">Phone:</label>
+     <input id="phone" formControlName="phone" type="text" />
+     <div *ngIf="formSubmitted && phone?.invalid">
+       Phone number is required.
      </div>
-     <div class="col-md-12">
-        <div class="contact__input-2">
-           <textarea class="wcinput" name="message" placeholder="Your message" formControlName="message"></textarea>
-           <span *ngIf="message?.hasError('required') && (message?.touched || formSubmitted)" class="text-danger"> Message is required </span>
-        </div>
+   </div>
+ 
+   <div>
+     <label for="practice_area">Practice Area:</label>
+     <input id="practice_area" formControlName="practice_area" type="text" />
+     <div *ngIf="formSubmitted && practice_area?.invalid">
+       Practice area is required.
      </div>
-     <div class="col-md-12">
-        <div class="contact__btn-2">
-           <button type="submit" class="tp-btn">Send Message</button>
-        </div>
+   </div>
+ 
+   <div>
+     <label for="message">Message:</label>
+     <textarea id="message" formControlName="message"></textarea>
+     <div *ngIf="formSubmitted && message?.invalid">
+       Message is required.
      </div>
-  </div>
-</form>
+   </div>
+ 
+   <button type="submit">Submit</button>
+ </form>
+ 
