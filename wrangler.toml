@@ -4,14 +4,14 @@ name = "wg-workers"
 type = "javascript"
 
 account_id = "af6be66b546b6c94de43eba8358b3fa2" # Replace with your actual account ID
-workers_dev = true
-route = ""
-zone_id = ""
+workers_dev = false
+route = "https://wallacegraham.com/api/submit-form"
+zone_id = "dbb7219d44348cfdab6a460e7177e462"
 
 [env.production]
 name = "wg-workers-production"
 type = "javascript"
-route = "https://wallacegraham.com/contact" # Replace with your actual domain and path
+route = "https://wallacegraham.com/api/submit-form" # Replace with your actual domain and path
 zone_id = "dbb7219d44348cfdab6a460e7177e462" # Replace with your Cloudflare zone ID
 
 
