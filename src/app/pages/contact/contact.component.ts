@@ -3,12 +3,13 @@ import { Component } from '@angular/core';
 import { HeaderTwoComponent } from '../../shared/header/header-two/header-two.component';
 import { FooterTwoComponent } from '../../shared/footer/footer-two/footer-two.component';
 import { ContactFormComponent } from '../../shared/components/form/contact-form/contact-form.component';
+import { LawyerFormComponent } from '../../shared/components/form/lawyer-form/lawyer-form.component';
 import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule,HeaderTwoComponent,ContactFormComponent,FooterTwoComponent],
+  imports: [CommonModule,HeaderTwoComponent,ContactFormComponent,FooterTwoComponent, LawyerFormComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })

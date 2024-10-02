@@ -37,7 +37,7 @@ export async function onRequestPost(context) {
     return new Response('Form submitted successfully!', {
       status: 200,
       headers: {
-        'Access-Control-Allow-Origin': '*', // Adjust for security
+        'Access-Control-Allow-Origin': 'https://wallacegraham.com', // Replace with your actual domain
         'Access-Control-Allow-Methods': 'POST',
         'Access-Control-Allow-Headers': 'Content-Type',
       }
