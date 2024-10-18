@@ -1,0 +1,55 @@
+<form id="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+   <div class="row">
+      <div class="col-md-6">
+         <div class="contact__input-2">
+            <input name="firstname" type="text" placeholder="Enter your name" formControlName="firstname">
+            <span *ngIf="firstname?.hasError('required') && (firstname?.touched || formSubmitted)" class="text-danger">
+              First Name is required
+            </span>
+         </div>
+      </div>
+      <div class="col-md-6">
+         <div class="contact__input-2">
+            <input name="lastname" type="text" placeholder="Enter your name" formControlName="lastname">
+            <span *ngIf="lastname?.hasError('required') && (lastname?.touched || formSubmitted)" class="text-danger">
+              Last Name is required
+            </span>
+         </div>
+      </div>
+      <div class="col-md-6">
+         <div class="contact__input-2">
+            <input name="email" type="email" placeholder="Enter your email" formControlName="email">
+            <span *ngIf="(email?.hasError('required') && email?.touched) || (email?.hasError('email') && email?.dirty) || (formSubmitted && !email?.value)" class="text-danger">
+              Email is required and must be a valid email address
+            </span>
+         </div>
+      </div>
+      <div class="col-md-6">
+         <div class="contact__input-2">
+           <select name="high_school" formControlName="high_school">
+             <option disabled [selected]="true">Please Select?</option>
+             <option value="Carson High School">Carson High School</option>
+             <option value="East Rowan High School">East Rowan High School</option>
+             <option value="North Rowan High School">North Rowan High School</option>
+             <option value="Salisbury High School">Salisbury High School</option>
+             <option value="South Rowan High School">South Rowan High School</option>
+             <option value="West Rowan High School">West Rowan High School</option>
+           </select>
+           <span *ngIf="high_school?.hasError('required') && (high_school?.touched || formSubmitted)" class="text-danger">Practice Area is required</span>
+ 
+         </div>
+      </div>
+      <div class="col-md-12">
+         <div class="contact__input-2">
+            <textarea name="message" placeholder="Your message" formControlName="message"></textarea>
+            <span *ngIf="message?.hasError('required') && (message?.touched || formSubmitted)" class="text-danger"> Message is required </span>
+         </div>
+      </div>
+      <div class="col-md-12">
+         <div class="contact__btn-2">
+            <button type="submit" class="tp-btn">Send Message</button>
+         </div>
+      </div>
+   </div>
+ </form>
+ 

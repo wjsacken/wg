@@ -19,6 +19,7 @@ const  attorney_data:IAttorneyDT[] = [
         civic: '<ul class="minus-list"><li class="p1"><span class="s1">Trustee,</span> <span class="s1">Catawba</span> <span class="s1">College</span></li><li class="p2"><span class="s1">Chairman,</span> <span class="s1">Catawba</span> College <span class="s1">Board</span> of <span class="s1">Visitors</span></li><li class="p2"><span class="s1">Advisory Board, Wake Forest School of Law</span></li><li class="p3">Former <span class="s1">Member,</span> <span class="s1">Board</span> of <span class="s1">Trustees,</span> <span class="s1">Hood</span> <span class="s1">Theological</span> <span class="s1">Seminary,</span> <span class="s1">Livingstone</span> <span class="s1">College</span></li><li class="p3"><span class="s1">Former Chair,</span> <span class="s1">Ralph</span> Ketner School of <span class="s1">Business</span> <span class="s1">Advisory</span> <span class="s1">Council,</span> <span class="s1">Catawba</span> <span class="s1">College</span></li><li class="p3"><span class="s1">Co-Chair,</span> <span class="s1">Catawba</span> School of <span class="s1">Business</span></li><li class="p3">Former <span class="s1">Member,</span> <span class="s1">United</span> Way <span class="s1">Board</span> of <span class="s1">Directors</span></li><li class="p3">Former <span class="s1">Member,</span> <span class="s1">Tri-County</span> <span class="s1">Mental</span> <span class="s1">Health</span> <span class="s1">Board</span> of <span class="s1">Directors</span> First <span class="s1">Presbyterian</span> <span class="s1">Church</span></li><li class="p3"><span class="s1">Rowan</span> <span class="s1">Helping</span> <span class="s1">Ministries,</span><span class="s3"> Former </span><span class="s1">Board</span> <span class="s1">Member,</span> Executive <span class="s1">Committee</span> <span class="s1">Member</span></li><li class="p3"><span class="s1">Benefactor</span> <span class="s1">and</span> <span class="s1">chief</span> <span class="s1">contributor</span> – <span class="s1">Wallace</span> <span class="s1">Educational</span> <span class="s1">Forum</span> – <span class="s1">providing</span> <span class="s1">public</span> <span class="s1">educational</span> <span class="s1">resources</span> <span class="s1">and</span> <span class="s1">building</span> for <span class="s1">local</span> <span class="s1">community.</span></li><li class="p3"><span class="s1">Numerous</span> other <span class="s1">significant</span> <span class="s1">acts</span> of <span class="s1">charitable</span> <span class="s1">contributions,</span> <span class="s1">community</span> <span class="s1">and</span> <span class="s1">educational</span> <span class="s1">support</span></li></ul>',
         charity: '<ul class="minus-list"><li class="li1">Mona Lisa <span class="s3">and</span> Lee <span class="s3">Wallace</span><span class="s2"> Charitable </span>Foundation</li><li class="li1">Wallace Educational Forum</li><li class="li1">Wallace Cancer Center</li><li class="li2">Mona <span class="s3">Wallace</span> <span class="s3">Public</span> <span class="s3">Interest</span> <span class="s3">Support</span> Fund – <span class="s3">Wake</span> Forest <span class="s3">University</span></li><li class="li1"><span class="s3">Benefactor</span> for <span class="s3">the</span> <span class="s3">American</span> <span class="s3">Museum</span> of <span class="s3">Tort</span> <span class="s3">Law</span></li><li class="li1"><span class="s3">Catawba College Scholarship Program</span></li></ul>',
         partner: '1',
+        legalElite: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/6395f910-8dee-425c-a8f2-1efa1ac82600/LegalElite',
         img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/15ed4e15-a4b8-496a-2bf3-404a32e50f00/attorney',
         url: 'mona-lisa-wallace',
         description: 'Mona Lisa Wallace is a partner in the law firm of Wallace &amp; Graham, P.A. She has successfully brought, litigated, and settled numerous significant personal injury, wrongful death, defective drug, asbestos, multiple-claimant and mass-tort claims.'
@@ -41,6 +42,7 @@ const  attorney_data:IAttorneyDT[] = [
         civic: '',
         charity: '',
         partner: '1',
+        legalElite: '',
         img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/e8c3fd66-919b-4533-d572-3498ba187d00/attorney',
         url: 'bill-graham',
         description: 'Bill Graham is a partner with the law firm of Wallace &amp; Graham.  Mr. Graham is a former prosecutor and is a strong supporter of law enforcement in North Carolina.'
@@ -64,6 +66,7 @@ const  attorney_data:IAttorneyDT[] = [
         civic: '',
         charity: '',
         partner: '1',
+        legalElite: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/6395f910-8dee-425c-a8f2-1efa1ac82600/LegalElite',
         img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/19210006-a499-43c8-84c8-7d5a2d915400/attorney',
         url: 'whitney-wallace-williams',
         description: 'Whitney concentrates her practice on workers&apos; compensation and civil litigation.  She loves what she does in helping clients through difficult times.'
@@ -87,6 +90,7 @@ const  attorney_data:IAttorneyDT[] = [
         civic: '',
         charity: '',
         partner: '',
+        legalElite: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/6395f910-8dee-425c-a8f2-1efa1ac82600/LegalElite',
         img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/7bc50c7a-6399-4303-b352-286b43cd0700/attorney',
         url: 'daniel-wallace',
         description: 'Daniel concentrates his practice on workers’ compensation, personal injury, and civil litigation. He earned an undergraduate degree from North Carolina State University and a J.D. from the Charlotte School of Law.'
@@ -110,6 +114,7 @@ const  attorney_data:IAttorneyDT[] = [
         civic: '',
         charity: '',
         partner: '',
+        legalElite: '',
         img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/a0047c55-e439-4ea7-d87c-019d715b3d00/attorney',
         url: 'ed-pauley',
         description: 'Ed joined Wallace & Graham in 1999. He handles workers’ compensation, asbestos litigation, personal injury and civil litigation.'
@@ -133,6 +138,7 @@ const  attorney_data:IAttorneyDT[] = [
         civic: '',
         charity: '',
         partner: '',
+        legalElite: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/6395f910-8dee-425c-a8f2-1efa1ac82600/LegalElite',
         img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/47f22de7-6025-4dc3-f0e1-9e80ed018f00/attorney',
         url: 'john-hughes',
         description: 'John Hughes is an attorney licensed to practice law in North Carolina. Since 1995, he has been engaged in the private practice of law in North Carolina, concentrating in civil litigation'
@@ -156,6 +162,7 @@ const  attorney_data:IAttorneyDT[] = [
         civic: '',
         charity: '',
         partner: '',
+        legalElite: '',
         img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/b5c1046d-c133-4799-cb8e-097acb93b800/attorney',
         url: 'krystal-draughn',
         description: 'Krystal has been with Wallace and Graham for more than 15 years joining us in 2000 as a recent graduate of Catawba College where she earned a Bachelor’s Degree in Political Science.'
@@ -179,6 +186,7 @@ const  attorney_data:IAttorneyDT[] = [
         civic: '',
         charity: '',
         partner: '',
+        legalElite: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/6395f910-8dee-425c-a8f2-1efa1ac82600/LegalElite',
         img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/84afb5b1-e23a-4061-e81b-656c67f2ae00/attorney',
         url: 'mark-doby',
         description: 'After graduating from high school in Salisbury, Mark earned his Bachelor of Arts degree from the University of North Carolina at Chapel Hill in 2006 followed by his law degree from Campbell University in 2009.'
@@ -202,6 +210,7 @@ const  attorney_data:IAttorneyDT[] = [
         civic: '',
         charity: '',
         partner: '',
+        legalElite: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/6395f910-8dee-425c-a8f2-1efa1ac82600/LegalElite',
         img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/3decb126-f57c-4bd4-1ea3-c82de390e500/attorney',
         url: 'olivia-smith',
         description: 'Olivia began working for Wallace & Graham during law school and continued her career with the firm after becoming a North Carolina-licensed attorney.'
@@ -225,6 +234,7 @@ const  attorney_data:IAttorneyDT[] = [
         civic: '',
         charity: '',
         partner: '',
+        legalElite: '',
         img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/a93f1bce-c8ff-4b9d-215a-0e6a5c42ae00/attorney',
         url: 'ben-ridings',
         description: 'Ben Ridings has been practicing workers’ compensation law for over fifteen years and is a North Carolina Board Certified Specialist in Workers’ Compensation Law.'
@@ -247,6 +257,7 @@ const  attorney_data:IAttorneyDT[] = [
         civic: '',
         charity: '',
         partner: '',
+        legalElite: '',
         img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/20832141-1bb8-4744-0444-acd414a02600/attorney',
         url: 'aren-hendrickson',
         description: 'After earning her bachelor’s degree in psychology from the New College of Florida, Aren relocated to North Carolina to attend Wake Forest University School of Law.'
@@ -269,6 +280,7 @@ const  attorney_data:IAttorneyDT[] = [
             civic: '',
             charity: '',
             partner: '',
+            legalElite: '',
             img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/49e5f83c-6150-45e3-5024-cedc4fb37000/attorney',
             url: 'noelle-musolino',
             description: 'Noelle grew up in Pennsylvania and graduated from The Pennsylvania State University summa cum laude in 2021.'

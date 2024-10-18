@@ -11,6 +11,7 @@ import { NotFoundComponent } from '../pages/not-found/not-found.component';
 import { FaqComponent } from '../pages/faq/faq.component';
 import { JobDetailsComponent } from '../pages/job-details/job-details.component';
 import { JobComponent } from '../pages/job/job.component';
+import { ScholarshipComponent } from '../pages/adversity-scholarship/scholarship.component';
 import { PortfolioTwoComponent } from '../portfolio/portfolio-two/portfolio-two.component';
 import { PortfolioDetailsComponent } from '../portfolio/portfolio-details/portfolio-details.component';
 import { AttorneyComponent } from '../pages/attorneys/attorney.component';
@@ -22,6 +23,7 @@ export const routes: Routes = [
   { path: 'new-directory', component: TeamClassicComponent, data: { title: 'Directory' } },
   { path: 'testimonials-new', component: FaqComponent, data: { title: 'Testimonials' } },
   { path: 'news', component: PortfolioTwoComponent, data: { title: 'News' }},
+  { path: 'adversity-scholarship', component: ScholarshipComponent, data: { title: 'Adversity Scholarship - Wallace & Graham' } },
   { path: 'news/:headline', component: PortfolioDetailsComponent, data: { title: 'News - Wallace & Graham' } },
   { path: 'about-us', component: AboutComponent, data: { title: 'About - Wallace & Graham' } },
   { path: 'community-outreach', component: AboutMeComponent, data: { title: 'Community Outreach - Wallace & Graham' } },
@@ -33,6 +35,7 @@ export const routes: Routes = [
   {path:'contact',component:ContactComponent,title:'Contact - Wallace & Graham'},
   { path: 'new-blog', component: BlogGridSidebarComponent, data: { title: 'Wallace & Graham Blog' } },
   { path: ':slug', component: BlogDetailsComponent, data: { title: 'Blog Title' } },
+  
   {path:'**',component:NotFoundComponent,title:'Page Not Found - Wallace & Graham'},
 
 

@@ -1,17 +1,16 @@
 # wrangler.toml
 
 name = "wg-workers"
-type = "javascript"
+main = "functions/submit-form.js" # Entry point to your Worker script
 
 account_id = "af6be66b546b6c94de43eba8358b3fa2" # Replace with your actual account ID
 workers_dev = false
 route = "https://wallacegraham.com/api/submit-form"
-zone_id = "dbb7219d44348cfdab6a460e7177e462"
+compatibility_date = "2024-10-02"
 
 [env.production]
 name = "wg-workers-production"
-type = "javascript"
+main = "functions/submit-form.js" # Ensure consistency across environments
 route = "https://wallacegraham.com/api/submit-form" # Replace with your actual domain and path
-zone_id = "dbb7219d44348cfdab6a460e7177e462" # Replace with your Cloudflare zone ID
-
+compatibility_date = "2024-10-02"
 

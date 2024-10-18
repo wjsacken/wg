@@ -31,26 +31,27 @@ export class LawyerFormComponent implements OnInit {
     if (this.contactForm.valid) {
       try {
         const formData = {
+          formType: 'lawyer', // Specify the form type
           firstname: this.contactForm.value.name,
           email: this.contactForm.value.email,
           phone: this.contactForm.value.phone,
           practice_area: this.contactForm.value.practice_area,
           message: this.contactForm.value.message
         };
-
+  
         // Send form data to the Cloudflare Worker endpoint
-        const response = await fetch('/api/submit-form', { // The Worker endpoint path
+        const response = await fetch('/api/submit-form', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify(formData)
         });
-
+  
         if (!response.ok) {
           throw new Error('Failed to submit form data');
         }
-
+  
         alert('Form submitted successfully!');
         // Reset the form
         this.contactForm.reset();
@@ -61,6 +62,7 @@ export class LawyerFormComponent implements OnInit {
       }
     }
   }
+  
 
   get name() { return this.contactForm.get('name'); }
   get email() { return this.contactForm.get('email'); }

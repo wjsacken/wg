@@ -16,6 +16,8 @@ import { PortfolioDetailsComponent } from './portfolio/portfolio-details/portfol
 import { AttorneyComponent } from './pages/attorneys/attorney.component';
 import { AttorneyDetailsComponent } from './pages/attorney-details/attorney-details.component';
 import { WorkersComponent } from './pages/workers-comp/workers.component';
+import { ScholarshipComponent } from './pages/adversity-scholarship/scholarship.component';
+
 export const routes: Routes = [
   { path: '', component: HomeLawyerComponent, data: { title: 'Wallace & Graham' } },
   { path: 'attorneys', component: AttorneyComponent, data: { title: 'Experienced Attorneys in North Carolina | Wallace & Graham' } },
@@ -23,6 +25,7 @@ export const routes: Routes = [
   { path: 'new-directory', component: TeamClassicComponent, data: { title: 'Directory' } },
   { path: 'testimonials-new', component: FaqComponent, data: { title: 'Testimonials' } },
   { path: 'news', component: PortfolioTwoComponent, data: { title: 'News' }},
+  { path: 'adversity-scholarship', component: ScholarshipComponent, data: { title: 'Adversity Scholarship - Wallace & Graham' } },
   { path: 'news/:headline', component: PortfolioDetailsComponent, data: { title: 'News - Wallace & Graham' } },
   { path: 'about-us', component: AboutComponent, data: { title: 'About - Wallace & Graham' } },
   { path: 'community-outreach', component: AboutMeComponent, data: { title: 'Community Outreach - Wallace & Graham' } },

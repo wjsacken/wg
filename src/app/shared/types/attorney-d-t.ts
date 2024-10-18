@@ -1,6 +1,7 @@
 export interface IAttorneyDT {
   id: number;
   img: string;
+  legalElite: string;
   name: string;
   title: string;
   mail?: string;
