@@ -1,7 +1,6 @@
 import { ITeamDT } from "../types/team-d-t";
 
 const team_data:ITeamDT[] = [
-  // home teams
   {
     id: 322,
     name: 'Amanda Norton',
