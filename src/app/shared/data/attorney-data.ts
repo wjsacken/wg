@@ -41,7 +41,8 @@ const  attorney_data:IAttorneyDT[] = [
         appointments: '',
         civic: '',
         charity: '',
-        partner: '1',
+        partner: '1',        
+        legalElite: '',
         img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/e8c3fd66-919b-4533-d572-3498ba187d00/attorney',
         url: 'bill-graham',
         description: 'Bill Graham is a partner with the law firm of Wallace &amp; Graham.  Mr. Graham is a former prosecutor and is a strong supporter of law enforcement in North Carolina.'
@@ -112,7 +113,8 @@ const  attorney_data:IAttorneyDT[] = [
         appointments: '',
         civic: '',
         charity: '',
-        partner: '',
+        partner: '',        
+        legalElite: '',
         img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/a0047c55-e439-4ea7-d87c-019d715b3d00/attorney',
         url: 'ed-pauley',
         description: 'Ed joined Wallace & Graham in 1999. He handles workers’ compensation, asbestos litigation, personal injury and civil litigation.'
@@ -159,7 +161,8 @@ const  attorney_data:IAttorneyDT[] = [
         appointments: '',
         civic: '',
         charity: '',
-        partner: '',
+        partner: '',        
+        legalElite: '',
         img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/b5c1046d-c133-4799-cb8e-097acb93b800/attorney',
         url: 'krystal-draughn',
         description: 'Krystal has been with Wallace and Graham for more than 15 years joining us in 2000 as a recent graduate of Catawba College where she earned a Bachelor’s Degree in Political Science.'
@@ -230,7 +233,8 @@ const  attorney_data:IAttorneyDT[] = [
         appointments: '',
         civic: '',
         charity: '',
-        partner: '',
+        partner: '',        
+        legalElite: '',
         img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/a93f1bce-c8ff-4b9d-215a-0e6a5c42ae00/attorney',
         url: 'ben-ridings',
         description: 'Ben Ridings has been practicing workers’ compensation law for over fifteen years and is a North Carolina Board Certified Specialist in Workers’ Compensation Law.'
@@ -252,7 +256,8 @@ const  attorney_data:IAttorneyDT[] = [
         appointments: '',
         civic: '',
         charity: '',
-        partner: '',
+        partner: '',        
+        legalElite: '',
         img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/20832141-1bb8-4744-0444-acd414a02600/attorney',
         url: 'aren-hendrickson',
         description: 'After earning her bachelor’s degree in psychology from the New College of Florida, Aren relocated to North Carolina to attend Wake Forest University School of Law.'
@@ -274,7 +279,8 @@ const  attorney_data:IAttorneyDT[] = [
             appointments: '',
             civic: '',
             charity: '',
-            partner: '',
+            partner: '',        
+            legalElite: '',
             img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/49e5f83c-6150-45e3-5024-cedc4fb37000/attorney',
             url: 'noelle-musolino',
             description: 'Noelle grew up in Pennsylvania and graduated from The Pennsylvania State University summa cum laude in 2021.'
