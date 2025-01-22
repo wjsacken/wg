@@ -552,6 +552,16 @@ const team_data:ITeamDT[] = [
     page: 'team',
 
 },
+  {
+    id: 447,
+    name: 'Noelle Musolino',
+    title: 'Attorney',
+    mail: 'nmusolino@wallacegraham.com',
+    phone: '',
+    img: 'https://imagedelivery.net/N7RaiyPSCRCLRce1-vDkeg/49e5f83c-6150-45e3-5024-cedc4fb37000/attorney',
+    page: 'team',
+
+},
 ]
 
 
