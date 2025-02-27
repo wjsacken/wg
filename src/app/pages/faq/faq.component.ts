@@ -788,6 +788,12 @@ export class FaqComponent {
             desc: "I am happy to say that I have nothing but an excellent relationship with Wallace and Graham. Amanda Norton, my paralegal, was excellent; professional in in every way! She even stayed late at work for me to execute some documents. (I was held up traveling in inclement weather!) This was a difficult case since my husband, John, was deceased and his coworkers were difficult to locate, if at all! Thank you for persevering and obtaining a settlement as my health (since my stroke in February) continues to decline! I appreciate all of your hard work.",
             parent: "general-1_accordion",
         },
+        {
+            id: "1443",
+            title: "Johnny Taylor Christopher",
+            desc: "Thank you for always answering our questions and staying transparent in the process about what was going on with our workers’ compensation case. Thank you for being a caring organization that comforted us. We could depend on you to take care of this matter for us with our best interests at heart.",
+            parent: "general-1_accordion",
+        },
           ]
     },
 
